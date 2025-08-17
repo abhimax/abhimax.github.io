@@ -28,9 +28,17 @@ const Experience = () => {
       technologies: ["HTML", "CSS", "JavaScript", "React"]
     },
     {
-      year: "2018 - 2019",
+      year: "2012 JUL - 2014 MAR",
       title: "Software & UI Engineer",
       company: "Multplx (Pvt) Ltd",
+      logo: "/multplx-logo.png",
+      description: "Assisted in website development and maintenance. Gained hands-on experience with various web technologies.",
+      technologies: ["HTML", "CSS", "JavaScript", "React"]
+    },
+    {
+      year: "2011 FEB - 2012 JUL",
+      title: "Software Engineer",
+      company: "Interblocks (Pvt) Ltd",
       logo: "/multplx-logo.png",
       description: "Assisted in website development and maintenance. Gained hands-on experience with various web technologies.",
       technologies: ["HTML", "CSS", "JavaScript", "React"]
