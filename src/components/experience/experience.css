@@ -1,19 +1,20 @@
 .experience {
-  min-height: 100vh;
   background: linear-gradient(135deg, var(--bg-gradient-1) 0%, var(--bg-gradient-2) 50%, var(--bg-gradient-3) 100%);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   transition: background 0.3s ease;
+  min-height: auto !important;
+  height: auto !important;
 }
 
 .experienceContainer {
   /* max-width: 1200px; */
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 2rem 4rem 2rem;
 }
 
 .experienceHeader {
@@ -58,9 +59,13 @@
 }
 
 .timelineItem {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   position: relative;
   width: 100%;
+}
+
+.timelineItem:last-child {
+  padding-bottom: 3rem;
 }
 
 .timelineItem::before {

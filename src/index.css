@@ -70,7 +70,7 @@ a {
 
 section {
   min-height: 100vh;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 20px;
   box-sizing: border-box;
   position: relative;
