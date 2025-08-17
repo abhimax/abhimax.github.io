@@ -53,22 +53,34 @@
 }
 
 .awards p {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.5rem;
   color: var(--text-secondary);
   margin: 16px 0px;
 }
 
-.awardList {
+/* 99x Logo Styling */
+.awards h2 {
   display: flex;
+  align-items: center;
   gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  font-weight: normal;
 }
 
-.awardList img {
-  width: 36px;
-  height: 36px;
-  padding: 8px;
-  background-color: var(--text-primary);
-  border-radius: 100%;
+.awards img {
+  width: 70px;
+  height: auto;
+  animation: logoShake 2s ease-in-out infinite;
+  margin-left: 4px;
+}
+
+@keyframes logoShake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
 }
 
 .scroll {
@@ -290,8 +302,14 @@
     width: 100%;
   }
 
-  .awardList {
-    justify-content: center;
+  .awards h2 {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .awards img {
+    width: 40px;
   }
 
   .hSection.right {

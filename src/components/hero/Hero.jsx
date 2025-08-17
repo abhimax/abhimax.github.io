@@ -57,16 +57,13 @@ const Hero = () => {
           initial="initial"
           animate="animate"
           className="awards"
+          speed={600}
         >
           <motion.h2 variants={awardVariants}>Senior Technical Lead @ 99x</motion.h2>
+          <motion.img variants={awardVariants} src="/99x-logo.png" alt="" />
           <motion.p variants={awardVariants}>
           Seasoned Frontend Developer | Front-end Development Pro | Micro Frontend, React, Redux, TypeScript Expert
           </motion.p>
-          <motion.div variants={awardVariants} className="awardList">
-            <motion.img variants={awardVariants} src="/award1.png" alt="" />
-            <motion.img variants={awardVariants} src="/award2.png" alt="" />
-            <motion.img variants={awardVariants} src="/award3.png" alt="" />
-          </motion.div>
         </motion.div>
         {/* SCROLL SVG */}
         <motion.a
@@ -150,19 +147,7 @@ const Hero = () => {
         </motion.div>
         {/* BUBBLE */}
         <Speech />
-        {/* CERTIFICATE */}
-        <motion.div
-          animate={{ opacity: [0, 1] }}
-          transition={{ duration: 1 }}
-          className="certificate"
-        >
-          <img src="/certificate.png" alt="" />
-          LMA CERTIFICED
-          <br />
-          PROFESSIONAL
-          <br />
-          UI DESIGNER
-        </motion.div>
+
         {/* CONTACT BUTTON */}
         <motion.a
           href="#contact"

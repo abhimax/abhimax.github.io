@@ -43,7 +43,7 @@ const Experience = () => {
           className="experienceHeader"
         >
           <h2>Experience</h2>
-          <p>My professional journey in web development</p>
+          <p>My professional journey in Software Development</p>
         </motion.div>
 
         <div className="timeline">
