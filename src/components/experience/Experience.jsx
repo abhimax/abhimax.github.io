@@ -4,32 +4,36 @@ import "./experience.css";
 const Experience = () => {
   const experiences = [
     {
-      year: "2023 - Present",
-      title: "Senior Frontend Developer",
-      company: "TechCorp Solutions",
-      description: "Leading frontend development team, implementing modern React applications with TypeScript and advanced state management.",
+      year: "2023 DEC - Present",
+      title: "Senior Technical Lead",
+      company: "99x Technology",
+      logo: "/99x-logo.png",
+      description: "Led the frontend transformation by developing a serverless, scalable solutions using cutting edge technologies. Drove innovation by building a reusable component library and Micro-Frontend architecture, while ensuring alignment with business goals through efficient CI/CD processes and mentoring developers.",
       technologies: ["React", "TypeScript", "Redux", "Next.js"]
     },
     {
-      year: "2021 - 2023",
-      title: "Frontend Developer",
-      company: "Digital Innovations Inc",
-      description: "Developed responsive web applications using React and modern CSS frameworks. Collaborated with design and backend teams.",
+      year: "2022 JAN - 2023 DEC",
+      title: "Lead - UI Engineering",
+      company: "Mad Mobile",
+      logo: "/madmobile-logo.png",
+      description: "Led the development of high-performance, scalable front-end solutions, optimizing React components for speed and user experience. Drove the adoption of configuration-driven design, created prototypes, and promoted best practices in UI development and code quality. Collaborated in agile teams, ensuring efficient testing and seamless integration across products.",
       technologies: ["React", "JavaScript", "CSS3", "Node.js"]
     },
     {
-      year: "2019 - 2021",
-      title: "Junior Developer",
-      company: "StartupHub",
+      year: "2014 MAY - 2022 JAN",
+      title: "Associate UI Specialist",
+      company: "Sysco Labs Sri Lanka",
+      logo: "/syscolabs-logo.png",
       description: "Built user interfaces and implemented responsive designs. Learned modern development practices and tools.",
       technologies: ["HTML", "CSS", "JavaScript", "React"]
     },
     {
       year: "2018 - 2019",
-      title: "Web Development Intern",
-      company: "Creative Agency",
+      title: "Software & UI Engineer",
+      company: "Multplx (Pvt) Ltd",
+      logo: "/multplx-logo.png",
       description: "Assisted in website development and maintenance. Gained hands-on experience with various web technologies.",
-      technologies: ["HTML", "CSS", "JavaScript", "WordPress"]
+      technologies: ["HTML", "CSS", "JavaScript", "React"]
     }
   ];
 
@@ -57,8 +61,15 @@ const Experience = () => {
             >
               <div className="timelineContent">
                 <div className="timelineYear">{exp.year}</div>
-                <h3>{exp.title}</h3>
-                <h4>{exp.company}</h4>
+                <div className="jobHeader">
+                  <div className="companyLogo">
+                    <img src={exp.logo} alt={`${exp.company} logo`} />
+                  </div>
+                  <div className="jobInfo">
+                    <h3>{exp.title}</h3>
+                    <h4>{exp.company}</h4>
+                  </div>
+                </div>
                 <p>{exp.description}</p>
                 <div className="technologies">
                   {exp.technologies.map((tech, techIndex) => (
