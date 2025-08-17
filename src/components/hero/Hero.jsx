@@ -48,7 +48,7 @@ const Hero = () => {
         >
           Hey There,
           <br />
-          <span>I'm Robert!</span>
+          <span>I'm Abhiman!</span>
         </motion.h1>
         {/* AWARDS */}
         <motion.div
@@ -57,9 +57,9 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>Top Rated Designer</motion.h2>
+          <motion.h2 variants={awardVariants}>Senior Technical Lead @ 99x</motion.h2>
           <motion.p variants={awardVariants}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Seasoned Frontend Developer | Front-end Development Pro | Micro Frontend, React, Redux, TypeScript Expert
           </motion.p>
           <motion.div variants={awardVariants} className="awardList">
             <motion.img variants={awardVariants} src="/award1.png" alt="" />

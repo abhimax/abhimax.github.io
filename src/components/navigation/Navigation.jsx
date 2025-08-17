@@ -44,7 +44,7 @@ const Navigation = () => {
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-brand">
-          <span>AbhiMax</span>
+          <span>Abhiman Ranaweera</span>
         </div>
         <ul className="nav-links">
           {navItems.map((item) => (
