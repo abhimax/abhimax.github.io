@@ -4,6 +4,7 @@ import Speech from "./Speech";
 import { motion } from "motion/react";
 import Shape from "./Shape";
 import { Suspense } from "react";
+import { FaGithub, FaMedium, FaLinkedin } from "react-icons/fa";
 
 const awardVariants = {
   initial: {
@@ -113,14 +114,35 @@ const Hero = () => {
           animate="animate"
           className="follow"
         >
-          <motion.a variants={followVariants} href="/">
-            <img src="/instagram.png" alt="" />
+          <motion.a 
+            variants={followVariants} 
+            href="https://github.com/abhimax" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-link"
+            aria-label="GitHub Profile"
+          >
+            <FaGithub className="social-icon" />
           </motion.a>
-          <motion.a variants={followVariants} href="/">
-            <img src="/facebook.png" alt="" />
+          <motion.a 
+            variants={followVariants} 
+            href="https://medium.com/@abhimanranaweera" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-link"
+            aria-label="Medium Profile"
+          >
+            <FaMedium className="social-icon" />
           </motion.a>
-          <motion.a variants={followVariants} href="/">
-            <img src="/youtube.png" alt="" />
+          <motion.a 
+            variants={followVariants} 
+            href="https://www.linkedin.com/in/abhiman-ranaweera-14a45177/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-link"
+            aria-label="LinkedIn Profile"
+          >
+            <FaLinkedin className="social-icon" />
           </motion.a>
           <motion.div variants={followVariants} className="followTextContainer">
             <div className="followText">FOLLOW ME</div>
@@ -170,7 +192,7 @@ const Hero = () => {
                 d="M 100,100 m -60,0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0"
               />
               <text className="circleText">
-                <textPath href="#innerCirclePath">Hire Now •</textPath>
+                <textPath href="#innerCirclePath">Follow Me •</textPath>
               </text>
               <text className="circleText">
                 <textPath href="#innerCirclePath" startOffset="44%">
