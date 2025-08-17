@@ -1,0 +1,133 @@
+.contact {
+  height: 100%;
+  display: flex;
+  gap: 100px;
+  transition: background 0.3s ease;
+}
+
+.cSection {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cSection:last-child {
+  background-color: var(--card-bg);
+  margin: 50px 0px;
+  padding: 50px;
+  border-radius: 50% 0px;
+  border: 1px solid var(--card-border);
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--card-bg);
+  padding: 50px;
+  border-radius: 50px;
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(10px);
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  border: 1px solid var(--card-border);
+  transition: all 0.3s ease;
+}
+
+.light-theme input,
+.light-theme textarea {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--card-border);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+.light-theme input:focus,
+.light-theme textarea:focus {
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.3);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.formButton {
+  background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
+  color: var(--bg-gradient-1);
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.light-theme .formButton {
+  color: #ffffff;
+}
+
+.formButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.4);
+}
+
+.light-theme .formButton:hover {
+  box-shadow: 0 5px 15px rgba(33, 150, 243, 0.4);
+}
+
+@media (max-width: 1280px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .cSection {
+    width: 100%;
+  }
+
+  .cSection:first-child {
+    height: 70%;
+  }
+  .cSection:last-child {
+    height: 30%;
+  }
+}
