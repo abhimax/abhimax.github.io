@@ -6,6 +6,7 @@
 import { lazy, Suspense } from "react";
 import LazyLoad from "react-lazyload";
 import ThemeToggle from "./components/theme/ThemeToggle";
+import Navigation from "./components/navigation/Navigation";
 
 const Hero = lazy(() => import("./components/hero/Hero"));
 const Experience = lazy(() => import("./components/experience/Experience"));
@@ -16,11 +17,12 @@ const Contact = lazy(() => import("./components/contact/Contact"));
 const App = () => {
   return (
     <div className="container">
+      <Navigation />
       <ThemeToggle />
       
       <Suspense fallback={"loading..."}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#home">
+          <section id="home">
             <Hero />
           </section>
         </LazyLoad>
@@ -28,7 +30,7 @@ const App = () => {
       
       <Suspense fallback={"loading..."}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#experience">
+          <section id="experience">
             <Experience />
           </section>
         </LazyLoad>
@@ -36,7 +38,7 @@ const App = () => {
       
       <Suspense fallback={"loading..."}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#skills">
+          <section id="skills">
             <Skills />
           </section>
         </LazyLoad>
@@ -44,7 +46,7 @@ const App = () => {
       
       <Suspense fallback={"loading..."}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#blog">
+          <section id="blog">
             <Blog />
           </section>
         </LazyLoad>
@@ -52,7 +54,7 @@ const App = () => {
       
       <Suspense fallback={"loading..."}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#contact">
+          <section id="contact">
             <Contact />
           </section>
         </LazyLoad>
