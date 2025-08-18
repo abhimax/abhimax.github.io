@@ -200,15 +200,15 @@
 .technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.35rem;
 }
 
 .techTag {
   background: rgba(100, 255, 218, 0.1);
   color: var(--accent-primary);
-  padding: 0.25rem 0.8rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 15px;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   border: 1px solid rgba(100, 255, 218, 0.3);
   transition: all 0.3s ease;
 }
