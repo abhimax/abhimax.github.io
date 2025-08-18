@@ -24,12 +24,12 @@
 .nav-brand {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #333;
+  color: var(--text-primary);
   cursor: pointer;
 }
 
 .nav-brand span {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -49,7 +49,7 @@
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #666;
+  color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 8px;
@@ -57,13 +57,13 @@
 }
 
 .nav-link:hover {
-  color: #333;
-  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+  background: var(--card-bg);
 }
 
 .nav-link.active {
-  color: #667eea;
-  background: rgba(102, 126, 234, 0.1);
+  color: var(--accent-primary);
+  background: rgba(100, 255, 218, 0.1);
   font-weight: 600;
 }
 
@@ -75,85 +75,23 @@
   transform: translateX(-50%);
   width: 20px;
   height: 3px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
   border-radius: 2px;
 }
 
-/* Dark theme support */
-@media (prefers-color-scheme: dark) {
-  .navigation {
-    background: rgba(0, 0, 0, 0.6);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .nav-brand {
-    color: #fff;
-  }
-  
-  .nav-link {
-    color: #ccc;
-  }
-  
-  .nav-link:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.1);
-  }
-  
-  .nav-link.active {
-    color: #667eea;
-    background: rgba(102, 126, 234, 0.2);
-  }
+/* Navigation automatically adapts to theme using CSS variables */
+.navigation {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--card-border);
+  box-shadow: 0 2px 20px var(--shadow);
 }
 
-/* Light theme class */
-.light-theme .navigation {
-  background: rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-}
 
-.light-theme .nav-brand {
-  color: #333;
-}
 
-.light-theme .nav-link {
-  color: #666;
-}
 
-.light-theme .nav-link:hover {
-  color: #333;
-  background: rgba(0, 0, 0, 0.05);
-}
 
-.light-theme .nav-link.active {
-  color: #667eea;
-  background: rgba(102, 126, 234, 0.1);
-}
 
-/* Dark theme class */
-.dark-theme .navigation {
-  background: rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-}
 
-.dark-theme .nav-brand {
-  color: #fff;
-}
-
-.dark-theme .nav-link {
-  color: #ccc;
-}
-
-.dark-theme .nav-link:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.dark-theme .nav-link.active {
-  color: #667eea;
-  background: rgba(102, 126, 234, 0.2);
-}
 
 /* Responsive design */
 @media (max-width: 768px) {
