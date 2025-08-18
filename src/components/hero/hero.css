@@ -278,6 +278,13 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
+    height: 100vh;
+  }
+  .lazyload-wrapper {
+    width:96vw;
+  }
+  .hImg{
+    width: 100%;
   }
 
   .bg {
