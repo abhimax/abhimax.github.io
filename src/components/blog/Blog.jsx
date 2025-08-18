@@ -5,63 +5,43 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Building Modern React Applications with TypeScript",
-      excerpt: "Learn how to leverage TypeScript in React to build more robust and maintainable applications. Discover best practices and common patterns.",
+      title: "Streamlining UI Library Development From Design to Release​",
+      excerpt: "You’ve probably worked with a UI library before whether it’s a set of buttons, forms, modals, or grids that you can quickly drop into your projects. We’re all familiar with these pre-built, reusable components that save time and keep things consistent. ",
       category: "Frontend Development",
       readTime: "8 min read",
       date: "Dec 15, 2024",
       image: "/p1.jpg",
-      tags: ["React", "TypeScript", "Frontend"]
+      tags: ["React", "UI Library Development", "Frontend"]
     },
     {
       id: 2,
-      title: "The Future of Web Development: AI-Powered Tools",
-      excerpt: "Explore how artificial intelligence is transforming the way we build websites and applications. From code generation to automated testing.",
+      title: "Exploring React micro-frontend options for building MF apps.",
+      excerpt: "In the previous article, we covered how to build a basic micro-frontend application from scratch. We explored four approaches for creating React Micro Frontend applications.",
       category: "Technology Trends",
       readTime: "12 min read",
       date: "Dec 10, 2024",
       image: "/p2.jpg",
-      tags: ["AI", "Web Development", "Future Tech"]
+      tags: ["Micro Frontend", "Web Development", "Future Tech"]
     },
     {
       id: 3,
-      title: "Performance Optimization Techniques for React Apps",
-      excerpt: "Discover advanced techniques to improve your React application's performance. From code splitting to memoization strategies.",
+      title: "How to fix the missing remoteEntry.js issue in Vite-Based Micro Frontends",
+      excerpt: "When developing Micro-Frontend Apps using Vite and module federation, you might face the challenge of the remoteEntry.js file being unavailable during local development...",
       category: "Performance",
       readTime: "10 min read",
       date: "Dec 5, 2024",
       image: "/p3.jpg",
-      tags: ["React", "Performance", "Optimization"]
+      tags: ["Vite Plugin Federation", "Vite Micro Frontend"]
     },
     {
       id: 4,
-      title: "Mastering CSS Grid and Flexbox Layouts",
+      title: "Boost Your Real-Time App Development with GraphQL Playground",
       excerpt: "A comprehensive guide to modern CSS layout techniques. Learn how to create responsive and flexible designs with CSS Grid and Flexbox.",
       category: "CSS",
       readTime: "15 min read",
       date: "Nov 28, 2024",
       image: "/p4.jpg",
-      tags: ["CSS", "Layout", "Responsive Design"]
-    },
-    {
-      id: 5,
-      title: "State Management in Large-Scale Applications",
-      excerpt: "Compare different state management solutions for React applications. From Redux to Zustand, find the right tool for your project.",
-      category: "State Management",
-      readTime: "14 min read",
-      date: "Nov 20, 2024",
-      image: "/p5.jpg",
-      tags: ["React", "State Management", "Redux"]
-    },
-    {
-      id: 6,
-      title: "Building Accessible Web Applications",
-      excerpt: "Learn how to create web applications that are accessible to all users. Implement ARIA labels, keyboard navigation, and more.",
-      category: "Accessibility",
-      readTime: "11 min read",
-      date: "Nov 15, 2024",
-      image: "/p1.jpg",
-      tags: ["Accessibility", "Web Standards", "UX"]
+      tags: ["GraphQL", "Real Time Update"]
     }
   ];
 
