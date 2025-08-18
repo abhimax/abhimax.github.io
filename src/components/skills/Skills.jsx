@@ -4,23 +4,20 @@ import "./skills.css";
 const Skills = () => {
   const skillCategories = [
     {
-      category: "Frontend Development",
+      category: "Top Development Skills",
       skills: [
         { name: "React", level: 95 },
         { name: "JavaScript", level: 90 },
         { name: "TypeScript", level: 85 },
-        { name: "HTML/CSS", level: 95 },
-        { name: "Next.js", level: 80 }
-      ]
-    },
-    {
-      category: "Backend Development",
-      skills: [
-        { name: "Node.js", level: 75 },
-        { name: "Express.js", level: 70 },
-        { name: "Python", level: 65 },
-        { name: "MongoDB", level: 70 },
-        { name: "PostgreSQL", level: 65 }
+        { name: "HTML/CSS/SCSS/Tailwind", level: 95 },
+        { name: "Next.js", level: 75 },
+        { name: "Design Systems / Component Libraries", level: 95 },
+        { name: "Micro-Frontend", level: 90 },
+        { name: "Storybook", level: 95 },
+        { name: "Node.js", level: 60 },
+        { name: "Express.js", level: 60 },
+        { name: "GraphQL", level: 70 },
+        { name: "CI/CD", level: 70 },
       ]
     },
     {
@@ -28,15 +25,18 @@ const Skills = () => {
       skills: [
         { name: "Git", level: 90 },
         { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
-        { name: "Figma", level: 75 },
-        { name: "Jest", level: 80 }
+        { name: "AWS", level: 60 },
+        { name: "Figma", level: 90 },
+        { name: "Jest/ Vitest", level: 90 }
       ]
     }
   ];
 
   const otherSkills = [
-    "Responsive Design", "RESTful APIs", "GraphQL", "State Management", 
+    "Modern JS frameworks", "Responsive Design", "RESTful APIs","Frontend solutions analysis",
+  "UI recommendations",
+  "Frontend evaluation",
+  "UI research", "DevOps skills", "GraphQL", "State Management", 
     "Performance Optimization", "Testing", "CI/CD", "Agile Methodologies",
     "UI/UX Design", "Cross-browser Compatibility", "SEO", "Accessibility"
   ];
