@@ -1,3 +1,2 @@
-# Lama Dev Animated 3D Portfolio Website Project
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# abhimax.github.io
+Visit my portfolio at abhimax.github.io. This site is hosted on GitHub Pages, with automatic builds and deployments triggered by changes to the main branch at https://abhimax.github.io/
