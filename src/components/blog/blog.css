@@ -15,7 +15,7 @@
 }
 
 .blogAuthorRow {
-  display: flex;
+  float: left;
   align-items: center;
   margin: 2rem 0 1.5rem 0;
 }

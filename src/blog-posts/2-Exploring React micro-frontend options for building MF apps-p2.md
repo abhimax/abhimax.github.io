@@ -6,11 +6,7 @@
 
 [Abhiman Ranaweera](https://medium.com/@abhimanranaweera?source=post_page---byline--6720f36f56e4---------------------------------------)
 
-4 min read
-
-·
-
-Feb 28, 2025
+4 min read | Feb 28, 2025
 
 ![captionless image](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*qcjnA5XaNoCOnj7tpmFbPQ.png)
 

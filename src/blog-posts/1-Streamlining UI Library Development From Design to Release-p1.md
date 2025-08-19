@@ -6,11 +6,7 @@
 
 [Abhiman Ranaweera](https://medium.com/@abhimanranaweera?source=post_page---byline--5fd4f888510a---------------------------------------)
 
-6 min read
-
-·
-
-Jul 28, 2025
+6 min read | Jul 28, 2025
 
 You’ve probably worked with a **UI library** before whether it’s a set of buttons, forms, modals, or grids that you can quickly drop into your projects. We’re all familiar with these pre-built, reusable components that save time and keep things consistent. But in this article, we won’t dive deep into definitions. Instead, let’s talk about **why building your own custom UI library** is often the best choice.
 

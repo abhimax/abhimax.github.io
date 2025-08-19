@@ -1,4 +1,4 @@
-# **Exploring React micro-frontend options for building MF apps.**
+# Exploring React micro-frontend options for building MF apps
 
 ## Part 01 — Building from Scratch
 
@@ -6,11 +6,7 @@
 
 [Abhiman Ranaweera](https://medium.com/@abhimanranaweera?source=post_page---byline--819cc6602b80---------------------------------------)
 
-4 min read
-
-·
-
-Jan 17, 2025
+4 min read | Jan 17, 2025
 
 Micro frontend architecture is revolutionizing how we develop and deploy modern web apps. The main idea behind micro-frontends is to achieve scalability, flexibility, and ease in maintaining applications by breaking down gigantic applications into well-separated, autonomously deployable modules. This article will cover 4 methods for composing an MF app within React.
 
