@@ -115,6 +115,9 @@
 }
 
 @media (max-width: 480px) {
+  .container{
+    padding: 0;
+  }
   .nav-links {
     gap: 0.5rem;
   }
@@ -122,5 +125,15 @@
   .nav-link {
     padding: 0.3rem 0.6rem;
     font-size: 0.8rem;
+  }
+  .nav-container{
+    justify-content: center;
+
+  }
+  .nav-brand span{
+    display: none;
+  }
+  .awards p{
+    width: 90%;
   }
 } 
