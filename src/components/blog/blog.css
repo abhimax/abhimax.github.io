@@ -1,3 +1,81 @@
+.blogPostContent {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.blogPostContent h1,
+.blogPostContent h2,
+.blogPostContent h3 {
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-weight: 700;
+  margin: 2.2rem 0 1.2rem 0;
+  color: var(--text-primary);
+}
+
+.blogPostContent h1 {
+  font-size: 2.2rem;
+}
+
+.blogPostContent h2 {
+  font-size: 1.6rem;
+}
+
+.blogPostContent h3 {
+  font-size: 1.3rem;
+}
+
+.blogPostContent p {
+  margin: 1.2rem 0;
+}
+
+.blogPostContent ul,
+.blogPostContent ol {
+  margin: 1.2rem 0 1.2rem 2rem;
+  padding-left: 1.5rem;
+}
+
+.blogPostContent li {
+  margin-bottom: 0.5rem;
+}
+
+.blogPostContent img {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.blogPostContent blockquote {
+  border-left: 4px solid var(--accent-primary);
+  background: rgba(100, 255, 218, 0.07);
+  color: var(--text-secondary);
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  font-style: italic;
+}
+
+.blogPostContent a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  word-break: break-all;
+  transition: color 0.2s;
+}
+
+.blogPostContent a:hover {
+  color: var(--accent-secondary);
+}
+
+.blogPostContent hr {
+  border: none;
+  border-top: 1px solid var(--card-border);
+  margin: 2rem 0;
+}
+
 .blog {
   min-height: 100vh;
   background: linear-gradient(135deg, var(--bg-gradient-2) 0%, var(--bg-gradient-3) 50%, var(--bg-gradient-1) 100%);
