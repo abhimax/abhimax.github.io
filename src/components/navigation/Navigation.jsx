@@ -62,9 +62,28 @@ const Navigation = () => {
                 className="nav-link"
                 onClick={() => navigate("/", { replace: false })}
               >
-                Back to Home
+                Home
               </button>
             </li>
+          ) : location.pathname.startsWith("/blog/") ? (
+            <>
+              <li key="home">
+                <button
+                  className="nav-link"
+                  onClick={() => navigate("/", { replace: false })}
+                >
+                  Home
+                </button>
+              </li>
+              <li key="back-to-blogs">
+                <button
+                  className="nav-link"
+                  onClick={() => navigate("/blog", { replace: false })}
+                >
+                  Blog
+                </button>
+              </li>
+            </>
           ) : (
             navItems.map((item) => (
               <li key={item.id}>

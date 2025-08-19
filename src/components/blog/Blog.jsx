@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 import BlogPost from "./BlogPost";
@@ -39,7 +38,9 @@ const Blog = () => {
         </div>
         {selectedPost ? (
           <>
-            <button className="backToListBtn" onClick={() => navigate("/blog")}>← Back to Blog</button>
+            <button className="backToListBtn" onClick={() => navigate("/blog")}>
+              ← Back to Blog
+            </button>
             <BlogPost post={selectedPost} />
           </>
         ) : (
