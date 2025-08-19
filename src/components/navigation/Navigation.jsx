@@ -1,30 +1,25 @@
-import { useState, useEffect } from 'react';
-import './navigation.css';
+import { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import "./navigation.css";
 
 const Navigation = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
+  const location = useLocation();
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'blog', label: 'Blog' },
-    { id: 'contact', label: 'Contact' }
+    {
+      id: "home",
+      label: location.pathname === "/blog" ? "Back to Home" : "Home",
+    },
+    { id: "experience", label: "Experience" },
+    { id: "skills", label: "Skills" },
+    { id: "blog", label: "Blog", isBlog: true },
+    { id: "contact", label: "Contact" },
   ];
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navItems.map(item => item.id);
+      const sections = navItems.map((item) => item.id);
       const scrollPosition = window.scrollY + 100; // Offset for better detection
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -36,9 +31,23 @@ const Navigation = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const navigate = useNavigate();
+
+  // Scroll and navigate handler for non-blog links
+  const handleNavClick = (sectionId) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: sectionId } });
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
 
   return (
     <nav className="navigation">
@@ -47,20 +56,46 @@ const Navigation = () => {
           <span>Abhiman Ranaweera</span>
         </div>
         <ul className="nav-links">
-          {navItems.map((item) => (
-            <li key={item.id}>
+          {location.pathname === "/blog" ? (
+            <li key="home">
               <button
-                className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
-                onClick={() => scrollToSection(item.id)}
+                className="nav-link"
+                onClick={() => navigate("/", { replace: false })}
               >
-                {item.label}
+                Back to Home
               </button>
             </li>
-          ))}
+          ) : (
+            navItems.map((item) => (
+              <li key={item.id}>
+                {item.isBlog ? (
+                  <Link
+                    to="/blog"
+                    className={`nav-link ${
+                      location.pathname === "/blog" ? "active" : ""
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <button
+                    className={`nav-link ${
+                      activeSection === item.id && location.pathname === "/"
+                        ? "active"
+                        : ""
+                    }`}
+                    onClick={() => handleNavClick(item.id)}
+                  >
+                    {item.label}
+                  </button>
+                )}
+              </li>
+            ))
+          )}
         </ul>
       </div>
     </nav>
   );
 };
 
-export default Navigation; 
+export default Navigation;
