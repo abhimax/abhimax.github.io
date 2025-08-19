@@ -2,6 +2,16 @@
 
 ## PART 01 — Understanding UI Library Architecture and Overcoming Challenges
 
+[![Abhiman Ranaweera](https://miro.medium.com/v2/resize:fill:64:64/1*5csW6IzMy7Uq75Y-KjI36w.jpeg)](https://medium.com/@abhimanranaweera?source=post_page---byline--5fd4f888510a---------------------------------------)
+
+[Abhiman Ranaweera](https://medium.com/@abhimanranaweera?source=post_page---byline--5fd4f888510a---------------------------------------)
+
+6 min read
+
+·
+
+Jul 28, 2025
+
 You’ve probably worked with a **UI library** before whether it’s a set of buttons, forms, modals, or grids that you can quickly drop into your projects. We’re all familiar with these pre-built, reusable components that save time and keep things consistent. But in this article, we won’t dive deep into definitions. Instead, let’s talk about **why building your own custom UI library** is often the best choice.
 
 With nearly a decade of experience developing **React component libraries**, I’ve seen the real-world challenges and benefits firsthand. I’ll be sharing practical insights based on my journey, showing how to streamline the development process and avoid the common pitfalls

@@ -1,3 +1,69 @@
+.blogAuthorRow {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.blogProfilePic {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.blogAuthorMeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blogAuthorName {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.blogAuthorDetails {
+  color: #757575;
+  font-size: 0.98rem;
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blogAuthorDetails .dot {
+  margin: 0 0.5rem;
+  font-size: 1.2em;
+  color: #bdbdbd;
+}
+
+.blogPostTitle {
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #222;
+  letter-spacing: -0.01em;
+}
+
+.blogPost {
+  background: var(--blog-bg, #fcfcfc);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 800px;
+  margin: 2.5rem auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .blogPost {
+    background: transparent;
+    box-shadow: none;
+  }
+}
 .blogPostContent {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
   color: var(--text-primary);
@@ -7,39 +73,47 @@
   padding: 2rem 0;
 }
 
-.blogPostContent h1,
-.blogPostContent h2,
-.blogPostContent h3 {
-  font-family: 'Merriweather', 'Georgia', serif;
-  font-weight: 700;
-  margin: 2.2rem 0 1.2rem 0;
-  color: var(--text-primary);
+.blogAuthorRow {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 1.5rem 0;
 }
-
-.blogPostContent h1 {
-  font-size: 2.2rem;
+.blogProfilePic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
-
-.blogPostContent h2 {
-  font-size: 1.6rem;
+.blogAuthorMeta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
 }
-
-.blogPostContent h3 {
-  font-size: 1.3rem;
+.blogAuthorName {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #222;
+  margin-right: 0.7rem;
 }
-
-.blogPostContent p {
-  margin: 1.2rem 0;
+@media (prefers-color-scheme: dark) {
+  .blogAuthorName {
+    color: #fff;
+  }
 }
-
-.blogPostContent ul,
-.blogPostContent ol {
-  margin: 1.2rem 0 1.2rem 2rem;
-  padding-left: 1.5rem;
+.blogAuthorDetails {
+  color: #757575;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
 }
-
-.blogPostContent li {
-  margin-bottom: 0.5rem;
+@media (prefers-color-scheme: dark) {
+  .blogAuthorDetails {
+    color: #bdbdbd;
+  }
 }
 
 .blogPostContent img {

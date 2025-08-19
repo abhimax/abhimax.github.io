@@ -5,28 +5,32 @@ function extractPreviewFromMarkdown(md) {
   // Title: first non-empty line starting with #
   const lines = md.split(/\r?\n/);
   let title = '';
-  let image = '';
+  let images = [];
   let excerpt = '';
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
     if (!title && line.startsWith('#')) {
       title = line.replace(/^#+\s*/, '');
     }
-    if (!image) {
-      const imgMatch = line.match(/!\[[^\]]*\]\(([^)]+)\)/);
-      if (imgMatch) image = imgMatch[1];
-    }
+    const imgMatch = line.match(/!\[[^\]]*\]\(([^)]+)\)/);
+    if (imgMatch) images.push(imgMatch[1]);
     if (!excerpt && line && !line.startsWith('#') && !line.startsWith('![') && !line.startsWith('[')) {
       excerpt = line;
     }
-    if (title && image && excerpt) break;
+    if (title && images.length >= 2 && excerpt) break;
   }
-  return { title, image, description: excerpt };
+  // Use first image as profile, second as tile (if available)
+  return {
+    title,
+    image: images[1] || images[0] || '', // tile image: prefer 2nd image
+    profileImage: images[0] || '', // profile image: first image
+    description: excerpt
+  };
 }
 
 export async function getAllBlogPosts() {
-  // Only process post-1.md for now
-  const files = import.meta.glob("../../blog-posts/post-1.md", { as: "raw" });
+  // Process all .md files in blog-posts
+  const files = import.meta.glob("../../blog-posts/*.md", { as: "raw" });
   const posts = [];
   for (const path in files) {
     const raw = await files[path]();
@@ -34,11 +38,13 @@ export async function getAllBlogPosts() {
     const preview = extractPreviewFromMarkdown(raw);
     posts.push({ ...preview, content: raw, slug });
   }
+  // Sort by title for now (could use date if available)
+  posts.sort((a, b) => a.title.localeCompare(b.title));
   return posts;
 }
 
 export async function getBlogPostBySlug(slug) {
-  const files = import.meta.glob("../../blog-posts/post-1.md", { as: "raw" });
+  const files = import.meta.glob("../../blog-posts/*.md", { as: "raw" });
   for (const path in files) {
     if (path.includes(`${slug}.md`)) {
       const raw = await files[path]();
