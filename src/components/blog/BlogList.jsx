@@ -3,20 +3,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./blog.css";
 
-// Helper to extract subtitle and excerpt from markdown
+// Helper to extract subtitle and excerpt from markdown (subtitle only if ## is immediately after #)
 function extractSubtitleAndExcerpt(md) {
   const lines = md.split(/\r?\n/);
   let subtitle = '';
-  let foundSubtitle = false;
-  let excerptLines = [];
+  let foundTitle = false;
+  let subtitleLine = -1;
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
-    if (!subtitle && line.startsWith('##')) {
-      subtitle = line.replace(/^##+\s*/, '');
-      foundSubtitle = true;
-      continue;
+    if (!foundTitle && line.startsWith('#')) {
+      foundTitle = true;
+      // Check next non-empty line for subtitle
+      for (let j = i + 1; j < lines.length; j++) {
+        const nextLine = lines[j].trim();
+        if (!nextLine) continue;
+        if (nextLine.startsWith('##')) {
+          subtitle = nextLine.replace(/^##+\s*/, '');
+          subtitleLine = j;
+        }
+        break;
+      }
+      break;
     }
-    if (foundSubtitle && line && !line.startsWith('#') && !line.startsWith('![') && !line.startsWith('[')) {
+  }
+  // Excerpt: first 3 content lines after subtitle (or after title if no subtitle)
+  let excerptLines = [];
+  let startIdx = subtitleLine > -1 ? subtitleLine + 1 : lines.findIndex(l => l.trim().startsWith('#')) + 1;
+  for (let i = startIdx; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line && !line.startsWith('#') && !line.startsWith('![') && !line.startsWith('[')) {
       excerptLines.push(line);
       if (excerptLines.length >= 3) break;
     }

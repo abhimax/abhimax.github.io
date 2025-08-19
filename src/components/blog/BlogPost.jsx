@@ -2,16 +2,27 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import "./blog.css";
 
-// Helper to extract subtitle (second heading) from markdown
+// Helper to extract subtitle only if ## is immediately after #
 function extractSubtitle(md) {
   const lines = md.split(/\r?\n/);
+  let foundTitle = false;
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
-    if (line.startsWith("##")) {
-      return line.replace(/^##+\s*/, "");
+    if (!foundTitle && line.startsWith('#')) {
+      foundTitle = true;
+      // Check next non-empty line for subtitle
+      for (let j = i + 1; j < lines.length; j++) {
+        const nextLine = lines[j].trim();
+        if (!nextLine) continue;
+        if (nextLine.startsWith('##')) {
+          return nextLine.replace(/^##+\s*/, '');
+        } else {
+          return '';
+        }
+      }
     }
   }
-  return "";
+  return '';
 }
 
 // Helper to remove first # and ## headings and profile image from markdown
