@@ -1,3 +1,53 @@
+.backToListBtn {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 1.5rem;
+  color: var(--blog-title);
+}
+.backToListBtn:hover {
+  background: rgba(0,0,0,0.07);
+}
+@media (prefers-color-scheme: dark) {
+  .backToListBtn:hover {
+    background: rgba(255,255,255,0.08);
+  }
+}
+.blogTileReadMore {
+  font-size: 0.85rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 18px;
+  min-width: unset;
+  width: auto;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
+.blogTileFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.blogTileMeta {
+  color: var(--blog-author-details);
+  font-size: 0.98rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .light-theme {
   --blog-title: #111;
   --blog-subtitle: #555;
@@ -211,7 +261,7 @@
 
 .blogHeader {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .blogHeader h2 {
@@ -382,11 +432,10 @@
   color: var(--bg-gradient-1);
   border: none;
   padding: 0.8rem 1.5rem;
-  border-radius: 25px;
+  border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 100%;
 }
 
 .light-theme .readMoreBtn {

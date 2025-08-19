@@ -9,6 +9,7 @@ function extractSubtitleAndExcerpt(md) {
   let subtitle = '';
   let foundTitle = false;
   let subtitleLine = -1;
+  let timeOrDateLine = -1;
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
     if (!foundTitle && line.startsWith('#')) {
@@ -26,10 +27,19 @@ function extractSubtitleAndExcerpt(md) {
       break;
     }
   }
-  // Excerpt: first 3 content lines after subtitle (or after title if no subtitle)
+  // Find time/date line (e.g. 'min read' or date with year)
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (/min read/.test(line) || /\d{4}/.test(line)) {
+      timeOrDateLine = i;
+      break;
+    }
+  }
+  // Excerpt: first 3 content lines after subtitle (or after title if no subtitle), skipping time/date line
   let excerptLines = [];
   let startIdx = subtitleLine > -1 ? subtitleLine + 1 : lines.findIndex(l => l.trim().startsWith('#')) + 1;
   for (let i = startIdx; i < lines.length; i++) {
+    if (i === timeOrDateLine) continue;
     const line = lines[i].trim();
     if (line && !line.startsWith('#') && !line.startsWith('![') && !line.startsWith('[')) {
       excerptLines.push(line);
@@ -57,14 +67,16 @@ const BlogList = ({ posts }) => {
                   {excerpt.length > 120 ? excerpt.slice(0, 120) + '…' : excerpt}
                 </p>
               )}
-              <div className="blogMeta">
-                {post.readTime && <span>{post.readTime}</span>}
-                {post.readTime && post.date && <span className="dot">·</span>}
-                {post.date && <span>{post.date}</span>}
+              <div className="blogTileFooter">
+                <div className="blogTileMeta">
+                  {post.readTime && <span>{post.readTime}</span>}
+                  {post.readTime && post.date && <span className="dot">·</span>}
+                  {post.date && <span>{post.date}</span>}
+                </div>
+                <Link to={`/blog/${post.slug}`} className="readMoreBtn blogTileReadMore">
+                  Read More
+                </Link>
               </div>
-              <Link to={`/blog/${post.slug}`} className="readMoreBtn">
-                Read More
-              </Link>
             </div>
           </article>
         );

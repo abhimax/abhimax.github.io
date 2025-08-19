@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import BlogList from "./BlogList";
 import BlogPost from "./BlogPost";
 import { getAllBlogPosts, getBlogPostBySlug } from "./blogUtils";
@@ -33,14 +34,21 @@ const Blog = () => {
     <div className="blog">
       <div className="blogContainer">
         <div className="blogHeader">
-          <h2>Blog & Articles</h2>
-          <p>Thoughts, tutorials, and insights about web development</p>
+          <h2>My Posts</h2>
         </div>
         {selectedPost ? (
           <>
-            <button className="backToListBtn" onClick={() => navigate("/blog")}>
-              ← Back to Blog
-            </button>
+            <motion.button
+              className="backToListBtn"
+              onClick={() => navigate("/blog")}
+              aria-label="Back to Blog"
+              initial={{ scale: 0.7, opacity: 0, y: -20, x: -20 }}
+              animate={{ scale: 1, opacity: 1, y: 0, x: 0 }}
+              transition={{ type: "spring", stiffness: 400, damping: 30 }}
+              style={{ position: 'absolute', top: 24, left: 24, zIndex: 10 }}
+            >
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </motion.button>
             <BlogPost post={selectedPost} />
           </>
         ) : (
