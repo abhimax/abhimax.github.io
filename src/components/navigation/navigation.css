@@ -128,6 +128,7 @@
   }
   .nav-container{
     justify-content: center;
+    margin: 0;
 
   }
   .nav-brand span{
@@ -135,5 +136,8 @@
   }
   .awards p{
     width: 90%;
+  }
+  .theme-toggle{
+    margin-top: 60px;
   }
 } 
