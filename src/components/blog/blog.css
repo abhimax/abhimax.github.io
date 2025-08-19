@@ -8,6 +8,7 @@
   position: relative;
   overflow: hidden;
   transition: background 0.3s ease;
+  margin-top: 70px;
 }
 
 .blogContainer {
@@ -300,20 +301,20 @@
   .blogHeader h2 {
     font-size: 2.5rem;
   }
-  
+
   .blogContainer {
     padding: 0 1rem;
   }
-  
+
   .blogGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .blogNewsletter {
     padding: 2rem;
   }
-  
+
   .newsletterForm {
     flex-direction: column;
   }
@@ -323,33 +324,33 @@
   .blogHeader h2 {
     font-size: 2rem;
   }
-  
+
   .blogHeader p {
     font-size: 1rem;
   }
-  
+
   .blogCategories {
     gap: 0.8rem;
   }
-  
+
   .categoryBtn {
     padding: 0.6rem 1.2rem;
     font-size: 0.8rem;
   }
-  
+
   .blogContent {
     padding: 1rem;
   }
-  
+
   .blogTitle {
     font-size: 1.1rem;
   }
-  
+
   .blogNewsletter h3 {
     font-size: 1.5rem;
   }
-  
+
   .blogNewsletter p {
     font-size: 1rem;
   }
-} 
+}

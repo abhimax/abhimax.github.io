@@ -78,7 +78,7 @@ const Navigation = () => {
                     {item.label}
                   </Link>
                 ) : (
-                  <button
+                  <Link
                     className={`nav-link ${
                       activeSection === item.id && location.pathname === "/"
                         ? "active"
@@ -87,7 +87,7 @@ const Navigation = () => {
                     onClick={() => handleNavClick(item.id)}
                   >
                     {item.label}
-                  </button>
+                  </Link>
                 )}
               </li>
             ))
