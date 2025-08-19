@@ -73,7 +73,7 @@ const App = () => {
           }
         />
         <Route
-          path="/blog"
+          path="/blog/*"
           element={
             <Suspense fallback={"loading..."}>
               <BlogPage />
