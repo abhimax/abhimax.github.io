@@ -1,3 +1,19 @@
+.light-theme {
+  --blog-title: #111;
+  --blog-subtitle: #555;
+  --blog-author-name: #222;
+  --blog-author-details: #666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blog-title: #fff;
+    --blog-subtitle: #bdbdbd;
+    --blog-author-name: #fff;
+    --blog-author-details: #bdbdbd;
+  }
+}
+
 .blogAuthorRow {
   display: flex;
   align-items: center;
@@ -10,7 +26,7 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: 1.2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 
 .blogAuthorMeta {
@@ -40,19 +56,42 @@
   color: #bdbdbd;
 }
 
+
+
 .blogPostTitle {
   font-family: 'Merriweather', 'Georgia', serif;
   font-size: 2.6rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  color: #222;
+  color: var(--blog-title);
   letter-spacing: -0.01em;
+}
+
+
+.blogPostSubtitle {
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--blog-subtitle);
+  margin-bottom: 1.2rem;
+}
+
+
+.blogAuthorName {
+  color: var(--blog-author-name);
+}
+
+
+.blogAuthorDetails {
+  color: var(--blog-author-details);
+}
+
 }
 
 .blogPost {
   background: var(--blog-bg, #fcfcfc);
   border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
   padding: 2.5rem 2rem 2rem 2rem;
   max-width: 800px;
   margin: 2.5rem auto;
@@ -64,6 +103,7 @@
     box-shadow: none;
   }
 }
+
 .blogPostContent {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
   color: var(--text-primary);
@@ -78,31 +118,30 @@
   align-items: center;
   margin: 2rem 0 1.5rem 0;
 }
+
 .blogProfilePic {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
+
 .blogAuthorMeta {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.7rem;
 }
+
 .blogAuthorName {
   font-weight: 600;
   font-size: 1.05rem;
-  color: #222;
+  color: var(--text-primary);
   margin-right: 0.7rem;
 }
-@media (prefers-color-scheme: dark) {
-  .blogAuthorName {
-    color: #fff;
-  }
-}
+
 .blogAuthorDetails {
   color: #757575;
   font-size: 1rem;
@@ -110,6 +149,7 @@
   align-items: center;
   gap: 0.7rem;
 }
+
 @media (prefers-color-scheme: dark) {
   .blogAuthorDetails {
     color: #bdbdbd;
