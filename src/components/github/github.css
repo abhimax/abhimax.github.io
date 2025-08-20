@@ -1,0 +1,27 @@
+.git-wrapper {
+    background-color: var(--bg-special-alpha);
+    padding: 24px;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .githubSection {
+        padding: 1.2rem 0.2rem;
+    }
+
+    .githubTitle {
+        font-size: 1.3rem;
+    }
+}
