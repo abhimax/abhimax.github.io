@@ -30,7 +30,7 @@ html {
 .light-theme {
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
-  --bg-special-alpha: rgb(255, 255, 255, 0.75);
+  --bg-special-alpha: rgb(255, 255, 255, 0.5);
   --bg-gradient-1: #e3f2fd;
   --bg-gradient-2: #f3e5f5;
   --bg-gradient-3: #e8f5e8;
