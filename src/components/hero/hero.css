@@ -78,9 +78,19 @@
 }
 
 @keyframes logoShake {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(-2deg); }
-  75% { transform: rotate(2deg); }
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-2deg);
+  }
+
+  75% {
+    transform: rotate(2deg);
+  }
 }
 
 .scroll {
@@ -169,6 +179,7 @@
   align-items: end;
   gap: 8px;
   justify-content: space-between;
+  margin-bottom: 40%;
 }
 
 .bubble {
@@ -280,10 +291,12 @@
     flex-direction: column;
     height: 100vh;
   }
+
   .lazyload-wrapper {
-    width:100%;
+    width: 100%;
   }
-  .hImg{
+
+  .hImg {
     width: 100%;
   }
 
@@ -314,7 +327,7 @@
     gap: 12px;
     text-align: center;
   }
-  
+
   .awards img {
     width: 40px;
   }
@@ -335,7 +348,7 @@
   .social-link {
     padding: 6px;
   }
-  
+
   .social-icon {
     font-size: 24px;
   }
