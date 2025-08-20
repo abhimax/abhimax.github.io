@@ -67,6 +67,11 @@ const App = () => {
                   <Skills />
                 </Suspense>
               </section>
+              <section id="contact">
+                <Suspense fallback={"loading..."}>
+                  <Contact />
+                </Suspense>
+              </section>
             </>
           }
         />
