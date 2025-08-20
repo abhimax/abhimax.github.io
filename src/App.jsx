@@ -8,6 +8,7 @@ import ThemeToggle from "./components/theme/ThemeToggle";
 import Navigation from "./components/navigation/Navigation";
 import { Routes, Route, useLocation } from "react-router-dom";
 
+
 const Hero = lazy(() => import("./components/hero/Hero"));
 const Experience = lazy(() => import("./components/experience/Experience"));
 const Skills = lazy(() => import("./components/skills/Skills"));
@@ -32,7 +33,7 @@ const App = () => {
         if (el) {
           el.scrollIntoView({ behavior: "smooth", block: "start" });
         } else if (attempts < maxAttempts) {
-          attempts++;
+          setTimeout(scrollToSection, 100);
           setTimeout(scrollToSection, 100);
         }
       };
@@ -53,20 +54,17 @@ const App = () => {
                 <Suspense fallback={"loading..."}>
                   <Hero />
                 </Suspense>
+
               </section>
               <section id="experience">
                 <Suspense fallback={"loading..."}>
                   <Experience />
                 </Suspense>
               </section>
+
               <section id="skills">
                 <Suspense fallback={"loading..."}>
                   <Skills />
-                </Suspense>
-              </section>
-              <section id="contact">
-                <Suspense fallback={"loading..."}>
-                  <Contact />
                 </Suspense>
               </section>
             </>
