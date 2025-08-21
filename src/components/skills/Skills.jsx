@@ -10,35 +10,47 @@ const Skills = () => {
         { name: "JavaScript", level: 90 },
         { name: "TypeScript", level: 85 },
         { name: "HTML/CSS/SCSS/Tailwind", level: 95 },
-        { name: "Next.js", level: 75 },
+        { name: "Next.js", level: 70 },
         { name: "Design Systems / Component Libraries", level: 95 },
         { name: "Micro-Frontend", level: 90 },
         { name: "Storybook", level: 95 },
         { name: "Node.js", level: 60 },
-        { name: "Express.js", level: 60 },
+        { name: "Express.js", level: 50 },
         { name: "GraphQL", level: 70 },
         { name: "CI/CD", level: 70 },
-      ]
+      ],
     },
     {
       category: "Tools & Others",
       skills: [
         { name: "Git", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 60 },
+        { name: "Docker", level: 60 },
+        { name: "AWS", level: 50 },
         { name: "Figma", level: 90 },
-        { name: "Jest/ Vitest", level: 90 }
-      ]
-    }
+        { name: "Jest/ Vitest", level: 90 },
+      ],
+    },
   ];
 
   const otherSkills = [
-    "Modern JS frameworks", "Responsive Design", "RESTful APIs","Frontend solutions analysis",
-  "UI recommendations",
-  "Frontend evaluation",
-  "UI research", "DevOps skills", "GraphQL", "State Management", 
-    "Performance Optimization", "Testing", "CI/CD", "Agile Methodologies",
-    "UI/UX Design", "Cross-browser Compatibility", "SEO", "Accessibility"
+    "Modern JS frameworks",
+    "Responsive Design",
+    "RESTful APIs",
+    "Frontend solutions analysis",
+    "UI recommendations",
+    "Frontend evaluation",
+    "UI research",
+    "DevOps skills",
+    "GraphQL",
+    "State Management",
+    "Performance Optimization",
+    "Testing",
+    "CI/CD",
+    "Agile Methodologies",
+    "UI/UX Design",
+    "Cross-browser Compatibility",
+    "SEO",
+    "Accessibility",
   ];
 
   return (
@@ -76,7 +88,10 @@ const Skills = () => {
                         <motion.div
                           initial={{ width: 0 }}
                           whileInView={{ width: `${skill.level}%` }}
-                          transition={{ duration: 1.5, delay: skillIndex * 0.1 }}
+                          transition={{
+                            duration: 1.5,
+                            delay: skillIndex * 0.1,
+                          }}
                           className="progressFill"
                         />
                       </div>
@@ -114,4 +129,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

@@ -22,6 +22,10 @@
   margin-bottom: 4rem;
 }
 
+.promotionText {
+  font-size: 12px;
+}
+
 .experienceHeader h2 {
   font-size: 3.5rem;
   color: var(--text-primary);
@@ -101,7 +105,7 @@
   backdrop-filter: blur(10px);
   border: 1px solid var(--card-border);
   border-radius: 15px;
-  padding: 1.25rem 2rem;
+  padding: 1.75rem 2rem;
   position: relative;
 }
 
@@ -180,7 +184,7 @@
   color: var(--text-primary);
   font-size: 1.5rem;
   margin-bottom: 0.1rem;
-  font-weight:normal
+  font-weight: normal
 }
 
 .timelineContent h4 {
@@ -233,36 +237,36 @@
   .timeline::before {
     left: 2rem;
   }
-  
+
   .timelineItem::before {
     left: 2rem;
   }
-  
+
   .timelineItem.left,
   .timelineItem.right {
     padding-left: 4rem;
     padding-right: 1rem;
   }
-  
+
   .jobHeader {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.8rem;
   }
-  
+
   .companyLogo {
     width: 40px;
     height: 40px;
   }
-  
+
   .companyLogo img {
     padding: 6px;
   }
-  
+
   .experienceHeader h2 {
     font-size: 2.5rem;
   }
-  
+
   .experienceContainer {
     padding: 0 1rem;
   }
@@ -272,12 +276,12 @@
   .timelineContent {
     padding: 1.5rem;
   }
-  
+
   .experienceHeader h2 {
     font-size: 2rem;
   }
-  
+
   .experienceHeader p {
     font-size: 1rem;
   }
-} 
+}
