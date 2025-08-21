@@ -1,7 +1,7 @@
 .theme-toggle {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 3.5rem;
+  right: 1.75rem;
   z-index: 1000;
 }
 
@@ -54,7 +54,7 @@
     top: 1rem;
     right: 1rem;
   }
-  
+
   .theme-toggle-btn {
     width: 45px;
     height: 45px;
@@ -66,4 +66,4 @@
     width: 40px;
     height: 40px;
   }
-} 
+}
