@@ -3,6 +3,9 @@
     padding: 24px;
 }
 
+.react-activity-calendar__scroll-container {
+    overflow: hidden !important;
+}
 
 @keyframes fadeInUp {
     from {
