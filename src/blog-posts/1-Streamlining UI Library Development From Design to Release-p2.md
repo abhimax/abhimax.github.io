@@ -8,6 +8,8 @@
 
 5 min read | Aug 20 2025
 
+![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6UmiLcjViKKQx-1hH79Lng.png)
+
 In [Part 01](https://medium.com/front-end-weekly/streamlining-ui-library-development-from-design-to-release-5fd4f888510a) of this article, we explored the architecture of our UI library and tackled the challenges we faced along the way. Now, in this section, we’ll dive into one of the most critical aspects of UI library development, syncing design tokens between design and development teams.
 
 We’ll discuss the strategies and solutions we implemented to bridge the gap between design and development, ensuring that the design vision stays intact throughout the build process. Let’s dive in, as we share practical insights into tackling one of the most common challenges in design-to-development workflows
