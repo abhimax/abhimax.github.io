@@ -52,7 +52,11 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       <div className="nav-container">
-        <div className="nav-brand">
+        <div
+          className="nav-brand"
+          style={{ cursor: "pointer" }}
+          onClick={() => handleNavClick("home")}
+        >
           <span>Abhiman Ranaweera</span>
         </div>
         <ul className="nav-links">
