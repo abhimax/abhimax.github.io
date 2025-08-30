@@ -453,7 +453,7 @@
 }
 
 section#home {
-  height: 100vh;
+  height: calc(100vh - 100px);
 }
 
 /* mobile */
@@ -462,6 +462,16 @@ section#home {
 
   section:first-of-type {
     padding-top: 80px;
+  }
+
+  .follow {
+    padding: 4px;
+  }
+
+  .followText {
+    font-size: 10px;
+    padding: 0 6px;
+    transform: translateY(-16px);
   }
 
   .hSection.left {
