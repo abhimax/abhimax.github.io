@@ -95,7 +95,11 @@
 
 
 
-
+@media (max-width: 1024px) {
+  .nav-brand {
+    font-size: 1.1rem;
+  }
+}
 
 
 
@@ -108,15 +112,15 @@
     max-width: 100vw;
     overflow-x: hidden;
   }
-  
+
   .nav-brand {
-    font-size: 1.25rem;
+    display: none;
   }
-  
+
   .nav-links {
     gap: 1rem;
   }
-  
+
   .nav-link {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
@@ -124,31 +128,36 @@
 }
 
 @media (max-width: 480px) {
-  .container{
+  .container {
     padding: 0;
   }
+
   .nav-links {
     gap: 0.5rem;
   }
-  
+
   .nav-link {
     padding: 0.3rem 0.6rem;
     font-size: 0.8rem;
   }
-  .nav-container{
+
+  .nav-container {
     justify-content: center;
     margin: 0;
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
   }
-  .nav-brand span{
+
+  .nav-brand span {
     display: none;
   }
-  .awards p{
+
+  .awards p {
     width: 90%;
   }
-  .theme-toggle{
+
+  .theme-toggle {
     margin-top: 60px;
   }
-} 
+}
