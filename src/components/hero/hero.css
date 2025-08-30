@@ -354,3 +354,32 @@
     font-size: 24px;
   }
 }
+
+/* mobile */
+@media (max-width: 480px) {
+  section:first-of-type {
+    padding-top: 80px;
+  }
+
+  .hSection.left {
+    gap: 10px;
+  }
+
+  .awards p {
+    font-size: 14px;
+    line-height: 1.1rem;
+    width: 96%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 5px 0px;
+  }
+
+  .awards h2 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+
+  .hTitle {
+    font-size: 34px;
+  }
+}
