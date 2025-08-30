@@ -282,8 +282,35 @@
   }
 
   .hTitle {
-    font-size: 72px;
+    font-size: 60px;
   }
+
+  section:first-of-type {
+    padding-top: 80px;
+  }
+
+  .hSection.left {
+    gap: 10px;
+  }
+
+  .awards p {
+    font-size: 14px;
+    line-height: 1.1rem;
+    width: 96%;
+    box-sizing: border-box;
+    padding: 0 8px;
+    margin: 5px 0px;
+  }
+
+  .awards h2 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+
+  .bubbleContainer {
+    margin-bottom: 100%;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -347,6 +374,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    margin-bottom: 0;
   }
 
   .bubbleContainer img {
@@ -403,6 +431,10 @@
 
   .social-icon {
     font-size: 24px;
+  }
+
+  .github-graph {
+    bottom: 46px !important;
   }
 }
 
