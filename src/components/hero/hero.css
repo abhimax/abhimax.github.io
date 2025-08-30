@@ -355,8 +355,14 @@
   }
 }
 
+section#home {
+  height: 100vh;
+}
+
 /* mobile */
 @media (max-width: 480px) {
+
+
   section:first-of-type {
     padding-top: 80px;
   }
@@ -382,4 +388,19 @@
   .hTitle {
     font-size: 34px;
   }
+
+  .git-wrapper {
+    padding: 10px 15px !important;
+  }
+}
+
+.github-graph {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.6;
 }
