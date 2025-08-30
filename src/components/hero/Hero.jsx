@@ -163,18 +163,7 @@ const Hero = () => {
           <img src="/hero.png" alt="" />
         </div>
         {/* GitHub graph as background/overlay at bottom of Hero */}
-        <div
-          style={{
-            position: "absolute",
-            left: 0,
-            right: 0,
-            bottom: 0,
-            width: "100%",
-            zIndex: 1,
-            pointerEvents: "none",
-            opacity: 0.6,
-          }}
-        >
+        <div className="github-graph">
           <Github />
         </div>
       </div>
