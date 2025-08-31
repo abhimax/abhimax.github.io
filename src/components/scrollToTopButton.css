@@ -1,0 +1,32 @@
+.scroll-to-top-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 2000;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: scale(0.9);
+}
+
+.scroll-to-top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.scroll-to-top-btn:hover {
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  transform: scale(1.08);
+}
