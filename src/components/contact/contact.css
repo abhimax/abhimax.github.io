@@ -16,11 +16,8 @@
 }
 
 .cSection:last-child {
-  background-color: var(--card-bg);
   margin: 50px 0px;
   padding: 50px;
-  border-radius: 50% 0px;
-  border: 1px solid var(--card-border);
 }
 
 form {
@@ -30,7 +27,7 @@ form {
   gap: 20px;
   background-color: var(--card-bg);
   padding: 50px;
-  border-radius: 50px;
+  border-radius: 15px;
   border: 1px solid var(--card-border);
   backdrop-filter: blur(10px);
 }
@@ -131,5 +128,9 @@ label {
 
   .cSection:last-child {
     height: 30%;
+  }
+
+  .cSection.contact-animation {
+    display: none;
   }
 }
