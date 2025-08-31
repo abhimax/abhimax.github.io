@@ -32,11 +32,11 @@ html {
   --bg-secondary: #f8f9fa;
   --bg-special-alpha: rgb(255, 255, 255, 0.5);
   --bg-gradient-1: #e3f2fd;
-  --bg-gradient-2: #f3e5f5;
+  --bg-gradient-2: #ffffff;
   --bg-gradient-3: #e8f5e8;
   --text-primary: #1a1a1a;
   --text-secondary: #666666;
-  --accent-primary: #2196f3;
+  --accent-primary: #04519f;
   --accent-secondary: #ff6b6b;
   --card-bg: rgba(0, 0, 0, 0.05);
   --card-border: rgba(0, 0, 0, 0.1);
