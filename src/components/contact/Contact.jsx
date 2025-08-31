@@ -56,33 +56,76 @@ const Contact = () => {
             Let&apos;s keep in touch
           </motion.h1>
           {state.succeeded ? (
-            <motion.p variants={listVariant} style={{ color: "var(--accent-primary)", marginTop: 24 }}>
+            <motion.p
+              variants={listVariant}
+              style={{ color: "var(--accent-primary)", marginTop: 24 }}
+            >
               Your message has been sent!
             </motion.p>
-          ) : <>
-            <motion.div variants={listVariant} className="formItem">
-              <label htmlFor="user_username">Name</label>
-              <input type="text" id="user_username" name="user_username" placeholder="John Doe" />
-              <ValidationError prefix="Name" field="user_username" errors={state.errors} />
-            </motion.div>
-            <motion.div variants={listVariant} className="formItem">
-              <label htmlFor="user_email">Email</label>
-              <input type="email" id="user_email" name="user_email" placeholder="john@gmail.com" />
-              <ValidationError prefix="Email" field="user_email" errors={state.errors} />
-              {emailError && <span style={{ color: "#ff6b6b", fontSize: 14 }}>{emailError}</span>}
-            </motion.div>
-            <motion.div variants={listVariant} className="formItem">
-              <label htmlFor="user_message">Message</label>
-              <textarea rows={10} id="user_message" name="user_message" placeholder="Write your message..." />
-              <ValidationError prefix="Message" field="user_message" errors={state.errors} />
-            </motion.div>
-            <motion.button variants={listVariant} className="formButton" type="submit" disabled={state.submitting}>
-              Send
-            </motion.button>
-          </>}
+          ) : (
+            <>
+              <motion.div variants={listVariant} className="formItem">
+                <label htmlFor="user_username">Name</label>
+                <input
+                  type="text"
+                  id="user_username"
+                  name="user_username"
+                  placeholder="John Doe"
+                />
+                <ValidationError
+                  prefix="Name"
+                  field="user_username"
+                  errors={state.errors}
+                />
+              </motion.div>
+              <motion.div variants={listVariant} className="formItem">
+                <label htmlFor="user_email">Email</label>
+                <input
+                  type="email"
+                  id="user_email"
+                  name="user_email"
+                  placeholder="john@gmail.com"
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="user_email"
+                  errors={state.errors}
+                />
+                {emailError && (
+                  <span style={{ color: "#ff6b6b", fontSize: 14 }}>
+                    {emailError}
+                  </span>
+                )}
+              </motion.div>
+              <motion.div variants={listVariant} className="formItem">
+                <label htmlFor="user_message">Message</label>
+                <textarea
+                  rows={10}
+                  id="user_message"
+                  name="user_message"
+                  placeholder="Write your message..."
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="user_message"
+                  errors={state.errors}
+                />
+              </motion.div>
+              <motion.button
+                variants={listVariant}
+                className="formButton"
+                type="submit"
+                disabled={state.submitting}
+              >
+                Send
+              </motion.button>
+            </>
+          )}
         </motion.form>
       </div>
-      <div className="cSection"><ContactSvg/></div>
+      <div className="cSection contact-animation">
+        <ContactSvg />
+      </div>
     </div>
   );
 };
