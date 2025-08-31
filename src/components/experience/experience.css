@@ -9,6 +9,7 @@
   transition: background 0.3s ease;
   min-height: auto !important;
   height: auto !important;
+  border-radius: 15px;
 }
 
 .experienceContainer {
