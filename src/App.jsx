@@ -7,6 +7,7 @@ import React, { lazy, Suspense } from "react";
 import ThemeToggle from "./components/theme/ThemeToggle";
 import Navigation from "./components/navigation/Navigation";
 import { Routes, Route, useLocation } from "react-router-dom";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 
 const Hero = lazy(() => import("./components/hero/Hero"));
@@ -45,6 +46,7 @@ const App = () => {
     <div className="container">
       <Navigation />
       <ThemeToggle />
+      <ScrollToTopButton />
       <Routes>
         <Route
           path="/"
