@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import "./navigation.css";
+import "./navigation.scss";
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState("home");

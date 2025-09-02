@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { MdGroupAdd } from "react-icons/md";
-import "./experience.css";
+import "./experience.scss";
 
 const Experience = () => {
   const experiences = [

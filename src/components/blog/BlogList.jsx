@@ -1,7 +1,6 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
-import "./blog.css";
+import "./blog.scss";
 
 // Helper to extract subtitle and excerpt from markdown (subtitle only if ## is immediately after #)
 function extractSubtitleAndExcerpt(md) {

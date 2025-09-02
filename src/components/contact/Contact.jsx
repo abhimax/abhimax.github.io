@@ -1,4 +1,4 @@
-import "./contact.css";
+import "./contact.scss";
 import { useRef, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { motion, useInView } from "motion/react";

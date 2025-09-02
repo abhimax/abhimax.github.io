@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import "./skills.css";
+import "./skills.scss";
 
 const Skills = () => {
   const skillCategories = [

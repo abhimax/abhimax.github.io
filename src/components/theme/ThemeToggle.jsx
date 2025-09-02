@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useTheme } from "../../context/ThemeContext";
-import "./themeToggle.css";
+import "./themeToggle.scss";
 
 const ThemeToggle = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -63,4 +63,4 @@ const ThemeToggle = () => {
   );
 };
 
-export default ThemeToggle; 
+export default ThemeToggle;

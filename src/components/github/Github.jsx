@@ -2,7 +2,7 @@ import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { useTheme } from "../../context/ThemeContext";
 import useResponsiveGithubCalendar from "../../hooks/useResponsiveGithubCalendar";
-import "./github.css";
+import "./github.scss";
 
 const Github = () => {
   const { isDarkMode } = useTheme();

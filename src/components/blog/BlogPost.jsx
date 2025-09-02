@@ -1,6 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import "./blog.css";
+import "./blog.scss";
 
 // Helper to extract subtitle only if ## is immediately after #
 function extractSubtitle(md) {
