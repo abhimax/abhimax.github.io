@@ -9,10 +9,12 @@ import Navigation from "./components/navigation/Navigation";
 import { Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
-
 const Hero = lazy(() => import("./components/hero/Hero"));
 const Experience = lazy(() => import("./components/experience/Experience"));
 const Skills = lazy(() => import("./components/skills/Skills"));
+const Testimonials = lazy(() =>
+  import("./components/testimonials/Testimonials")
+);
 const Contact = lazy(() => import("./components/contact/Contact"));
 const BlogPage = lazy(() => import("./components/blog/BlogPage"));
 
@@ -56,7 +58,6 @@ const App = () => {
                 <Suspense fallback={"loading..."}>
                   <Hero />
                 </Suspense>
-
               </section>
               <section id="experience">
                 <Suspense fallback={"loading..."}>
@@ -69,6 +70,13 @@ const App = () => {
                   <Skills />
                 </Suspense>
               </section>
+
+              <section id="testimonials">
+                <Suspense fallback={"loading..."}>
+                  <Testimonials />
+                </Suspense>
+              </section>
+
               <section id="contact">
                 <Suspense fallback={"loading..."}>
                   <Contact />
