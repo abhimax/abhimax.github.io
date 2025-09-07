@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 10px 0 20px !important;
+    padding: 3rem 10px 0 20px !important;
     position: relative;
     transition: background 0.3s ease;
     border-radius: 15px;
@@ -141,7 +141,7 @@
 
 @media (max-width: 768px) {
     .testimonials-section {
-        padding: 2rem 0 1rem 15px;
+        padding: 1.5rem 0 1rem 15px !important;
     }
 
     .testimonials-title {
