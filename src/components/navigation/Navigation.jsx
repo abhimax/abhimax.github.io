@@ -14,6 +14,7 @@ const Navigation = () => {
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "blog", label: "Blog", isBlog: true },
+    { id: "testimonials", label: "Testimonials" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -66,7 +67,7 @@ const Navigation = () => {
                 className="nav-link"
                 onClick={() => navigate("/", { replace: false })}
               >
-                Home
+                Back
               </button>
             </li>
           ) : location.pathname.startsWith("/blog/") ? (
@@ -115,6 +116,11 @@ const Navigation = () => {
               </li>
             ))
           )}
+          {/* <li>
+            <a href="#testimonials" className="nav-link">
+              Testimonials
+            </a>
+          </li> */}
         </ul>
       </div>
     </nav>
