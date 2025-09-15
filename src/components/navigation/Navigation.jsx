@@ -74,7 +74,19 @@ const Navigation = () => {
         >
           <span>Abhiman Ranaweera</span>
         </div>
-        {isMobile && location.pathname !== "/blog" && (
+        {isMobile && location.pathname.startsWith("/blog") && (
+          <ul className="nav-links nav-mobile-open">
+            <li key="home">
+              <button
+                className="nav-link active"
+                onClick={() => navigate("/")}
+              >
+                Back to Home
+              </button>
+            </li>
+          </ul>
+        )}
+        {isMobile && !location.pathname.startsWith("/blog") && (
           <button
             className={`nav-hamburger${menuOpen ? " open" : ""}`}
             aria-label="Toggle menu"
@@ -85,7 +97,7 @@ const Navigation = () => {
             <span className="hamburger-bar" />
           </button>
         )}
-        {!isMobile && location.pathname === "/blog" && (
+        {!isMobile && location.pathname.startsWith("/blog") && (
           <ul className="nav-links">
             <li key="home">
               <button
@@ -97,7 +109,7 @@ const Navigation = () => {
             </li>
           </ul>
         )}
-        {!isMobile && location.pathname !== "/blog" && (
+        {!isMobile && !location.pathname.startsWith("/blog") && (
           <ul className="nav-links">
             {navItems.map((item) => (
               <li key={item.id}>
@@ -127,19 +139,7 @@ const Navigation = () => {
           </ul>
         )}
       </div>
-      {isMobile && location.pathname === "/blog" && (
-        <ul className="nav-links nav-mobile-open">
-          <li key="home">
-            <button
-              className="nav-link active"
-              onClick={() => navigate("/")}
-            >
-              Back to Home
-            </button>
-          </li>
-        </ul>
-      )}
-      {isMobile && location.pathname !== "/blog" && (
+      {isMobile && !location.pathname.startsWith("/blog") && (
         <ul className={`nav-links${menuOpen ? " nav-mobile-open" : ""}`}>
           {navItems.map((item) => (
             <li key={item.id}>
