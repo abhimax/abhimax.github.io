@@ -1,91 +1,16 @@
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { MdGroupAdd } from "react-icons/md";
 import "./experience.scss";
 
 const Experience = () => {
-  const experiences = [
-    {
-      year: "2023 DEC - Present",
-      title: "Senior Technical Lead",
-      company: "99x Technology",
-      logo: "/99x-logo.png",
-      description:
-        "Led the frontend transformation by developing a serverless, scalable solutions using cutting edge technologies. Drove innovation by building a reusable component library and Micro-Frontend architecture, while ensuring alignment with business goals through efficient CI/CD processes and mentoring developers.",
-      technologies: [
-        "React",
-        "TypeScript",
-        "Frontend transformation",
-        "Serverless solutions",
-        "Micro-Frontend",
-        "GraphQL",
-        "CI/CD",
-        "Agile",
-        "Design Systems",
-      ],
-    },
-    {
-      year: "2022 JAN - 2023 DEC",
-      title: "Lead - UI Engineering",
-      promotion: "Associate UI Specialist ⮕ Lead - UI Engineering",
-      company: "Mad Mobile",
-      logo: "/madmobile-logo.png",
-      description:
-        "Led the development of high-performance, scalable front-end solutions, optimizing React components for speed and user experience. Drove the adoption of configuration-driven design, created prototypes, and promoted best practices in UI development and code quality. Collaborated in agile teams, ensuring efficient testing and seamless integration across products.",
-      technologies: [
-        "React",
-        "Front-end solutions",
-        "Performance optimization",
-        "Component architecture",
-        "Stakeholder engagement",
-        "Agile",
-      ],
-    },
-    {
-      year: "2014 MAY - 2022 JAN",
-      title: "Associate UI Specialist",
-      promotion: "Senior UI Engineer ⮕ Associate UI Specialist",
-      company: "Sysco Labs Sri Lanka",
-      logo: "/syscolabs-logo.png",
-      description:
-        "Specialized in React and ES6 for front-end development and UI design. Led the creation of a shared UI npm library, enhanced workflows through user feedback, and contributed to an Agile team.",
-      technologies: [
-        "Web Development",
-        "POS UI Development",
-        "React",
-        "ES6",
-        "Agile",
-      ],
-    },
-    {
-      year: "2012 JUL - 2014 MAR",
-      title: "Software & UI Engineer",
-      company: "Multplx (Pvt) Ltd",
-      logo: "/multplx-logo.png",
-      description:
-        "Specialized in front-end development for Android, Windows, and iPhone platforms. Led UI design for retail distribution maps using Google API and developed responsive websites with PHP, jQuery, and modern frameworks.",
-      technologies: [
-        "Web Development",
-        "Mobile Development",
-        "Sales & Distribution Maps",
-      ],
-    },
-    {
-      year: "2011 FEB - 2012 JUL",
-      title: "Software Engineer",
-      promotion: "Associate Software Engineer ⮕ Software Engineer",
-      company: "Interblocks (Pvt) Ltd",
-      logo: "/interblocks-logo.png",
-      description:
-        "Developed Android mobile banking apps and online banking websites for client banks. Designed ATM screens using ActionScript and created themes for online banking sites with CSS, jQuery, Ajax, and XSLT.",
-      technologies: [
-        "Java",
-        "JSP",
-        "ActionScript",
-        "ATM Frontend Development",
-        "Web Development",
-      ],
-    },
-  ];
+  const [experiences, setExperiences] = useState([]);
+
+  useEffect(() => {
+    fetch("/src/data/experiences.json")
+      .then((res) => res.json())
+      .then((data) => setExperiences(data));
+  }, []);
 
   return (
     <div className="experience">
