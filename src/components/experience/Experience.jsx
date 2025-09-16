@@ -1,17 +1,9 @@
-import { useEffect, useState } from "react";
+import experiences from "../../data/experiences.json";
 import { motion } from "motion/react";
 import { MdGroupAdd } from "react-icons/md";
 import "./experience.scss";
 
 const Experience = () => {
-  const [experiences, setExperiences] = useState([]);
-
-  useEffect(() => {
-    fetch("/src/data/experiences.json")
-      .then((res) => res.json())
-      .then((data) => setExperiences(data));
-  }, []);
-
   return (
     <div className="experience">
       <div className="experienceContainer">
