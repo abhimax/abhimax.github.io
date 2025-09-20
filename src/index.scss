@@ -24,6 +24,8 @@ html {
   --card-bg: rgba(255, 255, 255, 0.05);
   --card-border: rgba(255, 255, 255, 0.1);
   --shadow: rgba(0, 0, 0, 0.3);
+  /* Apply for both Dark and Light theme */
+  --always-white: #fff;
 }
 
 /* Light theme */
