@@ -5,7 +5,8 @@
     "image": "/portfolio/portfolio-site.png",
     "tech": ["React", "Vite", "SCSS", "Three.js"],
     "demo": "https://abhimax.github.io/",
-    "repo": "https://github.com/abhimax/abhimax.github.io"
+    "repo": "https://github.com/abhimax/abhimax.github.io",
+    "company": "interblocks"
   },
   {
     "title": "E-Commerce Dashboard",
@@ -13,7 +14,8 @@
     "image": "/portfolio/ecommerce-dashboard.png",
     "tech": ["React", "Redux", "Node.js", "MongoDB"],
     "demo": "https://demo-ecommerce.com/",
-    "repo": "https://github.com/abhimax/ecommerce-dashboard"
+    "repo": "https://github.com/abhimax/ecommerce-dashboard",
+    "company": "multplx"
   },
   {
     "title": "Weather App",
@@ -21,7 +23,8 @@
     "image": "/portfolio/weather-app.png",
     "tech": ["React", "OpenWeatherMap API", "Sass"],
     "demo": "https://weather-demo.com/",
-    "repo": "https://github.com/abhimax/weather-app"
+    "repo": "https://github.com/abhimax/weather-app",
+    "company": "syscoLabs"
   },
   {
     "title": "Task Manager",
@@ -29,7 +32,8 @@
     "image": "/portfolio/task-manager.png",
     "tech": ["React", "Redux", "Firebase"],
     "demo": "https://tasks-demo.com/",
-    "repo": "https://github.com/abhimax/task-manager"
+    "repo": "https://github.com/abhimax/task-manager",
+    "company": "99x"
   },
   {
     "title": "Blog Platform",
@@ -37,7 +41,8 @@
     "image": "/portfolio/blog-platform.png",
     "tech": ["Next.js", "MongoDB", "TailwindCSS"],
     "demo": "https://blog-demo.com/",
-    "repo": "https://github.com/abhimax/blog-platform"
+    "repo": "https://github.com/abhimax/blog-platform",
+    "company": "interblocks"
   },
   {
     "title": "Finance Tracker",
@@ -45,7 +50,8 @@
     "image": "/portfolio/finance-tracker.png",
     "tech": ["React", "Chart.js", "Node.js"],
     "demo": "https://finance-demo.com/",
-    "repo": "https://github.com/abhimax/finance-tracker"
+    "repo": "https://github.com/abhimax/finance-tracker",
+    "company": "multplx"
   },
   {
     "title": "Recipe Finder",
@@ -53,7 +59,8 @@
     "image": "/portfolio/recipe-finder.png",
     "tech": ["Vue.js", "Sass", "Firebase"],
     "demo": "https://recipes-demo.com/",
-    "repo": "https://github.com/abhimax/recipe-finder"
+    "repo": "https://github.com/abhimax/recipe-finder",
+    "company": "syscoLabs"
   },
   {
     "title": "Fitness App",
@@ -61,7 +68,8 @@
     "image": "/portfolio/fitness-app.png",
     "tech": ["React Native", "Expo", "Redux"],
     "demo": "https://fitness-demo.com/",
-    "repo": "https://github.com/abhimax/fitness-app"
+    "repo": "https://github.com/abhimax/fitness-app",
+    "company": "99x"
   },
   {
     "title": "Chat Application",
@@ -69,7 +77,8 @@
     "image": "/portfolio/chat-app.png",
     "tech": ["React", "Socket.io", "Node.js"],
     "demo": "https://chat-demo.com/",
-    "repo": "https://github.com/abhimax/chat-app"
+    "repo": "https://github.com/abhimax/chat-app",
+    "company": "interblocks"
   },
   {
     "title": "Crypto Dashboard",
@@ -77,7 +86,8 @@
     "image": "/portfolio/crypto-dashboard.png",
     "tech": ["React", "Redux", "CoinGecko API"],
     "demo": "https://crypto-demo.com/",
-    "repo": "https://github.com/abhimax/crypto-dashboard"
+    "repo": "https://github.com/abhimax/crypto-dashboard",
+    "company": "multplx"
   },
   {
     "title": "Travel Journal",
@@ -85,7 +95,8 @@
     "image": "/portfolio/travel-journal.png",
     "tech": ["Gatsby", "GraphQL", "Styled-Components"],
     "demo": "https://travel-demo.com/",
-    "repo": "https://github.com/abhimax/travel-journal"
+    "repo": "https://github.com/abhimax/travel-journal",
+    "company": "syscoLabs"
   },
   {
     "title": "Online Learning Platform",
@@ -93,7 +104,8 @@
     "image": "/portfolio/learning-platform.png",
     "tech": ["React", "Node.js", "PostgreSQL"],
     "demo": "https://learn-demo.com/",
-    "repo": "https://github.com/abhimax/learning-platform"
+    "repo": "https://github.com/abhimax/learning-platform",
+    "company": "99x"
   },
   {
     "title": "Movie Database",
@@ -101,7 +113,8 @@
     "image": "/portfolio/movie-db.png",
     "tech": ["Vue.js", "TMDB API", "Vuetify"],
     "demo": "https://movies-demo.com/",
-    "repo": "https://github.com/abhimax/movie-db"
+    "repo": "https://github.com/abhimax/movie-db",
+    "company": "interblocks"
   },
   {
     "title": "Portfolio Analytics",
@@ -109,7 +122,8 @@
     "image": "/portfolio/portfolio-analytics.png",
     "tech": ["React", "D3.js", "Node.js"],
     "demo": "https://analytics-demo.com/",
-    "repo": "https://github.com/abhimax/portfolio-analytics"
+    "repo": "https://github.com/abhimax/portfolio-analytics",
+    "company": "multplx"
   },
   {
     "title": "Event Planner",
@@ -117,6 +131,7 @@
     "image": "/portfolio/event-planner.png",
     "tech": ["Angular", "Firebase", "Sass"],
     "demo": "https://events-demo.com/",
-    "repo": "https://github.com/abhimax/event-planner"
+    "repo": "https://github.com/abhimax/event-planner",
+    "company": "syscoLabs"
   }
 ]
