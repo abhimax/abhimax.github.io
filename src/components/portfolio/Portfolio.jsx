@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import portfolioData from "../../data/portfolio.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./portfolio.scss";
+
+const companies = ["all", "interblocks", "multplx", "syscoLabs", "99x"];
 
 const PortfolioCard = ({ project }) => (
   <div className="portfolioCard">
@@ -47,6 +49,8 @@ const PortfolioCard = ({ project }) => (
 );
 
 const Portfolio = () => {
+  const [filter, setFilter] = useState("all");
+
   const settings = {
     dots: true,
     infinite: true,
@@ -83,14 +87,30 @@ const Portfolio = () => {
     ],
   };
 
+  const filteredData =
+    filter === "all"
+      ? portfolioData
+      : portfolioData.filter((item) => item.company === filter);
+
   return (
     <div className="portfolio">
       <div className="portfolioHeader">
         <h2>Portfolio</h2>
         <p>Some of my featured projects</p>
+        <div className="portfolioFilterTabs">
+          {companies.map((c) => (
+            <button
+              key={c}
+              className={`portfolioFilterBtn${filter === c ? " active" : ""}`}
+              onClick={() => setFilter(c)}
+            >
+              {c === "all" ? "All" : c}
+            </button>
+          ))}
+        </div>
       </div>
       <Slider {...settings} className="portfolioGrid">
-        {portfolioData.map((project, idx) => (
+        {filteredData.map((project, idx) => (
           <PortfolioCard project={project} key={idx} />
         ))}
       </Slider>
