@@ -7,46 +7,63 @@ import "./portfolio.scss";
 
 const companies = ["all", "interblocks", "multplx", "syscoLabs", "99x"];
 
-const PortfolioCard = ({ project }) => (
-  <div className="portfolioCard">
-    <div className="portfolioImage">
-      <img src={project.image} alt={project.title} />
-    </div>
-    <div className="portfolioContent">
-      <h3>{project.title}</h3>
-      <p>{project.description}</p>
-      <div className="portfolioTech">
-        {project.tech.map((t, i) => (
-          <span className="techTag" key={i}>
-            {t}
-          </span>
-        ))}
+const PortfolioCard = ({ project }) => {
+  const imageSettings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+  };
+  return (
+    <div className="portfolioCard">
+      <div className="portfolioImage">
+        <Slider {...imageSettings} className="portfolioImageSlider">
+          {project.images.map((img, idx) => (
+            <div key={idx} className="portfolioImageSlide">
+              <img src={img} alt={project.title + " " + (idx + 1)} />
+            </div>
+          ))}
+        </Slider>
       </div>
-      <div className="portfolioLinks">
-        {project.demo && (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="portfolioDemo"
-          >
-            Live Demo
-          </a>
-        )}
-        {project.repo && (
-          <a
-            href={project.repo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="portfolioRepo"
-          >
-            GitHub
-          </a>
-        )}
+      <div className="portfolioContent">
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+        <div className="portfolioTech">
+          {project.tech.map((t, i) => (
+            <span className="techTag" key={i}>
+              {t}
+            </span>
+          ))}
+        </div>
+        <div className="portfolioLinks">
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolioDemo"
+            >
+              Live Demo
+            </a>
+          )}
+          {project.repo && (
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolioRepo"
+            >
+              GitHub
+            </a>
+          )}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("all");
