@@ -2,7 +2,10 @@
   {
     "title": "Personal Portfolio Website",
     "description": "A modern, responsive portfolio site built with React, Vite, and SCSS, featuring a blog, testimonials, and 3D models.",
-    "image": "/portfolio/portfolio-site.png",
+    "images": [
+      "/portfolio/portfolio-site-1.png",
+      "/portfolio/portfolio-site-2.png"
+    ],
     "tech": ["React", "Vite", "SCSS", "Three.js"],
     "demo": "https://abhimax.github.io/",
     "repo": "https://github.com/abhimax/abhimax.github.io",
@@ -11,7 +14,11 @@
   {
     "title": "E-Commerce Dashboard",
     "description": "A dashboard for managing products, orders, and analytics, with a focus on UX and performance.",
-    "image": "/portfolio/ecommerce-dashboard.png",
+    "images": [
+      "/portfolio/ecommerce-dashboard-1.png",
+      "/portfolio/ecommerce-dashboard-2.png",
+      "/portfolio/ecommerce-dashboard-3.png"
+    ],
     "tech": ["React", "Redux", "Node.js", "MongoDB"],
     "demo": "https://demo-ecommerce.com/",
     "repo": "https://github.com/abhimax/ecommerce-dashboard",
@@ -20,7 +27,12 @@
   {
     "title": "Weather App",
     "description": "A sleek weather forecasting app with real-time data and animated backgrounds.",
-    "image": "/portfolio/weather-app.png",
+    "images": [
+      "/portfolio/weather-app-1.png",
+      "/portfolio/weather-app-2.png",
+      "/portfolio/weather-app-3.png",
+      "/portfolio/weather-app-4.png"
+    ],
     "tech": ["React", "OpenWeatherMap API", "Sass"],
     "demo": "https://weather-demo.com/",
     "repo": "https://github.com/abhimax/weather-app",
@@ -29,7 +41,13 @@
   {
     "title": "Task Manager",
     "description": "A productivity tool for managing daily tasks, deadlines, and reminders.",
-    "image": "/portfolio/task-manager.png",
+    "images": [
+      "/portfolio/task-manager-1.png",
+      "/portfolio/task-manager-2.png",
+      "/portfolio/task-manager-3.png",
+      "/portfolio/task-manager-4.png",
+      "/portfolio/task-manager-5.png"
+    ],
     "tech": ["React", "Redux", "Firebase"],
     "demo": "https://tasks-demo.com/",
     "repo": "https://github.com/abhimax/task-manager",
@@ -38,7 +56,9 @@
   {
     "title": "Blog Platform",
     "description": "A full-featured blogging platform with markdown support and user authentication.",
-    "image": "/portfolio/blog-platform.png",
+    "images": [
+      "/portfolio/blog-platform-1.png"
+    ],
     "tech": ["Next.js", "MongoDB", "TailwindCSS"],
     "demo": "https://blog-demo.com/",
     "repo": "https://github.com/abhimax/blog-platform",
@@ -47,7 +67,10 @@
   {
     "title": "Finance Tracker",
     "description": "Track expenses, set budgets, and visualize spending trends with interactive charts.",
-    "image": "/portfolio/finance-tracker.png",
+    "images": [
+      "/portfolio/finance-tracker-1.png",
+      "/portfolio/finance-tracker-2.png"
+    ],
     "tech": ["React", "Chart.js", "Node.js"],
     "demo": "https://finance-demo.com/",
     "repo": "https://github.com/abhimax/finance-tracker",
@@ -56,7 +79,11 @@
   {
     "title": "Recipe Finder",
     "description": "Discover recipes by ingredients, save favorites, and generate shopping lists.",
-    "image": "/portfolio/recipe-finder.png",
+    "images": [
+      "/portfolio/recipe-finder-1.png",
+      "/portfolio/recipe-finder-2.png",
+      "/portfolio/recipe-finder-3.png"
+    ],
     "tech": ["Vue.js", "Sass", "Firebase"],
     "demo": "https://recipes-demo.com/",
     "repo": "https://github.com/abhimax/recipe-finder",
@@ -65,7 +92,12 @@
   {
     "title": "Fitness App",
     "description": "A fitness tracking app with workout plans, progress charts, and social features.",
-    "image": "/portfolio/fitness-app.png",
+    "images": [
+      "/portfolio/fitness-app-1.png",
+      "/portfolio/fitness-app-2.png",
+      "/portfolio/fitness-app-3.png",
+      "/portfolio/fitness-app-4.png"
+    ],
     "tech": ["React Native", "Expo", "Redux"],
     "demo": "https://fitness-demo.com/",
     "repo": "https://github.com/abhimax/fitness-app",
@@ -74,7 +106,9 @@
   {
     "title": "Chat Application",
     "description": "A real-time chat app with group messaging, emojis, and notifications.",
-    "image": "/portfolio/chat-app.png",
+    "images": [
+      "/portfolio/chat-app-1.png"
+    ],
     "tech": ["React", "Socket.io", "Node.js"],
     "demo": "https://chat-demo.com/",
     "repo": "https://github.com/abhimax/chat-app",
@@ -83,7 +117,10 @@
   {
     "title": "Crypto Dashboard",
     "description": "Monitor cryptocurrency prices, news, and portfolio performance in real time.",
-    "image": "/portfolio/crypto-dashboard.png",
+    "images": [
+      "/portfolio/crypto-dashboard-1.png",
+      "/portfolio/crypto-dashboard-2.png"
+    ],
     "tech": ["React", "Redux", "CoinGecko API"],
     "demo": "https://crypto-demo.com/",
     "repo": "https://github.com/abhimax/crypto-dashboard",
@@ -92,7 +129,11 @@
   {
     "title": "Travel Journal",
     "description": "Share travel stories, photos, and tips with an interactive map view.",
-    "image": "/portfolio/travel-journal.png",
+    "images": [
+      "/portfolio/travel-journal-1.png",
+      "/portfolio/travel-journal-2.png",
+      "/portfolio/travel-journal-3.png"
+    ],
     "tech": ["Gatsby", "GraphQL", "Styled-Components"],
     "demo": "https://travel-demo.com/",
     "repo": "https://github.com/abhimax/travel-journal",
@@ -101,7 +142,12 @@
   {
     "title": "Online Learning Platform",
     "description": "A platform for online courses, quizzes, and progress tracking.",
-    "image": "/portfolio/learning-platform.png",
+    "images": [
+      "/portfolio/learning-platform-1.png",
+      "/portfolio/learning-platform-2.png",
+      "/portfolio/learning-platform-3.png",
+      "/portfolio/learning-platform-4.png"
+    ],
     "tech": ["React", "Node.js", "PostgreSQL"],
     "demo": "https://learn-demo.com/",
     "repo": "https://github.com/abhimax/learning-platform",
@@ -110,7 +156,10 @@
   {
     "title": "Movie Database",
     "description": "Browse movies, view ratings, and create watchlists with a modern UI.",
-    "image": "/portfolio/movie-db.png",
+    "images": [
+      "/portfolio/movie-db-1.png",
+      "/portfolio/movie-db-2.png"
+    ],
     "tech": ["Vue.js", "TMDB API", "Vuetify"],
     "demo": "https://movies-demo.com/",
     "repo": "https://github.com/abhimax/movie-db",
@@ -119,7 +168,11 @@
   {
     "title": "Portfolio Analytics",
     "description": "Analyze your investment portfolio with advanced charts and insights.",
-    "image": "/portfolio/portfolio-analytics.png",
+    "images": [
+      "/portfolio/portfolio-analytics-1.png",
+      "/portfolio/portfolio-analytics-2.png",
+      "/portfolio/portfolio-analytics-3.png"
+    ],
     "tech": ["React", "D3.js", "Node.js"],
     "demo": "https://analytics-demo.com/",
     "repo": "https://github.com/abhimax/portfolio-analytics",
@@ -128,7 +181,13 @@
   {
     "title": "Event Planner",
     "description": "Plan and manage events, send invites, and track RSVPs easily.",
-    "image": "/portfolio/event-planner.png",
+    "images": [
+      "/portfolio/event-planner-1.png",
+      "/portfolio/event-planner-2.png",
+      "/portfolio/event-planner-3.png",
+      "/portfolio/event-planner-4.png",
+      "/portfolio/event-planner-5.png"
+    ],
     "tech": ["Angular", "Firebase", "Sass"],
     "demo": "https://events-demo.com/",
     "repo": "https://github.com/abhimax/event-planner",
