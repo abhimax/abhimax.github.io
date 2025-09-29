@@ -3,8 +3,11 @@
     "title": "Personal Portfolio Website",
     "description": "A modern, responsive portfolio site built with React, Vite, and SCSS, featuring a blog, testimonials, and 3D models.",
     "images": [
-      "/portfolio/portfolio-site-1.png",
-      "/portfolio/portfolio-site-2.png"
+      "/public/portfolio/syscolabs/pos/pos-1.png",
+      "/public/portfolio/syscolabs/pos/pos-2.png",
+      "/public/portfolio/syscolabs/pos/pos-3.png",
+      "/public/portfolio/syscolabs/pos/pos-4.png",
+      "/public/portfolio/syscolabs/pos/pos-5.png"
     ],
     "tech": ["React", "Vite", "SCSS", "Three.js"],
     "demo": "https://abhimax.github.io/",
@@ -56,9 +59,7 @@
   {
     "title": "Blog Platform",
     "description": "A full-featured blogging platform with markdown support and user authentication.",
-    "images": [
-      "/portfolio/blog-platform-1.png"
-    ],
+    "images": ["/portfolio/blog-platform-1.png"],
     "tech": ["Next.js", "MongoDB", "TailwindCSS"],
     "demo": "https://blog-demo.com/",
     "repo": "https://github.com/abhimax/blog-platform",
@@ -106,9 +107,7 @@
   {
     "title": "Chat Application",
     "description": "A real-time chat app with group messaging, emojis, and notifications.",
-    "images": [
-      "/portfolio/chat-app-1.png"
-    ],
+    "images": ["/portfolio/chat-app-1.png"],
     "tech": ["React", "Socket.io", "Node.js"],
     "demo": "https://chat-demo.com/",
     "repo": "https://github.com/abhimax/chat-app",
@@ -156,10 +155,7 @@
   {
     "title": "Movie Database",
     "description": "Browse movies, view ratings, and create watchlists with a modern UI.",
-    "images": [
-      "/portfolio/movie-db-1.png",
-      "/portfolio/movie-db-2.png"
-    ],
+    "images": ["/portfolio/movie-db-1.png", "/portfolio/movie-db-2.png"],
     "tech": ["Vue.js", "TMDB API", "Vuetify"],
     "demo": "https://movies-demo.com/",
     "repo": "https://github.com/abhimax/movie-db",
