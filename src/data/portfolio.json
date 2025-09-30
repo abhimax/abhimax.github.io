@@ -18,9 +18,9 @@
     "title": "E-Commerce Dashboard",
     "description": "A dashboard for managing products, orders, and analytics, with a focus on UX and performance.",
     "images": [
-      "/portfolio/ecommerce-dashboard-1.png",
-      "/portfolio/ecommerce-dashboard-2.png",
-      "/portfolio/ecommerce-dashboard-3.png"
+      "/public/portfolio/syscolabs/olo/olo-1.png",
+      "/public/portfolio/syscolabs/olo/olo-2.png",
+      "/public/portfolio/syscolabs/olo/olo-3.png"
     ],
     "tech": ["React", "Redux", "Node.js", "MongoDB"],
     "demo": "https://demo-ecommerce.com/",
