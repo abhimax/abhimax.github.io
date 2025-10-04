@@ -262,7 +262,7 @@
 
     &.active {
         background: var(--accent-primary);
-        color: var(--always-white);
+        color: var(--bg-primary);
         border-color: var(--accent-secondary);
     }
 }
@@ -375,20 +375,21 @@
 }
 
 .portfolioViewMoreBtn {
-  background: var(--accent-primary);
-  color: var(--always-white);
-  border: none;
-  border-radius: 16px;
-  padding: 0.5rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  margin-top: 0.5rem;
-  &:hover {
-    background: var(--accent-secondary);
-    color: var(--always-white);
-  }
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 16px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 0.5rem;
+
+    &:hover {
+        background: var(--accent-secondary);
+        color: var(--bg-primary);
+    }
 }
 
 @media (max-width: 1536px) {
