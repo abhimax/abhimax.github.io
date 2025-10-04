@@ -18,15 +18,7 @@ const PortfolioCard = ({ project, onClick }) => {
     adaptiveHeight: true,
   };
   return (
-    <div
-      className="portfolioCard"
-      tabIndex={0}
-      onClick={onClick}
-      onKeyPress={(e) => {
-        if (e.key === "Enter") onClick();
-      }}
-      role="button"
-    >
+    <div className="portfolioCard">
       <div className="portfolioImage">
         <Slider {...imageSettings} className="portfolioImageSlider">
           {project.images.map((img, idx) => (
@@ -47,28 +39,9 @@ const PortfolioCard = ({ project, onClick }) => {
           ))}
         </div>
         <div className="portfolioLinks">
-          {project.demo && (
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="portfolioDemo"
-              onClick={(e) => e.stopPropagation()}
-            >
-              Live Demo
-            </a>
-          )}
-          {project.repo && (
-            <a
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="portfolioRepo"
-              onClick={(e) => e.stopPropagation()}
-            >
-              GitHub
-            </a>
-          )}
+          <button className="portfolioViewMoreBtn" onClick={onClick}>
+            View More
+          </button>
         </div>
       </div>
     </div>
@@ -192,9 +165,7 @@ const Portfolio = () => {
           {companies.map((c) => (
             <button
               key={c}
-              className={`portfolioFilterBtn${
-                filter === c ? " active" : ""
-              }`}
+              className={`portfolioFilterBtn${filter === c ? " active" : ""}`}
               onClick={() => setFilter(c)}
             >
               {c === "all" ? "All" : c}
