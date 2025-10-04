@@ -160,7 +160,6 @@ const Portfolio = () => {
     <div className="portfolio">
       <div className="portfolioHeader">
         <h2>Portfolio</h2>
-        <p>Some of my featured projects</p>
         <div className="portfolioFilterTabs">
           {companies.map((c) => (
             <button
