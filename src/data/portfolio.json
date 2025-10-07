@@ -31,10 +31,10 @@
     "title": "Weather App",
     "description": "A sleek weather forecasting app with real-time data and animated backgrounds.",
     "images": [
-      "/portfolio/weather-app-1.png",
-      "/portfolio/weather-app-2.png",
-      "/portfolio/weather-app-3.png",
-      "/portfolio/weather-app-4.png"
+      "/public/portfolio/syscolabs/web/web-1.png",
+      "/public/portfolio/syscolabs/web/web-2.png",
+      "/public/portfolio/syscolabs/web/web-3.png",
+      "/public/portfolio/syscolabs/web/web-4.png"
     ],
     "tech": ["React", "OpenWeatherMap API", "Sass"],
     "demo": "https://weather-demo.com/",
