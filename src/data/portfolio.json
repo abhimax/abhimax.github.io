@@ -42,14 +42,13 @@
     "company": "syscoLabs"
   },
   {
-    "title": "Task Manager",
+    "title": "Multplx Website",
     "description": "A productivity tool for managing daily tasks, deadlines, and reminders.",
     "images": [
-      "/portfolio/task-manager-1.png",
-      "/portfolio/task-manager-2.png",
-      "/portfolio/task-manager-3.png",
-      "/portfolio/task-manager-4.png",
-      "/portfolio/task-manager-5.png"
+      "/public/portfolio/multplx/web/home-1.png",
+      "/public/portfolio/multplx/web/product-2.png",
+      "public/portfolio/multplx/web/customers-3.png",
+      "public/portfolio/multplx/web/contact-us-4.png"
     ],
     "tech": ["React", "Redux", "Firebase"],
     "demo": "https://tasks-demo.com/",
