@@ -5,7 +5,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./portfolio.scss";
 
-const companies = ["all", "interblocks", "multplx", "syscoLabs", "99x"];
+const companies = [
+  "all",
+  "interblocks",
+  "multplx",
+  "syscoLabs",
+  "madmobile",
+  "99x",
+];
 
 const PortfolioCard = ({ project, onClick }) => {
   const imageSettings = {

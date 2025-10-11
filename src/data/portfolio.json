@@ -56,13 +56,13 @@
     "company": "99x"
   },
   {
-    "title": "Blog Platform",
+    "title": "KDS",
     "description": "A full-featured blogging platform with markdown support and user authentication.",
     "images": ["/portfolio/blog-platform-1.png"],
     "tech": ["Next.js", "MongoDB", "TailwindCSS"],
     "demo": "https://blog-demo.com/",
     "repo": "https://github.com/abhimax/blog-platform",
-    "company": "interblocks"
+    "company": "madmobile"
   },
   {
     "title": "Finance Tracker",
