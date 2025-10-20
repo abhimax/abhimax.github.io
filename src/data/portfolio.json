@@ -56,9 +56,9 @@
     "company": "99x"
   },
   {
-    "title": "KDS",
+    "title": "Zipit",
     "description": "A full-featured blogging platform with markdown support and user authentication.",
-    "images": ["/portfolio/blog-platform-1.png"],
+    "images": ["/portfolio/multplx/zipit/zip-it.png"],
     "tech": ["Next.js", "MongoDB", "TailwindCSS"],
     "demo": "https://blog-demo.com/",
     "repo": "https://github.com/abhimax/blog-platform",
