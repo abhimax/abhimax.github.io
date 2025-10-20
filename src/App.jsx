@@ -1,6 +1,6 @@
 // import Hero from "./components/hero/Hero";
 // import Services from "./components/services/Services";
-// import Portfolio from "./components/portfolio/Portfolio";
+//import Portfolio from "./components/portfolio/Portfolio";
 // import Contact from "./components/contact/Contact";
 
 import React, { lazy, Suspense } from "react";
@@ -68,6 +68,12 @@ const App = () => {
               <section id="skills">
                 <Suspense fallback={"loading..."}>
                   <Skills />
+                </Suspense>
+              </section>
+
+              <section id="skills">
+                <Suspense fallback={"loading..."}>
+                  {/* <Portfolio /> */}
                 </Suspense>
               </section>
 
