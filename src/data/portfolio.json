@@ -19,8 +19,7 @@
       "HTML5",
       "Compass"
     ],
-    "demo": "https://abhimax.github.io/",
-    "repo": "https://github.com/abhimax/abhimax.github.io",
+    "url": "https://abhimax.github.io/",
     "company": "syscoLabs"
   },
   {
@@ -32,8 +31,7 @@
       "/public/portfolio/syscolabs/olo/olo-3.png"
     ],
     "tech": ["React", "Redux", "Node.js", "MongoDB"],
-    "demo": "https://demo-ecommerce.com/",
-    "repo": "https://github.com/abhimax/ecommerce-dashboard",
+    "url": "https://demo-ecommerce.com/",
     "company": "multplx"
   },
   {
@@ -46,8 +44,7 @@
       "/public/portfolio/syscolabs/web/web-4.png"
     ],
     "tech": ["React", "OpenWeatherMap API", "Sass"],
-    "demo": "https://weather-demo.com/",
-    "repo": "https://github.com/abhimax/weather-app",
+    "url": "https://weather-demo.com/",
     "company": "syscoLabs"
   },
   {
@@ -60,8 +57,7 @@
       "public/portfolio/multplx/web/contact-us-4.png"
     ],
     "tech": ["React", "Redux", "Firebase"],
-    "demo": "https://tasks-demo.com/",
-    "repo": "https://github.com/abhimax/task-manager",
+    "url": "https://tasks-demo.com/",
     "company": "99x"
   },
   {
@@ -69,8 +65,7 @@
     "description": "A full-featured blogging platform with markdown support and user authentication.",
     "images": ["/portfolio/multplx/zipit/zip-it.png"],
     "tech": ["Next.js", "MongoDB", "TailwindCSS"],
-    "demo": "https://blog-demo.com/",
-    "repo": "https://github.com/abhimax/blog-platform",
+    "url": "https://blog-demo.com/",
     "company": "madmobile"
   },
   {
@@ -81,8 +76,7 @@
       "/portfolio/finance-tracker-2.png"
     ],
     "tech": ["React", "Chart.js", "Node.js"],
-    "demo": "https://finance-demo.com/",
-    "repo": "https://github.com/abhimax/finance-tracker",
+    "url": "https://finance-demo.com/",
     "company": "multplx"
   },
   {
@@ -94,8 +88,7 @@
       "/portfolio/recipe-finder-3.png"
     ],
     "tech": ["Vue.js", "Sass", "Firebase"],
-    "demo": "https://recipes-demo.com/",
-    "repo": "https://github.com/abhimax/recipe-finder",
+    "url": "https://recipes-demo.com/",
     "company": "syscoLabs"
   },
   {
@@ -108,8 +101,7 @@
       "/portfolio/fitness-app-4.png"
     ],
     "tech": ["React Native", "Expo", "Redux"],
-    "demo": "https://fitness-demo.com/",
-    "repo": "https://github.com/abhimax/fitness-app",
+    "url": "https://fitness-demo.com/",
     "company": "99x"
   },
   {
@@ -117,8 +109,7 @@
     "description": "A real-time chat app with group messaging, emojis, and notifications.",
     "images": ["/portfolio/chat-app-1.png"],
     "tech": ["React", "Socket.io", "Node.js"],
-    "demo": "https://chat-demo.com/",
-    "repo": "https://github.com/abhimax/chat-app",
+    "url": "https://chat-demo.com/",
     "company": "interblocks"
   },
   {
@@ -129,8 +120,7 @@
       "/portfolio/crypto-dashboard-2.png"
     ],
     "tech": ["React", "Redux", "CoinGecko API"],
-    "demo": "https://crypto-demo.com/",
-    "repo": "https://github.com/abhimax/crypto-dashboard",
+    "url": "https://crypto-demo.com/",
     "company": "multplx"
   },
   {
@@ -142,8 +132,7 @@
       "/portfolio/travel-journal-3.png"
     ],
     "tech": ["Gatsby", "GraphQL", "Styled-Components"],
-    "demo": "https://travel-demo.com/",
-    "repo": "https://github.com/abhimax/travel-journal",
+    "url": "https://travel-demo.com/",
     "company": "syscoLabs"
   },
   {
@@ -156,8 +145,7 @@
       "/portfolio/learning-platform-4.png"
     ],
     "tech": ["React", "Node.js", "PostgreSQL"],
-    "demo": "https://learn-demo.com/",
-    "repo": "https://github.com/abhimax/learning-platform",
+    "url": "https://learn-demo.com/",
     "company": "99x"
   },
   {
@@ -165,8 +153,7 @@
     "description": "Browse movies, view ratings, and create watchlists with a modern UI.",
     "images": ["/portfolio/movie-db-1.png", "/portfolio/movie-db-2.png"],
     "tech": ["Vue.js", "TMDB API", "Vuetify"],
-    "demo": "https://movies-demo.com/",
-    "repo": "https://github.com/abhimax/movie-db",
+    "url": "https://movies-demo.com/",
     "company": "interblocks"
   },
   {
@@ -178,8 +165,7 @@
       "/portfolio/portfolio-analytics-3.png"
     ],
     "tech": ["React", "D3.js", "Node.js"],
-    "demo": "https://analytics-demo.com/",
-    "repo": "https://github.com/abhimax/portfolio-analytics",
+    "url": "https://analytics-demo.com/",
     "company": "multplx"
   },
   {
@@ -193,8 +179,7 @@
       "/portfolio/event-planner-5.png"
     ],
     "tech": ["Angular", "Firebase", "Sass"],
-    "demo": "https://events-demo.com/",
-    "repo": "https://github.com/abhimax/event-planner",
+    "url": "https://events-demo.com/",
     "company": "syscoLabs"
   }
 ]
