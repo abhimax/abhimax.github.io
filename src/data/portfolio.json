@@ -1,7 +1,7 @@
 [
   {
-    "title": "Personal Portfolio Website",
-    "description": "A modern, responsive portfolio site built with React, Vite, and SCSS, featuring a blog, testimonials, and 3D models.",
+    "title": "Cake POS ( Restaurant Point of Sale System )",
+    "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
     "images": [
       "/public/portfolio/syscolabs/pos/pos-1.png",
       "/public/portfolio/syscolabs/pos/pos-2.png",
@@ -9,10 +9,19 @@
       "/public/portfolio/syscolabs/pos/pos-4.png",
       "/public/portfolio/syscolabs/pos/pos-5.png"
     ],
-    "tech": ["React", "Vite", "SCSS", "Three.js"],
+    "tech": [
+      "React",
+      "Redux",
+      "SCSS",
+      "Axios",
+      "CouchDB",
+      "ES6",
+      "HTML5",
+      "Compass"
+    ],
     "demo": "https://abhimax.github.io/",
     "repo": "https://github.com/abhimax/abhimax.github.io",
-    "company": "interblocks"
+    "company": "syscoLabs"
   },
   {
     "title": "E-Commerce Dashboard",
@@ -68,7 +77,7 @@
     "title": "Finance Tracker",
     "description": "Track expenses, set budgets, and visualize spending trends with interactive charts.",
     "images": [
-      "/portfolio/finance-tracker-1.png",
+      "/public/portfolio/multplx/web/home-1.pngs",
       "/portfolio/finance-tracker-2.png"
     ],
     "tech": ["React", "Chart.js", "Node.js"],
