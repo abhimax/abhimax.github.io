@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Slider from "react-slick";
 import portfolioData from "../../data/portfolio.json";
 import "slick-carousel/slick/slick.css";
@@ -91,24 +91,14 @@ const PortfolioModal = ({ project, onClose }) => {
             ))}
           </div>
           <div className="portfolioLinks">
-            {project.demo && (
+            {project.url && (
               <a
-                href={project.demo}
+                href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="portfolioDemo"
+                className="portfolioMoreInfo"
               >
-                Live Demo
-              </a>
-            )}
-            {project.repo && (
-              <a
-                href={project.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="portfolioRepo"
-              >
-                GitHub
+                More Info
               </a>
             )}
           </div>
