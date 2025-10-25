@@ -121,6 +121,18 @@
             transform: translateY(-8px) scale(1.03);
             box-shadow: 0 8px 32px var(--shadow);
         }
+
+        .portfolioTech {
+            gap: 0.35rem;
+            margin-bottom: 0;
+
+            .techTag {
+                font-size: 0.6rem;
+                padding: 0.15rem 0.4rem 0.2rem 0.4rem;
+                line-height: 0.6rem;
+                font-weight: 400;
+            }
+        }
     }
 }
 
