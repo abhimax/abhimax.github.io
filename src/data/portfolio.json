@@ -23,27 +23,36 @@
     "company": "syscoLabs"
   },
   {
-    "title": "E-Commerce Dashboard",
-    "description": "A dashboard for managing products, orders, and analytics, with a focus on UX and performance.",
+    "title": "CAKE Online Ordering System (OLO)",
+    "description": "CAKE Online Ordering creates a new revenue stream for restaurants, enhancing online presence and eliminating third-party fees. Customers can order ahead via mobile or desktop, schedule orders, and enjoy seamless POS integration, reducing errors with a single menu. The platform allows custom branding and dish images, offers contactless payments with Apple Pay, Google Pay, and credit card options, and provides hassle-free curbside management with two-way text communication. My role involved developing web interfaces, native iOS views for onboarding, testing UI flows on iPad, creating UI test cases for React Storybook, and wireframing new features.",
     "images": [
       "/public/portfolio/syscolabs/olo/olo-1.png",
       "/public/portfolio/syscolabs/olo/olo-2.png",
       "/public/portfolio/syscolabs/olo/olo-3.png"
     ],
-    "tech": ["React", "Redux", "Node.js", "MongoDB"],
+    "tech": [
+      "React",
+      "Redux",
+      "Node",
+      "Webpack",
+      "ES6",
+      "HTML5",
+      "Styled-components",
+      "SVG"
+    ],
     "url": "https://demo-ecommerce.com/",
-    "company": "multplx"
+    "company": "syscoLabs"
   },
   {
-    "title": "Weather App",
-    "description": "A sleek weather forecasting app with real-time data and animated backgrounds.",
+    "title": "SyscoLabs Website",
+    "description": "We developed SyscoLabs Sri Lanka's official website using React and the latest web technologies. The design was provided, and we ensured the development aligned with the UX, focusing on responsive design, performance, and user-friendly navigation. Seamless UX: Translated the design into an intuitive, responsive site. React Development: Built with React for performance and dynamic interactions. Optimized Performance: Fast load times and responsive layouts for better usability. Custom Features: Tailored features to meet SyscoLabs' needs.",
     "images": [
       "/public/portfolio/syscolabs/web/web-1.png",
       "/public/portfolio/syscolabs/web/web-2.png",
       "/public/portfolio/syscolabs/web/web-3.png",
       "/public/portfolio/syscolabs/web/web-4.png"
     ],
-    "tech": ["React", "OpenWeatherMap API", "Sass"],
+    "tech": ["React", "JavaScript", "HTML5", "SASS"],
     "url": "https://weather-demo.com/",
     "company": "syscoLabs"
   },
