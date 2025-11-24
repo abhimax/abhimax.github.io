@@ -190,5 +190,12 @@
     "tech": ["Angular", "Firebase", "Sass"],
     "url": "https://events-demo.com/",
     "company": "syscoLabs"
+  },
+  {
+    "title": "Glaze-ui ( React-based Component Library )",
+    "description": "Glaze-ui offers a comprehensive suite of UI components to help clients ship new features faster. This React-based component library provides production-ready components for React applications, delivering consistent UIs across projects and enabling faster delivery. My Role: Develop components; create React Storybook views to test component states; publish to npm and maintain release documentation.",
+    "images": ["public/portfolio/syscolabs/glaze-ui/glaze-ui.jpg"],
+    "tech": ["React", "Babel", "Webpack", "Storybook", "JSX", "ES6", "SCSS"],
+    "company": "syscoLabs"
   }
 ]
