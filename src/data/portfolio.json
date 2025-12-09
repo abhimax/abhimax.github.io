@@ -89,18 +89,6 @@
     "company": "multplx"
   },
   {
-    "title": "Recipe Finder",
-    "description": "Discover recipes by ingredients, save favorites, and generate shopping lists.",
-    "images": [
-      "/portfolio/recipe-finder-1.png",
-      "/portfolio/recipe-finder-2.png",
-      "/portfolio/recipe-finder-3.png"
-    ],
-    "tech": ["Vue.js", "Sass", "Firebase"],
-    "url": "https://recipes-demo.com/",
-    "company": "syscoLabs"
-  },
-  {
     "title": "Fitness App",
     "description": "A fitness tracking app with workout plans, progress charts, and social features.",
     "images": [
@@ -131,18 +119,6 @@
     "tech": ["React", "Redux", "CoinGecko API"],
     "url": "https://crypto-demo.com/",
     "company": "multplx"
-  },
-  {
-    "title": "Travel Journal",
-    "description": "Share travel stories, photos, and tips with an interactive map view.",
-    "images": [
-      "/portfolio/travel-journal-1.png",
-      "/portfolio/travel-journal-2.png",
-      "/portfolio/travel-journal-3.png"
-    ],
-    "tech": ["Gatsby", "GraphQL", "Styled-Components"],
-    "url": "https://travel-demo.com/",
-    "company": "syscoLabs"
   },
   {
     "title": "Online Learning Platform",
@@ -176,20 +152,6 @@
     "tech": ["React", "D3.js", "Node.js"],
     "url": "https://analytics-demo.com/",
     "company": "multplx"
-  },
-  {
-    "title": "Event Planner",
-    "description": "Plan and manage events, send invites, and track RSVPs easily.",
-    "images": [
-      "/portfolio/event-planner-1.png",
-      "/portfolio/event-planner-2.png",
-      "/portfolio/event-planner-3.png",
-      "/portfolio/event-planner-4.png",
-      "/portfolio/event-planner-5.png"
-    ],
-    "tech": ["Angular", "Firebase", "Sass"],
-    "url": "https://events-demo.com/",
-    "company": "syscoLabs"
   },
   {
     "title": "Glaze-ui ( React-based Component Library )",
