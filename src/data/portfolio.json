@@ -67,7 +67,7 @@
     ],
     "tech": ["React", "Redux", "Firebase"],
     "url": "https://tasks-demo.com/",
-    "company": "99x"
+    "company": "multplx"
   },
   {
     "title": "Zipit",
@@ -142,15 +142,14 @@
     "company": "interblocks"
   },
   {
-    "title": "Portfolio Analytics",
-    "description": "Analyze your investment portfolio with advanced charts and insights.",
+    "title": "Jabra Kiosk Microsite",
+    "description": "Front end Development and UI designing of Jawbone micro-site Samsung galaxy note 10.1 Devices.",
     "images": [
       "/portfolio/portfolio-analytics-1.png",
       "/portfolio/portfolio-analytics-2.png",
       "/portfolio/portfolio-analytics-3.png"
     ],
-    "tech": ["React", "D3.js", "Node.js"],
-    "url": "https://analytics-demo.com/",
+    "tech": ["jQuery", "iDangero Swiper API"],
     "company": "multplx"
   },
   {
