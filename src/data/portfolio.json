@@ -155,7 +155,20 @@
   {
     "title": "Glaze-ui ( React-based Component Library )",
     "description": "Glaze-ui offers a comprehensive suite of UI components to help clients ship new features faster. This React-based component library provides production-ready components for React applications, delivering consistent UIs across projects and enabling faster delivery. My Role: Develop components; create React Storybook views to test component states; publish to npm and maintain release documentation.",
-    "images": ["public/portfolio/syscolabs/glaze-ui/glaze-ui.jpg"],
+    "images": [
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-1.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-2.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-3.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-4.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-5.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-6.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-7.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-8.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-9.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-10.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-11.jpg",
+      "public/portfolio/syscolabs/glaze-ui/glaze-ui-12.jpg"
+    ],
     "tech": ["React", "Babel", "Webpack", "Storybook", "JSX", "ES6", "SCSS"],
     "company": "syscoLabs"
   }
