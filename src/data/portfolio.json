@@ -1,5 +1,17 @@
 [
   {
+    "title": "Cake POS V2 ( Restaurant Point of Sale System )",
+    "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
+    "images": [
+      "public/portfolio/madmobile/pos/cake-pos-1.png",
+      "public/portfolio/madmobile/pos/cake-pos-2.png",
+      "public/portfolio/madmobile/pos/cake-pos-3.png"
+    ],
+    "tech": ["React", "Redux", "SCSS", "Axios", "CouchDB", "ES6", "HTML5"],
+    "url": "https://abhimax.github.io/",
+    "company": "madmobile"
+  },
+  {
     "title": "Cake POS ( Restaurant Point of Sale System )",
     "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
     "images": [
