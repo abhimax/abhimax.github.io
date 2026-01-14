@@ -12,6 +12,20 @@
     "company": "madmobile"
   },
   {
+    "title": "Cake KDS (Kitchen display system)",
+    "description": "CAKE’s Kitchen Display System (KDS) connects directly to your POS, giving your BOH staff ultimate visibility for order management.- Connect directly to CAKE POS and send orders to kitchen staff in seconds.\n- Whether dine-in, online, or take-out, route orders to the right stations in your kitchen.\n- Servers are notified when orders are hot and ready, delivering the best experience possible.",
+    "images": [
+      "public/portfolio/madmobile/kds/kds-01.jpg",
+      "public/portfolio/madmobile/kds/kds-02.jpg",
+      "public/portfolio/madmobile/kds/kds-03.jpg",
+      "public/portfolio/madmobile/kds/kds-04.jpg",
+      "public/portfolio/madmobile/kds/kds-05.jpg"
+    ],
+    "tech": ["React", "Redux", "SCSS", "Axios", "CouchDB", "ES6", "HTML5"],
+    "url": "https://abhimax.github.io/",
+    "company": "madmobile"
+  },
+  {
     "title": "Cake POS ( Restaurant Point of Sale System )",
     "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
     "images": [
