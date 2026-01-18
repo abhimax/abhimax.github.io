@@ -70,6 +70,27 @@
     "company": "syscoLabs"
   },
   {
+    "title": "CAKE Online Ordering System (OLO)",
+    "description": "CAKE Online Ordering creates a new revenue stream for restaurants, enhancing online presence and eliminating third-party fees. Customers can order ahead via mobile or desktop, schedule orders, and enjoy seamless POS integration, reducing errors with a single menu. The platform allows custom branding and dish images, offers contactless payments with Apple Pay, Google Pay, and credit card options, and provides hassle-free curbside management with two-way text communication. My role involved developing web interfaces, native iOS views for onboarding, testing UI flows on iPad, creating UI test cases for React Storybook, and wireframing new features.",
+    "images": [
+      "/public/portfolio/syscolabs/olo/olo-1.png",
+      "/public/portfolio/syscolabs/olo/olo-2.png",
+      "/public/portfolio/syscolabs/olo/olo-3.png"
+    ],
+    "tech": [
+      "React",
+      "Redux",
+      "Node",
+      "Webpack",
+      "ES6",
+      "HTML5",
+      "Styled-components",
+      "SVG"
+    ],
+    "url": "https://demo-ecommerce.com/",
+    "company": "madmobile"
+  },
+  {
     "title": "SyscoLabs Website",
     "description": "We developed SyscoLabs Sri Lanka's official website using React and the latest web technologies. The design was provided, and we ensured the development aligned with the UX, focusing on responsive design, performance, and user-friendly navigation. Seamless UX: Translated the design into an intuitive, responsive site. React Development: Built with React for performance and dynamic interactions. Optimized Performance: Fast load times and responsive layouts for better usability. Custom Features: Tailored features to meet SyscoLabs' needs.",
     "images": [
@@ -104,47 +125,12 @@
     "company": "multplx"
   },
   {
-    "title": "Finance Tracker",
-    "description": "Track expenses, set budgets, and visualize spending trends with interactive charts.",
-    "images": [
-      "/public/portfolio/multplx/web/home-1.pngs",
-      "/portfolio/finance-tracker-2.png"
-    ],
-    "tech": ["React", "Chart.js", "Node.js"],
-    "url": "https://finance-demo.com/",
-    "company": "multplx"
-  },
-  {
-    "title": "Fitness App",
-    "description": "A fitness tracking app with workout plans, progress charts, and social features.",
-    "images": [
-      "/portfolio/fitness-app-1.png",
-      "/portfolio/fitness-app-2.png",
-      "/portfolio/fitness-app-3.png",
-      "/portfolio/fitness-app-4.png"
-    ],
-    "tech": ["React Native", "Expo", "Redux"],
-    "url": "https://fitness-demo.com/",
-    "company": "99x"
-  },
-  {
     "title": "Chat Application",
     "description": "A real-time chat app with group messaging, emojis, and notifications.",
     "images": ["/portfolio/chat-app-1.png"],
     "tech": ["React", "Socket.io", "Node.js"],
     "url": "https://chat-demo.com/",
     "company": "interblocks"
-  },
-  {
-    "title": "Crypto Dashboard",
-    "description": "Monitor cryptocurrency prices, news, and portfolio performance in real time.",
-    "images": [
-      "/portfolio/crypto-dashboard-1.png",
-      "/portfolio/crypto-dashboard-2.png"
-    ],
-    "tech": ["React", "Redux", "CoinGecko API"],
-    "url": "https://crypto-demo.com/",
-    "company": "multplx"
   },
   {
     "title": "Online Learning Platform",
@@ -160,20 +146,32 @@
     "company": "99x"
   },
   {
-    "title": "Movie Database",
-    "description": "Browse movies, view ratings, and create watchlists with a modern UI.",
-    "images": ["/portfolio/movie-db-1.png", "/portfolio/movie-db-2.png"],
-    "tech": ["Vue.js", "TMDB API", "Vuetify"],
-    "url": "https://movies-demo.com/",
-    "company": "interblocks"
+    "title": "Jawbone Kiosk Microsite",
+    "description": "Front end Development and UI designing of Jawbone micro-site Samsung galaxy note 10.1 Devices.",
+    "images": [
+      "/portfolio/multplx/jambox/jambox-01.png",
+      "/portfolio/multplx/jambox/jambox-02.png",
+      "/portfolio/multplx/jambox/jambox-03.png",
+      "/portfolio/multplx/jambox/jambox-04.png",
+      "/portfolio/multplx/jambox/jambox-05.png",
+      "/portfolio/multplx/jambox/jambox-06.png",
+      "/portfolio/multplx/jambox/jambox-07.png",
+      "/portfolio/multplx/jambox/jambox-08.png",
+      "/portfolio/multplx/jambox/jambox-09.png",
+      "/portfolio/multplx/jambox/jambox-10.png"
+    ],
+    "tech": ["jQuery", "iDangero Swiper API"],
+    "company": "multplx"
   },
   {
     "title": "Jabra Kiosk Microsite",
     "description": "Front end Development and UI designing of Jawbone micro-site Samsung galaxy note 10.1 Devices.",
     "images": [
-      "/portfolio/portfolio-analytics-1.png",
-      "/portfolio/portfolio-analytics-2.png",
-      "/portfolio/portfolio-analytics-3.png"
+      "public/portfolio/multplx/ixion/01-ixion.jpeg",
+      "public/portfolio/multplx/ixion/02-ixion.jpeg",
+      "public/portfolio/multplx/ixion/03-ixion.jpeg",
+      "public/portfolio/multplx/ixion/04-ixion.jpeg",
+      "public/portfolio/multplx/ixion/05-ixion.jpeg"
     ],
     "tech": ["jQuery", "iDangero Swiper API"],
     "company": "multplx"
