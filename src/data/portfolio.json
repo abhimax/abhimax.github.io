@@ -125,11 +125,19 @@
     "company": "multplx"
   },
   {
-    "title": "Chat Application",
-    "description": "A real-time chat app with group messaging, emojis, and notifications.",
-    "images": ["/portfolio/chat-app-1.png"],
-    "tech": ["React", "Socket.io", "Node.js"],
-    "url": "https://chat-demo.com/",
+    "title": "Frontend Development of ATM Machines",
+    "description": "ATM frontend and UI development using web development technologies for various client banks. I have worked on many Sri Lankan bank ATM frontend development projects, including Sampath Bank, Seylan Bank, NSB, BOC, MCB, NTB, and Union Bank. Developed various ATM screens using ActionScript and created themes for online banking sites with CSS, jQuery, Ajax, and XSLT. Also worked on some foreign banks, especially in the Philippines, Cambodia, and Bangladesh.",
+    "images": ["/portfolio/interblocks/ATM.png"],
+    "tech": [
+      "JavaScript",
+      "ActionScript",
+      "HTML5",
+      "Ajax",
+      "CSS",
+      "jQuery",
+      "XSLT"
+    ],
+    "url": "",
     "company": "interblocks"
   },
   {
