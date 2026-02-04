@@ -141,6 +141,14 @@
     "company": "interblocks"
   },
   {
+    "title": "Online Banking Web Application Development",
+    "description": "I have played a key role in the frontend development of several online banking web applications, leveraging JSP technologies alongside JavaScript, Ajax, CSS, and XHTML. My contributions include designing and implementing responsive, user-friendly interfaces, optimizing page performance, and ensuring seamless integration with backend services. I have worked closely with cross-functional teams to deliver intuitive and secure digital banking experiences, enhancing usability and customer satisfaction.",
+    "images": ["/portfolio/interblocks/sampath-online.png"],
+    "tech": ["Java & JSP", "JavaScript", "Ajax", "CSS", "XHTML"],
+    "url": "",
+    "company": "interblocks"
+  },
+  {
     "title": "Online Learning Platform",
     "description": "A platform for online courses, quizzes, and progress tracking.",
     "images": [
