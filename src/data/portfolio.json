@@ -149,16 +149,24 @@
     "company": "interblocks"
   },
   {
-    "title": "Online Learning Platform",
-    "description": "A platform for online courses, quizzes, and progress tracking.",
-    "images": [
-      "/portfolio/learning-platform-1.png",
-      "/portfolio/learning-platform-2.png",
-      "/portfolio/learning-platform-3.png",
-      "/portfolio/learning-platform-4.png"
+    "title": "End-to-End Architecture and Automation for Component Libraries",
+    "description": "In this project, I was involved with requirement gathering and problem solving. I directly worked with the design system architecture team as a middle layer between the design team and dev teams. Responsibilities included making the component library architecture, selecting technology and tools, automating the release process, automating release notes, automating release note Slack alerts, handling unit and integration testing, improving bundle size and performance optimization, automated Figma to GitHub design token syncing, and automated static Storybook version hosting with each library release.",
+    "images": ["/portfolio/99x/component-lib.png"],
+    "tech": [
+      "React",
+      "TypeScript",
+      "Rollup",
+      "SASS",
+      "Storybook",
+      "GitHub Actions",
+      "AWS CodeArtifact",
+      "S3",
+      "semantic-release",
+      "Radix UI",
+      "CSS",
+      "Vitest"
     ],
-    "tech": ["React", "Node.js", "PostgreSQL"],
-    "url": "https://learn-demo.com/",
+    "url": "",
     "company": "99x"
   },
   {
