@@ -3,9 +3,9 @@
     "title": "Cake POS V2 ( Restaurant Point of Sale System )",
     "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
     "images": [
-      "public/portfolio/madmobile/pos/cake-pos-1.png",
-      "public/portfolio/madmobile/pos/cake-pos-2.png",
-      "public/portfolio/madmobile/pos/cake-pos-3.png"
+      "/portfolio/madmobile/pos/cake-pos-1.png",
+      "/portfolio/madmobile/pos/cake-pos-2.png",
+      "/portfolio/madmobile/pos/cake-pos-3.png"
     ],
     "tech": ["React", "Redux", "SCSS", "Axios", "CouchDB", "ES6", "HTML5"],
     "url": "https://abhimax.github.io/",
@@ -15,11 +15,11 @@
     "title": "Cake KDS (Kitchen display system)",
     "description": "CAKE’s Kitchen Display System (KDS) connects directly to your POS, giving your BOH staff ultimate visibility for order management.- Connect directly to CAKE POS and send orders to kitchen staff in seconds.\n- Whether dine-in, online, or take-out, route orders to the right stations in your kitchen.\n- Servers are notified when orders are hot and ready, delivering the best experience possible.",
     "images": [
-      "public/portfolio/madmobile/kds/kds-01.jpg",
-      "public/portfolio/madmobile/kds/kds-02.jpg",
-      "public/portfolio/madmobile/kds/kds-03.jpg",
-      "public/portfolio/madmobile/kds/kds-04.jpg",
-      "public/portfolio/madmobile/kds/kds-05.jpg"
+      "/portfolio/madmobile/kds/kds-01.jpg",
+      "/portfolio/madmobile/kds/kds-02.jpg",
+      "/portfolio/madmobile/kds/kds-03.jpg",
+      "/portfolio/madmobile/kds/kds-04.jpg",
+      "/portfolio/madmobile/kds/kds-05.jpg"
     ],
     "tech": ["React", "Redux", "SCSS", "Axios", "CouchDB", "ES6", "HTML5"],
     "url": "https://abhimax.github.io/",
@@ -29,11 +29,11 @@
     "title": "Cake POS ( Restaurant Point of Sale System )",
     "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
     "images": [
-      "/public/portfolio/syscolabs/pos/pos-1.png",
-      "/public/portfolio/syscolabs/pos/pos-2.png",
-      "/public/portfolio/syscolabs/pos/pos-3.png",
-      "/public/portfolio/syscolabs/pos/pos-4.png",
-      "/public/portfolio/syscolabs/pos/pos-5.png"
+      "/portfolio/syscolabs/pos/pos-1.png",
+      "/portfolio/syscolabs/pos/pos-2.png",
+      "/portfolio/syscolabs/pos/pos-3.png",
+      "/portfolio/syscolabs/pos/pos-4.png",
+      "/portfolio/syscolabs/pos/pos-5.png"
     ],
     "tech": [
       "React",
@@ -52,9 +52,9 @@
     "title": "CAKE Online Ordering System (OLO)",
     "description": "CAKE Online Ordering creates a new revenue stream for restaurants, enhancing online presence and eliminating third-party fees. Customers can order ahead via mobile or desktop, schedule orders, and enjoy seamless POS integration, reducing errors with a single menu. The platform allows custom branding and dish images, offers contactless payments with Apple Pay, Google Pay, and credit card options, and provides hassle-free curbside management with two-way text communication. My role involved developing web interfaces, native iOS views for onboarding, testing UI flows on iPad, creating UI test cases for React Storybook, and wireframing new features.",
     "images": [
-      "/public/portfolio/syscolabs/olo/olo-1.png",
-      "/public/portfolio/syscolabs/olo/olo-2.png",
-      "/public/portfolio/syscolabs/olo/olo-3.png"
+      "/portfolio/syscolabs/olo/olo-1.png",
+      "/portfolio/syscolabs/olo/olo-2.png",
+      "/portfolio/syscolabs/olo/olo-3.png"
     ],
     "tech": [
       "React",
@@ -73,9 +73,9 @@
     "title": "CAKE Online Ordering System (OLO)",
     "description": "CAKE Online Ordering creates a new revenue stream for restaurants, enhancing online presence and eliminating third-party fees. Customers can order ahead via mobile or desktop, schedule orders, and enjoy seamless POS integration, reducing errors with a single menu. The platform allows custom branding and dish images, offers contactless payments with Apple Pay, Google Pay, and credit card options, and provides hassle-free curbside management with two-way text communication. My role involved developing web interfaces, native iOS views for onboarding, testing UI flows on iPad, creating UI test cases for React Storybook, and wireframing new features.",
     "images": [
-      "/public/portfolio/syscolabs/olo/olo-1.png",
-      "/public/portfolio/syscolabs/olo/olo-2.png",
-      "/public/portfolio/syscolabs/olo/olo-3.png"
+      "/portfolio/syscolabs/olo/olo-1.png",
+      "/portfolio/syscolabs/olo/olo-2.png",
+      "/portfolio/syscolabs/olo/olo-3.png"
     ],
     "tech": [
       "React",
@@ -94,10 +94,10 @@
     "title": "SyscoLabs Website",
     "description": "We developed SyscoLabs Sri Lanka's official website using React and the latest web technologies. The design was provided, and we ensured the development aligned with the UX, focusing on responsive design, performance, and user-friendly navigation. Seamless UX: Translated the design into an intuitive, responsive site. React Development: Built with React for performance and dynamic interactions. Optimized Performance: Fast load times and responsive layouts for better usability. Custom Features: Tailored features to meet SyscoLabs' needs.",
     "images": [
-      "/public/portfolio/syscolabs/web/web-1.png",
-      "/public/portfolio/syscolabs/web/web-2.png",
-      "/public/portfolio/syscolabs/web/web-3.png",
-      "/public/portfolio/syscolabs/web/web-4.png"
+      "/portfolio/syscolabs/web/web-1.png",
+      "/portfolio/syscolabs/web/web-2.png",
+      "/portfolio/syscolabs/web/web-3.png",
+      "/portfolio/syscolabs/web/web-4.png"
     ],
     "tech": ["React", "JavaScript", "HTML5", "SASS"],
     "url": "https://weather-demo.com/",
@@ -107,10 +107,10 @@
     "title": "Multplx Website",
     "description": "A productivity tool for managing daily tasks, deadlines, and reminders.",
     "images": [
-      "/public/portfolio/multplx/web/home-1.png",
-      "/public/portfolio/multplx/web/product-2.png",
-      "public/portfolio/multplx/web/customers-3.png",
-      "public/portfolio/multplx/web/contact-us-4.png"
+      "/portfolio/multplx/web/home-1.png",
+      "/portfolio/multplx/web/product-2.png",
+      "/portfolio/multplx/web/customers-3.png",
+      "/portfolio/multplx/web/contact-us-4.png"
     ],
     "tech": ["React", "Redux", "Firebase"],
     "url": "https://tasks-demo.com/",
@@ -218,11 +218,11 @@
     "title": "Jabra Kiosk Microsite",
     "description": "Front end Development and UI designing of Jawbone micro-site Samsung galaxy note 10.1 Devices.",
     "images": [
-      "public/portfolio/multplx/ixion/01-ixion.jpeg",
-      "public/portfolio/multplx/ixion/02-ixion.jpeg",
-      "public/portfolio/multplx/ixion/03-ixion.jpeg",
-      "public/portfolio/multplx/ixion/04-ixion.jpeg",
-      "public/portfolio/multplx/ixion/05-ixion.jpeg"
+      "/portfolio/multplx/ixion/01-ixion.jpeg",
+      "/portfolio/multplx/ixion/02-ixion.jpeg",
+      "/portfolio/multplx/ixion/03-ixion.jpeg",
+      "/portfolio/multplx/ixion/04-ixion.jpeg",
+      "/portfolio/multplx/ixion/05-ixion.jpeg"
     ],
     "tech": ["jQuery", "iDangero Swiper API"],
     "company": "multplx"
@@ -231,18 +231,18 @@
     "title": "Glaze-ui ( React-based Component Library )",
     "description": "Glaze-ui offers a comprehensive suite of UI components to help clients ship new features faster. This React-based component library provides production-ready components for React applications, delivering consistent UIs across projects and enabling faster delivery. My Role: Develop components; create React Storybook views to test component states; publish to npm and maintain release documentation.",
     "images": [
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-1.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-2.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-3.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-4.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-5.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-6.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-7.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-8.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-9.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-10.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-11.jpg",
-      "public/portfolio/syscolabs/glaze-ui/glaze-ui-12.jpg"
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-1.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-2.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-3.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-4.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-5.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-6.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-7.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-8.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-9.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-10.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-11.jpg",
+      "/portfolio/syscolabs/glaze-ui/glaze-ui-12.jpg"
     ],
     "tech": ["React", "Babel", "Webpack", "Storybook", "JSX", "ES6", "SCSS"],
     "company": "syscoLabs"
