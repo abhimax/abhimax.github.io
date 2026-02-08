@@ -171,9 +171,28 @@
   },
   {
     "title": "Architecting and Implementing Microfrontends for Scalable Applications",
-    "description": "In this project, I led the design and development of a scalable microfrontend architecture for our client. My role involved making key architectural decisions and guiding the implementation of microfrontends across multiple applications. We created a proof of concept (POC) and researched various technologies like React, Next.js, Webpack Module Federation, and Plugin Federation to determine the best solutions for the microfrontend framework. I also developed strategies for shared state management, secure authentication, and protected routes. Through testing different deployment strategies and frameworks, we successfully delivered a robust and scalable microfrontend architecture that met the client’s needs.",
+    "description": "In this project, I led the design and development of a scalable microfrontend architecture for our client. My role involved making key architectural decisions and guiding the implementation of microfrontends across multiple applications. We created a proof of concept (POC) and researched various technologies like React, Next.js, Webpack Module Federation, and Plugin Federation to determine the best solutions for the microfrontend framework. I also developed strategies for shared state management, secure authentication, and protected routes. Through testing different deployment strategies and frameworks, we successfully delivered a robust and scalable microfrontend architecture that met the client's needs.",
     "images": ["/portfolio/99x/micro-frontend.png"],
     "tech": ["React", "TypeScript", "Webpack", "AWS", "CSS", "Vitest"],
+    "url": "",
+    "company": "99x"
+  },
+  {
+    "title": "Full-Stack Serverless Medical Scheduling Application with Real-Time Syncing",
+    "description": "In this project, I developed a serverless medical scheduling application that efficiently manages appointments for doctors, back-office staff, and patients. The app is built on a serverless architecture, leveraging AWS services for scalability and cost efficiency. The core feature of the application is the advanced scheduling functionality, built on React Big Calendar with custom features like filtering, custom layouts, sorting, and interactive drag-and-drop elements. These enhancements were custom-implemented on top of React Scheduler to meet client-specific requirements.\n\nA key part of this project was using GraphQL for creating flexible APIs and handling real-time updates. By implementing GraphQL subscriptions, the application supports real-time syncing between the front-end and back-end, ensuring that appointment data is instantly reflected across all connected users without manual refreshes.\n\nAs the full-stack developer, I handled both the front-end and back-end. The back-end services are entirely serverless, utilizing AWS services like AppSync for GraphQL, DynamoDB for data storage, and CloudWatch for monitoring. The front-end was built with React and TypeScript, styled with SASS and CSS, and hosted through a CDN for fast and reliable access.",
+    "images": ["/portfolio/99x/rcb-scheduler.png"],
+    "tech": [
+      "React",
+      "TypeScript",
+      "SASS",
+      "CSS",
+      "Serverless Architecture",
+      "GraphQL",
+      "AWS AppSync",
+      "AWS DynamoDB",
+      "AWS CloudWatch",
+      "CDN"
+    ],
     "url": "",
     "company": "99x"
   },
