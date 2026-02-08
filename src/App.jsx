@@ -12,8 +12,8 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 const Hero = lazy(() => import("./components/hero/Hero"));
 const Experience = lazy(() => import("./components/experience/Experience"));
 const Skills = lazy(() => import("./components/skills/Skills"));
-const Testimonials = lazy(() =>
-  import("./components/testimonials/Testimonials")
+const Testimonials = lazy(
+  () => import("./components/testimonials/Testimonials"),
 );
 const Contact = lazy(() => import("./components/contact/Contact"));
 const BlogPage = lazy(() => import("./components/blog/BlogPage"));
@@ -71,11 +71,11 @@ const App = () => {
                 </Suspense>
               </section>
 
-              {/* <section id="skills">
+              <section id="portfolio">
                 <Suspense fallback={"loading..."}>
                   <Portfolio />
                 </Suspense>
-              </section> */}
+              </section>
 
               <section id="testimonials">
                 <Suspense fallback={"loading..."}>
