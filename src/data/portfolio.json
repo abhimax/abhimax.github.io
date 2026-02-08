@@ -170,6 +170,14 @@
     "company": "99x"
   },
   {
+    "title": "Architecting and Implementing Microfrontends for Scalable Applications",
+    "description": "In this project, I led the design and development of a scalable microfrontend architecture for our client. My role involved making key architectural decisions and guiding the implementation of microfrontends across multiple applications. We created a proof of concept (POC) and researched various technologies like React, Next.js, Webpack Module Federation, and Plugin Federation to determine the best solutions for the microfrontend framework. I also developed strategies for shared state management, secure authentication, and protected routes. Through testing different deployment strategies and frameworks, we successfully delivered a robust and scalable microfrontend architecture that met the client’s needs.",
+    "images": ["/portfolio/99x/micro-frontend.png"],
+    "tech": ["React", "TypeScript", "Webpack", "AWS", "CSS", "Vitest"],
+    "url": "",
+    "company": "99x"
+  },
+  {
     "title": "Jawbone Kiosk Microsite",
     "description": "Front end Development and UI designing of Jawbone micro-site Samsung galaxy note 10.1 Devices.",
     "images": [
