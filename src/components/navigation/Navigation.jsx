@@ -3,7 +3,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./navigation.scss";
 
 function useMediaQuery(query) {
-  const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
+  const [matches, setMatches] = useState(
+    () => window.matchMedia(query).matches,
+  );
   useEffect(() => {
     const media = window.matchMedia(query);
     const listener = () => setMatches(media.matches);
@@ -27,6 +29,7 @@ const Navigation = () => {
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "blog", label: "Blog", isBlog: true },
+    { id: "portfolio", label: "portfolio" },
     { id: "testimonials", label: "Testimonials" },
     { id: "contact", label: "Contact" },
   ];
@@ -77,10 +80,7 @@ const Navigation = () => {
         {isMobile && location.pathname.startsWith("/blog") && (
           <ul className="nav-links nav-mobile-open">
             <li key="home">
-              <button
-                className="nav-link active"
-                onClick={() => navigate("/")}
-              >
+              <button className="nav-link active" onClick={() => navigate("/")}>
                 Back to Home
               </button>
             </li>
@@ -100,10 +100,7 @@ const Navigation = () => {
         {!isMobile && location.pathname.startsWith("/blog") && (
           <ul className="nav-links">
             <li key="home">
-              <button
-                className="nav-link active"
-                onClick={() => navigate("/")}
-              >
+              <button className="nav-link active" onClick={() => navigate("/")}>
                 Back to Home
               </button>
             </li>
