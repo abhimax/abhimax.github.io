@@ -246,5 +246,26 @@
     ],
     "tech": ["React", "Babel", "Webpack", "Storybook", "JSX", "ES6", "SCSS"],
     "company": "syscoLabs"
+  },
+  {
+    "title": "Cloud-Native Healthcare Multi-tenant SaaS Platform",
+    "description": "Contributed to the design and implementation of serverless solutions within the enterprise architecture team. Worked on defining engineering standards and best practices for software development. Assisted in the design and implementation of CI/CD pipelines using GitHub Actions. Collaborated on development for cloud-native architecture and best practices. Played a key role in driving innovation and adoption of serverless technologies within the project.",
+    "images": ["/portfolio/99x/multi-tenant-saas.webp"],
+    "tech": [
+      "TypeScript",
+      "ReactJS",
+      "NodeJS",
+      "GraphQL",
+      "PostgreSQL",
+      "AWS Lambda",
+      "API Gateway",
+      "DynamoDB",
+      "EventBridge",
+      "CloudFormation",
+      "AppSync",
+      "Cognito"
+    ],
+    "url": "",
+    "company": "99x"
   }
 ]
