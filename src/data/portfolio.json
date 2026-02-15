@@ -1,271 +1,281 @@
-[
-  {
-    "title": "Cake POS V2 ( Restaurant Point of Sale System )",
-    "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
-    "images": [
-      "/portfolio/madmobile/pos/cake-pos-1.png",
-      "/portfolio/madmobile/pos/cake-pos-2.png",
-      "/portfolio/madmobile/pos/cake-pos-3.png"
-    ],
-    "tech": ["React", "Redux", "SCSS", "Axios", "CouchDB", "ES6", "HTML5"],
-    "url": "https://abhimax.github.io/",
-    "company": "madmobile"
-  },
-  {
-    "title": "Cake KDS (Kitchen display system)",
-    "description": "CAKE’s Kitchen Display System (KDS) connects directly to your POS, giving your BOH staff ultimate visibility for order management.- Connect directly to CAKE POS and send orders to kitchen staff in seconds.\n- Whether dine-in, online, or take-out, route orders to the right stations in your kitchen.\n- Servers are notified when orders are hot and ready, delivering the best experience possible.",
-    "images": [
-      "/portfolio/madmobile/kds/kds-01.jpg",
-      "/portfolio/madmobile/kds/kds-02.jpg",
-      "/portfolio/madmobile/kds/kds-03.jpg",
-      "/portfolio/madmobile/kds/kds-04.jpg",
-      "/portfolio/madmobile/kds/kds-05.jpg"
-    ],
-    "tech": ["React", "Redux", "SCSS", "Axios", "CouchDB", "ES6", "HTML5"],
-    "url": "https://abhimax.github.io/",
-    "company": "madmobile"
-  },
-  {
-    "title": "Cake POS ( Restaurant Point of Sale System )",
-    "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
-    "images": [
-      "/portfolio/syscolabs/pos/pos-1.png",
-      "/portfolio/syscolabs/pos/pos-2.png",
-      "/portfolio/syscolabs/pos/pos-3.png",
-      "/portfolio/syscolabs/pos/pos-4.png",
-      "/portfolio/syscolabs/pos/pos-5.png"
-    ],
-    "tech": [
-      "React",
-      "Redux",
-      "SCSS",
-      "Axios",
-      "CouchDB",
-      "ES6",
-      "HTML5",
-      "Compass"
-    ],
-    "url": "https://abhimax.github.io/",
-    "company": "syscoLabs"
-  },
-  {
-    "title": "CAKE Online Ordering System (OLO)",
-    "description": "CAKE Online Ordering creates a new revenue stream for restaurants, enhancing online presence and eliminating third-party fees. Customers can order ahead via mobile or desktop, schedule orders, and enjoy seamless POS integration, reducing errors with a single menu. The platform allows custom branding and dish images, offers contactless payments with Apple Pay, Google Pay, and credit card options, and provides hassle-free curbside management with two-way text communication. My role involved developing web interfaces, native iOS views for onboarding, testing UI flows on iPad, creating UI test cases for React Storybook, and wireframing new features.",
-    "images": [
-      "/portfolio/syscolabs/olo/olo-1.png",
-      "/portfolio/syscolabs/olo/olo-2.png",
-      "/portfolio/syscolabs/olo/olo-3.png"
-    ],
-    "tech": [
-      "React",
-      "Redux",
-      "Node",
-      "Webpack",
-      "ES6",
-      "HTML5",
-      "Styled-components",
-      "SVG"
-    ],
-    "url": "https://demo-ecommerce.com/",
-    "company": "syscoLabs"
-  },
-  {
-    "title": "CAKE Online Ordering System (OLO)",
-    "description": "CAKE Online Ordering creates a new revenue stream for restaurants, enhancing online presence and eliminating third-party fees. Customers can order ahead via mobile or desktop, schedule orders, and enjoy seamless POS integration, reducing errors with a single menu. The platform allows custom branding and dish images, offers contactless payments with Apple Pay, Google Pay, and credit card options, and provides hassle-free curbside management with two-way text communication. My role involved developing web interfaces, native iOS views for onboarding, testing UI flows on iPad, creating UI test cases for React Storybook, and wireframing new features.",
-    "images": [
-      "/portfolio/syscolabs/olo/olo-1.png",
-      "/portfolio/syscolabs/olo/olo-2.png",
-      "/portfolio/syscolabs/olo/olo-3.png"
-    ],
-    "tech": [
-      "React",
-      "Redux",
-      "Node",
-      "Webpack",
-      "ES6",
-      "HTML5",
-      "Styled-components",
-      "SVG"
-    ],
-    "url": "https://demo-ecommerce.com/",
-    "company": "madmobile"
-  },
-  {
-    "title": "SyscoLabs Website",
-    "description": "We developed SyscoLabs Sri Lanka's official website using React and the latest web technologies. The design was provided, and we ensured the development aligned with the UX, focusing on responsive design, performance, and user-friendly navigation. Seamless UX: Translated the design into an intuitive, responsive site. React Development: Built with React for performance and dynamic interactions. Optimized Performance: Fast load times and responsive layouts for better usability. Custom Features: Tailored features to meet SyscoLabs' needs.",
-    "images": [
-      "/portfolio/syscolabs/web/web-1.png",
-      "/portfolio/syscolabs/web/web-2.png",
-      "/portfolio/syscolabs/web/web-3.png",
-      "/portfolio/syscolabs/web/web-4.png"
-    ],
-    "tech": ["React", "JavaScript", "HTML5", "SASS"],
-    "url": "https://weather-demo.com/",
-    "company": "syscoLabs"
-  },
-  {
-    "title": "Multplx Website",
-    "description": "A productivity tool for managing daily tasks, deadlines, and reminders.",
-    "images": [
-      "/portfolio/multplx/web/home-1.png",
-      "/portfolio/multplx/web/product-2.png",
-      "/portfolio/multplx/web/customers-3.png",
-      "/portfolio/multplx/web/contact-us-4.png"
-    ],
-    "tech": ["React", "Redux", "Firebase"],
-    "url": "https://tasks-demo.com/",
-    "company": "multplx"
-  },
-  {
-    "title": "Zipit",
-    "description": "A full-featured blogging platform with markdown support and user authentication.",
-    "images": ["/portfolio/multplx/zipit/zip-it.png"],
-    "tech": ["Next.js", "MongoDB", "TailwindCSS"],
-    "url": "https://blog-demo.com/",
-    "company": "multplx"
-  },
-  {
-    "title": "Frontend Development of ATM Machines",
-    "description": "ATM frontend and UI development using web development technologies for various client banks. I have worked on many Sri Lankan bank ATM frontend development projects, including Sampath Bank, Seylan Bank, NSB, BOC, MCB, NTB, and Union Bank. Developed various ATM screens using ActionScript and created themes for online banking sites with CSS, jQuery, Ajax, and XSLT. Also worked on some foreign banks, especially in the Philippines, Cambodia, and Bangladesh.",
-    "images": ["/portfolio/interblocks/ATM.png"],
-    "tech": [
-      "JavaScript",
-      "ActionScript",
-      "HTML5",
-      "Ajax",
-      "CSS",
-      "jQuery",
-      "XSLT"
-    ],
-    "url": "",
-    "company": "interblocks"
-  },
-  {
-    "title": "Online Banking Web Application Development",
-    "description": "I have played a key role in the frontend development of several online banking web applications, leveraging JSP technologies alongside JavaScript, Ajax, CSS, and XHTML. My contributions include designing and implementing responsive, user-friendly interfaces, optimizing page performance, and ensuring seamless integration with backend services. I have worked closely with cross-functional teams to deliver intuitive and secure digital banking experiences, enhancing usability and customer satisfaction.",
-    "images": ["/portfolio/interblocks/sampath-online.png"],
-    "tech": ["Java & JSP", "JavaScript", "Ajax", "CSS", "XHTML"],
-    "url": "",
-    "company": "interblocks"
-  },
-  {
-    "title": "End-to-End Architecture and Automation for Component Libraries",
-    "description": "In this project, I was involved with requirement gathering and problem solving. I directly worked with the design system architecture team as a middle layer between the design team and dev teams. Responsibilities included making the component library architecture, selecting technology and tools, automating the release process, automating release notes, automating release note Slack alerts, handling unit and integration testing, improving bundle size and performance optimization, automated Figma to GitHub design token syncing, and automated static Storybook version hosting with each library release.",
-    "images": ["/portfolio/99x/component-lib.png"],
-    "tech": [
-      "React",
-      "TypeScript",
-      "Rollup",
-      "SASS",
-      "Storybook",
-      "GitHub Actions",
-      "AWS CodeArtifact",
-      "S3",
-      "semantic-release",
-      "Radix UI",
-      "CSS",
-      "Vitest"
-    ],
-    "url": "",
-    "company": "99x"
-  },
-  {
-    "title": "Architecting and Implementing Microfrontends for Scalable Applications",
-    "description": "In this project, I led the design and development of a scalable microfrontend architecture for our client. My role involved making key architectural decisions and guiding the implementation of microfrontends across multiple applications. We created a proof of concept (POC) and researched various technologies like React, Next.js, Webpack Module Federation, and Plugin Federation to determine the best solutions for the microfrontend framework. I also developed strategies for shared state management, secure authentication, and protected routes. Through testing different deployment strategies and frameworks, we successfully delivered a robust and scalable microfrontend architecture that met the client's needs.",
-    "images": ["/portfolio/99x/micro-frontend.png"],
-    "tech": ["React", "TypeScript", "Webpack", "AWS", "CSS", "Vitest"],
-    "url": "",
-    "company": "99x"
-  },
-  {
-    "title": "Full-Stack Serverless Medical Scheduling Application with Real-Time Syncing",
-    "description": "In this project, I developed a serverless medical scheduling application that efficiently manages appointments for doctors, back-office staff, and patients. The app is built on a serverless architecture, leveraging AWS services for scalability and cost efficiency. The core feature of the application is the advanced scheduling functionality, built on React Big Calendar with custom features like filtering, custom layouts, sorting, and interactive drag-and-drop elements. These enhancements were custom-implemented on top of React Scheduler to meet client-specific requirements.\n\nA key part of this project was using GraphQL for creating flexible APIs and handling real-time updates. By implementing GraphQL subscriptions, the application supports real-time syncing between the front-end and back-end, ensuring that appointment data is instantly reflected across all connected users without manual refreshes.\n\nAs the full-stack developer, I handled both the front-end and back-end. The back-end services are entirely serverless, utilizing AWS services like AppSync for GraphQL, DynamoDB for data storage, and CloudWatch for monitoring. The front-end was built with React and TypeScript, styled with SASS and CSS, and hosted through a CDN for fast and reliable access.",
-    "images": ["/portfolio/99x/rcb-scheduler.png"],
-    "tech": [
-      "React",
-      "TypeScript",
-      "SASS",
-      "CSS",
-      "Serverless Architecture",
-      "GraphQL",
-      "AWS AppSync",
-      "AWS DynamoDB",
-      "AWS CloudWatch",
-      "CDN"
-    ],
-    "url": "",
-    "company": "99x"
-  },
-  {
-    "title": "Jawbone Kiosk Microsite",
-    "description": "Front end Development and UI designing of Jawbone micro-site Samsung galaxy note 10.1 Devices.",
-    "images": [
-      "/portfolio/multplx/jambox/jambox-01.png",
-      "/portfolio/multplx/jambox/jambox-02.png",
-      "/portfolio/multplx/jambox/jambox-03.png",
-      "/portfolio/multplx/jambox/jambox-04.png",
-      "/portfolio/multplx/jambox/jambox-05.png",
-      "/portfolio/multplx/jambox/jambox-06.png",
-      "/portfolio/multplx/jambox/jambox-07.png",
-      "/portfolio/multplx/jambox/jambox-08.png",
-      "/portfolio/multplx/jambox/jambox-09.png",
-      "/portfolio/multplx/jambox/jambox-10.png"
-    ],
-    "tech": ["jQuery", "iDangero Swiper API"],
-    "company": "multplx"
-  },
-  {
-    "title": "Jabra Kiosk Microsite",
-    "description": "Front end Development and UI designing of Jawbone micro-site Samsung galaxy note 10.1 Devices.",
-    "images": [
-      "/portfolio/multplx/ixion/01-ixion.jpeg",
-      "/portfolio/multplx/ixion/02-ixion.jpeg",
-      "/portfolio/multplx/ixion/03-ixion.jpeg",
-      "/portfolio/multplx/ixion/04-ixion.jpeg",
-      "/portfolio/multplx/ixion/05-ixion.jpeg"
-    ],
-    "tech": ["jQuery", "iDangero Swiper API"],
-    "company": "multplx"
-  },
-  {
-    "title": "Glaze-ui ( React-based Component Library )",
-    "description": "Glaze-ui offers a comprehensive suite of UI components to help clients ship new features faster. This React-based component library provides production-ready components for React applications, delivering consistent UIs across projects and enabling faster delivery. My Role: Develop components; create React Storybook views to test component states; publish to npm and maintain release documentation.",
-    "images": [
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-1.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-2.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-3.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-4.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-5.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-6.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-7.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-8.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-9.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-10.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-11.jpg",
-      "/portfolio/syscolabs/glaze-ui/glaze-ui-12.jpg"
-    ],
-    "tech": ["React", "Babel", "Webpack", "Storybook", "JSX", "ES6", "SCSS"],
-    "company": "syscoLabs"
-  },
-  {
-    "title": "Cloud-Native Healthcare Multi-tenant SaaS Platform",
-    "description": "Contributed to the design and implementation of serverless solutions within the enterprise architecture team. Worked on defining engineering standards and best practices for software development. Assisted in the design and implementation of CI/CD pipelines using GitHub Actions. Collaborated on development for cloud-native architecture and best practices. Played a key role in driving innovation and adoption of serverless technologies within the project.",
-    "images": ["/portfolio/99x/multi-tenant-saas.webp"],
-    "tech": [
-      "TypeScript",
-      "ReactJS",
-      "NodeJS",
-      "GraphQL",
-      "PostgreSQL",
-      "AWS Lambda",
-      "API Gateway",
-      "DynamoDB",
-      "EventBridge",
-      "CloudFormation",
-      "AppSync",
-      "Cognito"
-    ],
-    "url": "",
-    "company": "99x"
+{
+  "portfolio": [
+    {
+      "title": "Cake POS V2 ( Restaurant Point of Sale System )",
+      "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
+      "images": [
+        "/portfolio/madmobile/pos/cake-pos-1.png",
+        "/portfolio/madmobile/pos/cake-pos-2.png",
+        "/portfolio/madmobile/pos/cake-pos-3.png"
+      ],
+      "tech": ["React", "Redux", "SCSS", "Axios", "CouchDB", "ES6", "HTML5"],
+      "url": "https://abhimax.github.io/",
+      "company": "madmobile"
+    },
+    {
+      "title": "Cake KDS (Kitchen display system)",
+      "description": "CAKE’s Kitchen Display System (KDS) connects directly to your POS, giving your BOH staff ultimate visibility for order management.- Connect directly to CAKE POS and send orders to kitchen staff in seconds.\n- Whether dine-in, online, or take-out, route orders to the right stations in your kitchen.\n- Servers are notified when orders are hot and ready, delivering the best experience possible.",
+      "images": [
+        "/portfolio/madmobile/kds/kds-01.jpg",
+        "/portfolio/madmobile/kds/kds-02.jpg",
+        "/portfolio/madmobile/kds/kds-03.jpg",
+        "/portfolio/madmobile/kds/kds-04.jpg",
+        "/portfolio/madmobile/kds/kds-05.jpg"
+      ],
+      "tech": ["React", "Redux", "SCSS", "Axios", "CouchDB", "ES6", "HTML5"],
+      "url": "https://abhimax.github.io/",
+      "company": "madmobile"
+    },
+    {
+      "title": "Cake POS ( Restaurant Point of Sale System )",
+      "description": "Integrated online ordering, curbside management, reservations, and more. Simplify operations, quickly edit menus, and manage orders with ease. Automate time tracking, payroll, and tip sharing for seamless staff management. Role: Develop UI component libraries and user interfaces; perform structural and visual testing; create views for testing in React Storybook; wireframe and design mockups for new features.",
+      "images": [
+        "/portfolio/syscolabs/pos/pos-1.png",
+        "/portfolio/syscolabs/pos/pos-2.png",
+        "/portfolio/syscolabs/pos/pos-3.png",
+        "/portfolio/syscolabs/pos/pos-4.png",
+        "/portfolio/syscolabs/pos/pos-5.png"
+      ],
+      "tech": [
+        "React",
+        "Redux",
+        "SCSS",
+        "Axios",
+        "CouchDB",
+        "ES6",
+        "HTML5",
+        "Compass"
+      ],
+      "url": "https://abhimax.github.io/",
+      "company": "syscoLabs"
+    },
+    {
+      "title": "CAKE Online Ordering System (OLO)",
+      "description": "CAKE Online Ordering creates a new revenue stream for restaurants, enhancing online presence and eliminating third-party fees. Customers can order ahead via mobile or desktop, schedule orders, and enjoy seamless POS integration, reducing errors with a single menu. The platform allows custom branding and dish images, offers contactless payments with Apple Pay, Google Pay, and credit card options, and provides hassle-free curbside management with two-way text communication. My role involved developing web interfaces, native iOS views for onboarding, testing UI flows on iPad, creating UI test cases for React Storybook, and wireframing new features.",
+      "images": [
+        "/portfolio/syscolabs/olo/olo-1.png",
+        "/portfolio/syscolabs/olo/olo-2.png",
+        "/portfolio/syscolabs/olo/olo-3.png"
+      ],
+      "tech": [
+        "React",
+        "Redux",
+        "Node",
+        "Webpack",
+        "ES6",
+        "HTML5",
+        "Styled-components",
+        "SVG"
+      ],
+      "url": "https://demo-ecommerce.com/",
+      "company": "syscoLabs"
+    },
+    {
+      "title": "CAKE Online Ordering System (OLO)",
+      "description": "CAKE Online Ordering creates a new revenue stream for restaurants, enhancing online presence and eliminating third-party fees. Customers can order ahead via mobile or desktop, schedule orders, and enjoy seamless POS integration, reducing errors with a single menu. The platform allows custom branding and dish images, offers contactless payments with Apple Pay, Google Pay, and credit card options, and provides hassle-free curbside management with two-way text communication. My role involved developing web interfaces, native iOS views for onboarding, testing UI flows on iPad, creating UI test cases for React Storybook, and wireframing new features.",
+      "images": [
+        "/portfolio/syscolabs/olo/olo-1.png",
+        "/portfolio/syscolabs/olo/olo-2.png",
+        "/portfolio/syscolabs/olo/olo-3.png"
+      ],
+      "tech": [
+        "React",
+        "Redux",
+        "Node",
+        "Webpack",
+        "ES6",
+        "HTML5",
+        "Styled-components",
+        "SVG"
+      ],
+      "url": "https://demo-ecommerce.com/",
+      "company": "madmobile"
+    },
+    {
+      "title": "SyscoLabs Website",
+      "description": "We developed SyscoLabs Sri Lanka's official website using React and the latest web technologies. The design was provided, and we ensured the development aligned with the UX, focusing on responsive design, performance, and user-friendly navigation. Seamless UX: Translated the design into an intuitive, responsive site. React Development: Built with React for performance and dynamic interactions. Optimized Performance: Fast load times and responsive layouts for better usability. Custom Features: Tailored features to meet SyscoLabs' needs.",
+      "images": [
+        "/portfolio/syscolabs/web/web-1.png",
+        "/portfolio/syscolabs/web/web-2.png",
+        "/portfolio/syscolabs/web/web-3.png",
+        "/portfolio/syscolabs/web/web-4.png"
+      ],
+      "tech": ["React", "JavaScript", "HTML5", "SASS"],
+      "url": "https://weather-demo.com/",
+      "company": "syscoLabs"
+    },
+    {
+      "title": "Multplx Website",
+      "description": "A productivity tool for managing daily tasks, deadlines, and reminders.",
+      "images": [
+        "/portfolio/multplx/web/home-1.png",
+        "/portfolio/multplx/web/product-2.png",
+        "/portfolio/multplx/web/customers-3.png",
+        "/portfolio/multplx/web/contact-us-4.png"
+      ],
+      "tech": ["React", "Redux", "Firebase"],
+      "url": "https://tasks-demo.com/",
+      "company": "multplx"
+    },
+    {
+      "title": "Zipit",
+      "description": "A full-featured blogging platform with markdown support and user authentication.",
+      "images": ["/portfolio/multplx/zipit/zip-it.png"],
+      "tech": ["Next.js", "MongoDB", "TailwindCSS"],
+      "url": "https://blog-demo.com/",
+      "company": "multplx"
+    },
+    {
+      "title": "Frontend Development of ATM Machines",
+      "description": "ATM frontend and UI development using web development technologies for various client banks. I have worked on many Sri Lankan bank ATM frontend development projects, including Sampath Bank, Seylan Bank, NSB, BOC, MCB, NTB, and Union Bank. Developed various ATM screens using ActionScript and created themes for online banking sites with CSS, jQuery, Ajax, and XSLT. Also worked on some foreign banks, especially in the Philippines, Cambodia, and Bangladesh.",
+      "images": ["/portfolio/interblocks/ATM.png"],
+      "tech": [
+        "JavaScript",
+        "ActionScript",
+        "HTML5",
+        "Ajax",
+        "CSS",
+        "jQuery",
+        "XSLT"
+      ],
+      "url": "",
+      "company": "interblocks"
+    },
+    {
+      "title": "Online Banking Web Application Development",
+      "description": "I have played a key role in the frontend development of several online banking web applications, leveraging JSP technologies alongside JavaScript, Ajax, CSS, and XHTML. My contributions include designing and implementing responsive, user-friendly interfaces, optimizing page performance, and ensuring seamless integration with backend services. I have worked closely with cross-functional teams to deliver intuitive and secure digital banking experiences, enhancing usability and customer satisfaction.",
+      "images": ["/portfolio/interblocks/sampath-online.png"],
+      "tech": ["Java & JSP", "JavaScript", "Ajax", "CSS", "XHTML"],
+      "url": "",
+      "company": "interblocks"
+    },
+    {
+      "title": "End-to-End Architecture and Automation for Component Libraries",
+      "description": "In this project, I was involved with requirement gathering and problem solving. I directly worked with the design system architecture team as a middle layer between the design team and dev teams. Responsibilities included making the component library architecture, selecting technology and tools, automating the release process, automating release notes, automating release note Slack alerts, handling unit and integration testing, improving bundle size and performance optimization, automated Figma to GitHub design token syncing, and automated static Storybook version hosting with each library release.",
+      "images": ["/portfolio/99x/component-lib.png"],
+      "tech": [
+        "React",
+        "TypeScript",
+        "Rollup",
+        "SASS",
+        "Storybook",
+        "GitHub Actions",
+        "AWS CodeArtifact",
+        "S3",
+        "semantic-release",
+        "Radix UI",
+        "CSS",
+        "Vitest"
+      ],
+      "url": "",
+      "company": "99x"
+    },
+    {
+      "title": "Architecting and Implementing Microfrontends for Scalable Applications",
+      "description": "In this project, I led the design and development of a scalable microfrontend architecture for our client. My role involved making key architectural decisions and guiding the implementation of microfrontends across multiple applications. We created a proof of concept (POC) and researched various technologies like React, Next.js, Webpack Module Federation, and Plugin Federation to determine the best solutions for the microfrontend framework. I also developed strategies for shared state management, secure authentication, and protected routes. Through testing different deployment strategies and frameworks, we successfully delivered a robust and scalable microfrontend architecture that met the client's needs.",
+      "images": ["/portfolio/99x/micro-frontend.png"],
+      "tech": ["React", "TypeScript", "Webpack", "AWS", "CSS", "Vitest"],
+      "url": "",
+      "company": "99x"
+    },
+    {
+      "title": "Full-Stack Serverless Medical Scheduling Application with Real-Time Syncing",
+      "description": "In this project, I developed a serverless medical scheduling application that efficiently manages appointments for doctors, back-office staff, and patients. The app is built on a serverless architecture, leveraging AWS services for scalability and cost efficiency. The core feature of the application is the advanced scheduling functionality, built on React Big Calendar with custom features like filtering, custom layouts, sorting, and interactive drag-and-drop elements. These enhancements were custom-implemented on top of React Scheduler to meet client-specific requirements.\n\nA key part of this project was using GraphQL for creating flexible APIs and handling real-time updates. By implementing GraphQL subscriptions, the application supports real-time syncing between the front-end and back-end, ensuring that appointment data is instantly reflected across all connected users without manual refreshes.\n\nAs the full-stack developer, I handled both the front-end and back-end. The back-end services are entirely serverless, utilizing AWS services like AppSync for GraphQL, DynamoDB for data storage, and CloudWatch for monitoring. The front-end was built with React and TypeScript, styled with SASS and CSS, and hosted through a CDN for fast and reliable access.",
+      "images": ["/portfolio/99x/rcb-scheduler.png"],
+      "tech": [
+        "React",
+        "TypeScript",
+        "SASS",
+        "CSS",
+        "Serverless Architecture",
+        "GraphQL",
+        "AWS AppSync",
+        "AWS DynamoDB",
+        "AWS CloudWatch",
+        "CDN"
+      ],
+      "url": "",
+      "company": "99x"
+    },
+    {
+      "title": "Jawbone Kiosk Microsite",
+      "description": "Front end Development and UI designing of Jawbone micro-site Samsung galaxy note 10.1 Devices.",
+      "images": [
+        "/portfolio/multplx/jambox/jambox-01.png",
+        "/portfolio/multplx/jambox/jambox-02.png",
+        "/portfolio/multplx/jambox/jambox-03.png",
+        "/portfolio/multplx/jambox/jambox-04.png",
+        "/portfolio/multplx/jambox/jambox-05.png",
+        "/portfolio/multplx/jambox/jambox-06.png",
+        "/portfolio/multplx/jambox/jambox-07.png",
+        "/portfolio/multplx/jambox/jambox-08.png",
+        "/portfolio/multplx/jambox/jambox-09.png",
+        "/portfolio/multplx/jambox/jambox-10.png"
+      ],
+      "tech": ["jQuery", "iDangero Swiper API"],
+      "company": "multplx"
+    },
+    {
+      "title": "Jabra Kiosk Microsite",
+      "description": "Front end Development and UI designing of Jawbone micro-site Samsung galaxy note 10.1 Devices.",
+      "images": [
+        "/portfolio/multplx/ixion/01-ixion.jpeg",
+        "/portfolio/multplx/ixion/02-ixion.jpeg",
+        "/portfolio/multplx/ixion/03-ixion.jpeg",
+        "/portfolio/multplx/ixion/04-ixion.jpeg",
+        "/portfolio/multplx/ixion/05-ixion.jpeg"
+      ],
+      "tech": ["jQuery", "iDangero Swiper API"],
+      "company": "multplx"
+    },
+    {
+      "title": "Glaze-ui ( React-based Component Library )",
+      "description": "Glaze-ui offers a comprehensive suite of UI components to help clients ship new features faster. This React-based component library provides production-ready components for React applications, delivering consistent UIs across projects and enabling faster delivery. My Role: Develop components; create React Storybook views to test component states; publish to npm and maintain release documentation.",
+      "images": [
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-1.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-2.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-3.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-4.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-5.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-6.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-7.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-8.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-9.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-10.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-11.jpg",
+        "/portfolio/syscolabs/glaze-ui/glaze-ui-12.jpg"
+      ],
+      "tech": ["React", "Babel", "Webpack", "Storybook", "JSX", "ES6", "SCSS"],
+      "company": "syscoLabs"
+    },
+    {
+      "title": "Cloud-Native Healthcare Multi-tenant SaaS Platform",
+      "description": "Contributed to the design and implementation of serverless solutions within the enterprise architecture team. Worked on defining engineering standards and best practices for software development. Assisted in the design and implementation of CI/CD pipelines using GitHub Actions. Collaborated on development for cloud-native architecture and best practices. Played a key role in driving innovation and adoption of serverless technologies within the project.",
+      "images": ["/portfolio/99x/multi-tenant-saas.webp"],
+      "tech": [
+        "TypeScript",
+        "ReactJS",
+        "NodeJS",
+        "GraphQL",
+        "PostgreSQL",
+        "AWS Lambda",
+        "API Gateway",
+        "DynamoDB",
+        "EventBridge",
+        "CloudFormation",
+        "AppSync",
+        "Cognito"
+      ],
+      "url": "",
+      "company": "99x"
+    }
+  ],
+  "companyDurations": {
+    "all": "October 2010 - Present",
+    "interblocks": "2010 FEB - 2012 JUN",
+    "multplx": "2012 JUL - 2014 MAR",
+    "syscoLabs": "2014 APR - 2023 MAR",
+    "madmobile": "2020 APR - 2023 NOV",
+    "99x": "2023 DEC - Present"
   }
-]
+}
