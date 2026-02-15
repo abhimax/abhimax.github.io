@@ -14,6 +14,15 @@ const companies = [
   "99x",
 ];
 
+const companyDurations = {
+  all: "2010 FEB - Present",
+  interblocks: "2010 FEB - 2012 JUN",
+  multplx: "2012 JUL - 2014 APR",
+  syscoLabs: "2014 MAY - 2021 DEC",
+  madmobile: "2022 JAN - 2023 NOV",
+  "99x": "2023 DEC - Present",
+};
+
 const PortfolioCard = ({ project, onClick }) => {
   const imageSettings = {
     dots: true,
@@ -150,8 +159,9 @@ const Portfolio = () => {
 
   const filteredData =
     filter === "all"
-      ? portfolioData
-      : portfolioData.filter((item) => item.company === filter);
+      ? portfolioData?.portfolio || []
+      : portfolioData?.portfolio?.filter((item) => item.company === filter) ||
+        [];
 
   return (
     <div className="portfolio">
@@ -169,6 +179,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
+      <p className="portfolioDuration">{companyDurations[filter]}</p>
       <Slider {...settings} className="portfolioGrid">
         {filteredData.map((project, idx) => (
           <PortfolioCard
