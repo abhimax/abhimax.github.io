@@ -4,27 +4,27 @@
       "category": "Top Development Skills",
       "skills": [
         { "name": "React", "level": 95 },
-        { "name": "JavaScript", "level": 90 },
-        { "name": "TypeScript", "level": 85 },
+        { "name": "JavaScript", "level": 95 },
+        { "name": "TypeScript", "level": 95 },
         { "name": "HTML/CSS/SCSS/Tailwind", "level": 95 },
-        { "name": "Next.js", "level": 70 },
+        { "name": "Next.js", "level": 75 },
         { "name": "Design Systems / Component Libraries", "level": 95 },
-        { "name": "Micro-Frontend", "level": 90 },
+        { "name": "Micro-Frontend", "level": 95 },
         { "name": "Storybook", "level": 95 },
         { "name": "Node.js", "level": 70 },
         { "name": "Express.js", "level": 60 },
-        { "name": "GraphQL", "level": 70 },
-        { "name": "CI/CD", "level": 70 }
+        { "name": "GraphQL", "level": 85 },
+        { "name": "CI/CD", "level": 75 }
       ]
     },
     {
       "category": "Tools & Others",
       "skills": [
-        { "name": "Git", "level": 90 },
+        { "name": "Git", "level": 95 },
         { "name": "Docker", "level": 60 },
         { "name": "AWS", "level": 60 },
-        { "name": "Figma", "level": 90 },
-        { "name": "Jest/ Vitest", "level": 90 }
+        { "name": "Figma", "level": 95 },
+        { "name": "Jest/ Vitest", "level": 95 }
       ]
     }
   ],
