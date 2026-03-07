@@ -269,9 +269,16 @@
 
 .portfolioFilterTabs {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next row */
+    gap: 10px;
+    /* Add spacing between items */
     justify-content: center;
+    /* Center items in the container */
+    padding: 10px;
+    /* Add padding to prevent cutting off */
+    scrollbar-width: thin;
+    /* For Firefox */
 }
 
 .portfolioFilterBtn {
@@ -311,6 +318,8 @@
 .portfolioDescClamp {
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
+    /* Standard property */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
