@@ -143,8 +143,22 @@ const Portfolio = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: windowWidth >= 1280 ? 4 : windowWidth >= 900 ? 3 : windowWidth >= 600 ? 2 : 1,
-    slidesToScroll: windowWidth >= 1280 ? 4 : windowWidth >= 900 ? 3 : windowWidth >= 600 ? 2 : 1,
+    slidesToShow:
+      windowWidth >= 1280
+        ? 4
+        : windowWidth >= 900
+          ? 3
+          : windowWidth >= 600
+            ? 2
+            : 1,
+    slidesToScroll:
+      windowWidth >= 1280
+        ? 4
+        : windowWidth >= 900
+          ? 3
+          : windowWidth >= 600
+            ? 2
+            : 1,
     rows: windowWidth >= 600 ? 2 : 1,
     slidesPerRow: 1,
     responsive: [
