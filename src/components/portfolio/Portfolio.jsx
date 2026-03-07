@@ -139,6 +139,25 @@ const Portfolio = () => {
     };
   }, []);
 
+  const companyOrder = [
+    "99x",
+    "madmobile",
+    "syscoLabs",
+    "multplx",
+    "interblocks",
+  ];
+
+  const sortedPortfolioData = (portfolioData?.portfolio || []).sort((a, b) => {
+    const indexA = companyOrder.indexOf(a.company);
+    const indexB = companyOrder.indexOf(b.company);
+    return indexA - indexB;
+  });
+
+  const filteredData =
+    filter === "all"
+      ? sortedPortfolioData
+      : sortedPortfolioData.filter((item) => item.company === filter);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -188,12 +207,6 @@ const Portfolio = () => {
       },
     ],
   };
-
-  const filteredData =
-    filter === "all"
-      ? portfolioData?.portfolio || []
-      : portfolioData?.portfolio?.filter((item) => item.company === filter) ||
-        [];
 
   return (
     <div className="portfolio">
