@@ -12,12 +12,11 @@ const Speech = () => {
         <TypeAnimation
           sequence={[
             1000,
-            "I’m a seasoned Frontend Engineer with technical expertise and creative flair, specializing in React.",
+            "Experienced Frontend Engineer with full-stack capabilities, specializing in React and serverless architecture.",
             1000,
             "I’m an expert at Micro Frontends, component libraries, and developing complex, high-quality UIs.",
             1000,
-            ,
-            "I'm a Technical Writer and AWS enthusiast, with a passion for AI and cloud technologies.",
+            "I’m a Technical Writer and serverless enthusiast, passionate about AI and cloud technologies.",
             1000,
           ]}
           wrapper="span"
