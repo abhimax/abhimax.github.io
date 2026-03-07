@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import portfolioData from "../../data/portfolio.json";
 import "slick-carousel/slick/slick.css";
@@ -120,14 +120,32 @@ const PortfolioModal = ({ project, onClose }) => {
 const Portfolio = () => {
   const [filter, setFilter] = useState("all");
   const [modalProject, setModalProject] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Trigger a re-render on load to ensure responsive settings are applied
+    handleResize();
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    rows: 2,
+    slidesToShow: windowWidth >= 1280 ? 4 : windowWidth >= 900 ? 3 : windowWidth >= 600 ? 2 : 1,
+    slidesToScroll: windowWidth >= 1280 ? 4 : windowWidth >= 900 ? 3 : windowWidth >= 600 ? 2 : 1,
+    rows: windowWidth >= 600 ? 2 : 1,
     slidesPerRow: 1,
     responsive: [
       {
