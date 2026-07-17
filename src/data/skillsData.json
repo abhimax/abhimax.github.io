@@ -12,7 +12,7 @@
         { "name": "Micro-Frontend", "level": 95 },
         { "name": "Storybook", "level": 95 },
         { "name": "Node.js", "level": 70 },
-        { "name": "Express.js", "level": 60 },
+        { "name": "Express.js", "level": 75 },
         { "name": "GraphQL", "level": 85 },
         { "name": "CI/CD", "level": 75 }
       ]
@@ -21,8 +21,8 @@
       "category": "Tools & Others",
       "skills": [
         { "name": "Git", "level": 95 },
-        { "name": "Docker", "level": 60 },
-        { "name": "AWS", "level": 60 },
+        { "name": "Docker", "level": 75 },
+        { "name": "AWS", "level": 75 },
         { "name": "Figma", "level": 95 },
         { "name": "Jest/ Vitest", "level": 95 }
       ]
