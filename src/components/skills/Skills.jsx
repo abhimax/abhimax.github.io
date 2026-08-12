@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import "./skills.scss";
 
 const Skills = () => {
-  const { skillCategories, otherSkills } = skillsData;
+  const { skillCategories, otherSkills = [] } = skillsData;
 
   return (
     <div className="skills">
@@ -54,27 +54,29 @@ const Skills = () => {
             ))}
           </div>
 
-          <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="otherSkills"
-          >
-            <h3>Additional Skills</h3>
-            <div className="skillTags">
-              {otherSkills.map((skill, index) => (
-                <motion.span
-                  key={index}
-                  initial={{ scale: 0, opacity: 0 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="skillTag"
-                >
-                  {skill}
-                </motion.span>
-              ))}
-            </div>
-          </motion.div>
+          {otherSkills.length > 0 && (
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="otherSkills"
+            >
+              <h3>Additional Skills</h3>
+              <div className="skillTags">
+                {otherSkills.map((skill, index) => (
+                  <motion.span
+                    key={index}
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="skillTag"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+          )}
         </div>
       </div>
     </div>
