@@ -1,51 +1,73 @@
 {
   "skillCategories": [
     {
-      "category": "Top Development Skills",
+      "id": "01",
+      "category": "Frontend Engineering",
       "skills": [
         { "name": "React", "level": 95 },
-        { "name": "JavaScript", "level": 95 },
         { "name": "TypeScript", "level": 95 },
-        { "name": "HTML/CSS/SCSS/Tailwind", "level": 95 },
         { "name": "Next.js", "level": 75 },
-        { "name": "Design Systems / Component Libraries", "level": 95 },
-        { "name": "Micro-Frontend", "level": 95 },
+        { "name": "JavaScript", "level": 95 },
+        { "name": "Micro-frontends", "level": 95 },
         { "name": "Storybook", "level": 95 },
-        { "name": "Node.js", "level": 70 },
-        { "name": "Express.js", "level": 75 },
-        { "name": "GraphQL", "level": 85 },
-        { "name": "CI/CD", "level": 75 }
+        { "name": "State Management", "level": 90 }
       ]
     },
     {
-      "category": "Tools & Others",
+      "id": "02",
+      "category": "UI Engineering & Design Systems",
       "skills": [
-        { "name": "Git", "level": 95 },
-        { "name": "Docker", "level": 75 },
-        { "name": "AWS", "level": 75 },
+        { "name": "Design Systems", "level": 95 },
+        { "name": "Component Libraries", "level": 95 },
         { "name": "Figma", "level": 95 },
-        { "name": "Jest/ Vitest", "level": 95 }
+        { "name": "Accessibility", "level": 90 },
+        { "name": "Responsive UI", "level": 95 },
+        { "name": "UI/UX Design", "level": 90 },
+        { "name": "HTML/CSS/SCSS/Tailwind", "level": 95 }
+      ]
+    },
+    {
+      "id": "03",
+      "category": "Backend & APIs",
+      "skills": [
+        { "name": "Node.js", "level": 70 },
+        { "name": "Express.js", "level": 75 },
+        { "name": "REST APIs", "level": 85 },
+        { "name": "GraphQL", "level": 85 },
+        { "name": "Authentication", "level": 80 },
+        { "name": "API Integration", "level": 85 }
+      ]
+    },
+    {
+      "id": "04",
+      "category": "Testing & Quality",
+      "skills": [
+        { "name": "Jest", "level": 95 },
+        { "name": "Vitest", "level": 90 },
+        { "name": "React Testing Library", "level": 90 },
+        { "name": "Cypress", "level": 75 },
+        { "name": "k6", "level": 70 },
+        { "name": "Lighthouse", "level": 85 },
+        { "name": "Performance Optimization", "level": 85 }
+      ]
+    },
+    {
+      "id": "05",
+      "category": "Cloud & Delivery",
+      "skills": [
+        { "name": "AWS", "level": 75 },
+        { "name": "Docker", "level": 75 },
+        { "name": "CI/CD", "level": 75 },
+        { "name": "Git", "level": 95 },
+        { "name": "Deployment", "level": 80 },
+        { "name": "DevOps", "level": 75 }
       ]
     }
   ],
   "otherSkills": [
-    "Modern JS frameworks",
-    "Responsive Design",
-    "RESTful APIs",
-    "Frontend solutions analysis",
-    "UI recommendations",
-    "Frontend evaluation",
-    "UI research",
-    "DevOps skills",
-    "GraphQL",
-    "State Management",
-    "Performance Optimization",
-    "Testing",
-    "CI/CD",
-    "Agile Methodologies",
-    "UI/UX Design",
-    "Cross-browser Compatibility",
-    "SEO",
-    "Accessibility"
+    "Leadership",
+    "UI Designing",
+    "Public Speaking",
+    "Blog Writer"
   ]
 }
