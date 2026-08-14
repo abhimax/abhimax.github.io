@@ -19,47 +19,45 @@ const Skills = () => {
         </motion.div>
 
         <div className="skillsContent">
-          <div className="skillCategories">
-            {skillCategories.map((category, categoryIndex) => (
-              <motion.div
-                key={categoryIndex}
-                initial={{ x: -100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
-                className="skillCategory"
-              >
-                <h3>{category.category}</h3>
-                <div className="skillBars">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="skillBar">
-                      <div className="skillInfo">
-                        <span className="skillName">{skill.name}</span>
-                        {/* <span className="skillLevel">{skill.level}%</span> */}
-                      </div>
-                      <div className="progressBar">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          transition={{
-                            duration: 1.5,
-                            delay: skillIndex * 0.1,
-                          }}
-                          className="progressFill"
-                        />
-                      </div>
+          {skillCategories.map((category, categoryIndex) => (
+            <motion.div
+              key={categoryIndex}
+              initial={{ x: categoryIndex % 2 === 0 ? -100 : 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
+              className={`skillCategory ${categoryIndex % 2 === 0 ? 'left' : 'right'}`}
+            >
+              <h3>{category.category}</h3>
+              <div className="skillBars">
+                {category.skills.map((skill, skillIndex) => (
+                  <div key={skillIndex} className="skillBar">
+                    <div className="skillInfo">
+                      <span className="skillName">{skill.name}</span>
+                      {/* <span className="skillLevel">{skill.level}%</span> */}
                     </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
+                    <div className="progressBar">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${skill.level}%` }}
+                        transition={{
+                          duration: 1.5,
+                          delay: skillIndex * 0.1,
+                        }}
+                        className="progressFill"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
 
           {otherSkills.length > 0 && (
             <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="otherSkills"
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, delay: skillCategories.length * 0.2 }}
+              className="otherSkills fullWidth"
             >
               <h3>Additional Skills</h3>
               <div className="skillTags">
