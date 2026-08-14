@@ -25,7 +25,7 @@ const Skills = () => {
               initial={{ x: categoryIndex % 2 === 0 ? -100 : 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
-              className={`skillCategory ${categoryIndex % 2 === 0 ? 'left' : 'right'}`}
+              className={`skillCategory ${categoryIndex % 2 === 0 ? "left" : "right"}`}
             >
               <h3>{category.category}</h3>
               <div className="skillBars">
@@ -56,7 +56,10 @@ const Skills = () => {
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.8, delay: skillCategories.length * 0.2 }}
+              transition={{
+                duration: 0.8,
+                delay: skillCategories.length * 0.2,
+              }}
               className="otherSkills fullWidth"
             >
               <h3>Additional Skills</h3>
