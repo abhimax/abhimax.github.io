@@ -43,7 +43,8 @@ const sectionRoutes = [
 
 const scrollToSectionWithOffset = (sectionId, behavior = "auto") => {
   let attempts = 0;
-  const maxAttempts = 20;
+  const maxAttempts = 30;
+  const navOffset = 80;
 
   const tryScroll = () => {
     const el = document.getElementById(sectionId);
@@ -55,7 +56,8 @@ const scrollToSectionWithOffset = (sectionId, behavior = "auto") => {
       return;
     }
 
-    el.scrollIntoView({ behavior, block: "start" });
+    const top = Math.max(el.offsetTop - navOffset, 0);
+    window.scrollTo({ top, behavior });
   };
 
   requestAnimationFrame(tryScroll);
