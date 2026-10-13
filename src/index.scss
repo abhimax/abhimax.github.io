@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 110px;
 }
 
 /* CSS Variables for theming */
@@ -81,6 +82,7 @@ section {
   padding-top: 20px;
   box-sizing: border-box;
   position: relative;
+  scroll-margin-top: 110px;
 }
 
 /* First section needs extra top padding to account for navigation height (70px) */

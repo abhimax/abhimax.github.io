@@ -1,8 +1,3 @@
-// import Hero from "./components/hero/Hero";
-// import Services from "./components/services/Services";
-import Portfolio from "./components/portfolio/Portfolio";
-// import Contact from "./components/contact/Contact";
-
 import React, { lazy, Suspense } from "react";
 import ThemeToggle from "./components/theme/ThemeToggle";
 import Navigation from "./components/navigation/Navigation";
@@ -12,38 +7,82 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 const Hero = lazy(() => import("./components/hero/Hero"));
 const Experience = lazy(() => import("./components/experience/Experience"));
 const Skills = lazy(() => import("./components/skills/Skills"));
+const Portfolio = lazy(() => import("./components/portfolio/Portfolio"));
 const Testimonials = lazy(
   () => import("./components/testimonials/Testimonials"),
 );
 const Contact = lazy(() => import("./components/contact/Contact"));
 const BlogPage = lazy(() => import("./components/blog/BlogPage"));
 
-const App = () => {
+const renderSection = (id, Component) => (
+  <section id={id}>
+    <Suspense fallback={"loading..."}>
+      <Component />
+    </Suspense>
+  </section>
+);
+
+const HomePage = () => (
+  <>
+    {renderSection("home", Hero)}
+    {renderSection("experience", Experience)}
+    {renderSection("skills", Skills)}
+    {renderSection("portfolio", Portfolio)}
+    {renderSection("testimonials", Testimonials)}
+    {renderSection("contact", Contact)}
+  </>
+);
+
+const sectionRoutes = [
+  { path: "/experience", id: "experience" },
+  { path: "/skills", id: "skills" },
+  { path: "/portfolio", id: "portfolio" },
+  { path: "/testimonials", id: "testimonials" },
+  { path: "/contact", id: "contact" },
+];
+
+const scrollToSectionWithOffset = (sectionId, behavior = "auto") => {
+  let attempts = 0;
+  const maxAttempts = 20;
+
+  const tryScroll = () => {
+    const el = document.getElementById(sectionId);
+    if (!el) {
+      if (attempts < maxAttempts) {
+        attempts += 1;
+        requestAnimationFrame(tryScroll);
+      }
+      return;
+    }
+
+    el.scrollIntoView({ behavior, block: "start" });
+  };
+
+  requestAnimationFrame(tryScroll);
+};
+
+const ScrollToRouteSection = () => {
   const location = useLocation();
 
-  // Scroll to section if coming from navigation
   React.useEffect(() => {
-    if (
-      location.pathname === "/" &&
-      location.state &&
-      location.state.scrollTo
-    ) {
-      const sectionId = location.state.scrollTo;
-      let attempts = 0;
-      const maxAttempts = 20;
-      const scrollToSection = () => {
-        const el = document.getElementById(sectionId);
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
-        } else if (attempts < maxAttempts) {
-          setTimeout(scrollToSection, 100);
-          setTimeout(scrollToSection, 100);
-        }
-      };
-      scrollToSection();
-    }
-  }, [location]);
+    const matchedRoute = sectionRoutes.find(
+      (route) => route.path === location.pathname,
+    );
 
+    if (!matchedRoute) {
+      if (location.pathname !== "/") {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      }
+      return;
+    }
+
+    scrollToSectionWithOffset(matchedRoute.id);
+  }, [location.pathname]);
+
+  return null;
+};
+
+const App = () => {
   return (
     <div className="container">
       <Navigation />
@@ -54,43 +93,23 @@ const App = () => {
           path="/"
           element={
             <>
-              <section id="home">
-                <Suspense fallback={"loading..."}>
-                  <Hero />
-                </Suspense>
-              </section>
-              <section id="experience">
-                <Suspense fallback={"loading..."}>
-                  <Experience />
-                </Suspense>
-              </section>
-
-              <section id="skills">
-                <Suspense fallback={"loading..."}>
-                  <Skills />
-                </Suspense>
-              </section>
-
-              <section id="portfolio">
-                <Suspense fallback={"loading..."}>
-                  <Portfolio />
-                </Suspense>
-              </section>
-
-              <section id="testimonials">
-                <Suspense fallback={"loading..."}>
-                  <Testimonials />
-                </Suspense>
-              </section>
-
-              <section id="contact">
-                <Suspense fallback={"loading..."}>
-                  <Contact />
-                </Suspense>
-              </section>
+              <ScrollToRouteSection />
+              <HomePage />
             </>
           }
         />
+        {sectionRoutes.map(({ path, id }) => (
+          <Route
+            key={path}
+            path={path}
+            element={
+              <>
+                <ScrollToRouteSection />
+                <HomePage />
+              </>
+            }
+          />
+        ))}
         <Route
           path="/blog/*"
           element={

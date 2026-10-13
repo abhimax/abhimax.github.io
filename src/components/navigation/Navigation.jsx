@@ -24,20 +24,29 @@ const Navigation = () => {
   const navItems = [
     {
       id: "home",
-      label: location.pathname === "/blog" ? "Back to Home" : "Home",
+      label: location.pathname.startsWith("/blog") ? "Back to Home" : "Home",
+      path: "/",
     },
-    { id: "experience", label: "Experience" },
-    { id: "skills", label: "Skills" },
-    { id: "blog", label: "Blog", isBlog: true },
-    { id: "portfolio", label: "portfolio" },
-    { id: "testimonials", label: "Testimonials" },
-    { id: "contact", label: "Contact" },
+    { id: "experience", label: "Experience", path: "/experience" },
+    { id: "skills", label: "Skills", path: "/skills" },
+    { id: "portfolio", label: "Portfolio", path: "/portfolio" },
+    { id: "testimonials", label: "Testimonials", path: "/testimonials" },
+    { id: "contact", label: "Contact", path: "/contact" },
+    { id: "blog", label: "Blog", path: "/blog", isBlog: true },
   ];
 
   useEffect(() => {
+    if (location.pathname !== "/") {
+      const routeName =
+        location.pathname.split("/").filter(Boolean)[0] || "home";
+      const mappedSection = routeName === "blog" ? "home" : routeName || "home";
+      setActiveSection(mappedSection);
+      return;
+    }
+
     const handleScroll = () => {
       const sections = navItems.map((item) => item.id);
-      const scrollPosition = window.scrollY + 100; // Offset for better detection
+      const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = document.getElementById(sections[i]);
@@ -48,23 +57,30 @@ const Navigation = () => {
       }
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [navItems]);
+  }, [location.pathname, navItems]);
 
   const navigate = useNavigate();
 
-  // Scroll and navigate handler for non-blog links
-  const handleNavClick = (sectionId) => {
-    setMenuOpen(false);
-    if (location.pathname !== "/") {
-      navigate("/", { state: { scrollTo: sectionId } });
-    } else {
-      const el = document.getElementById(sectionId);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+  const isItemActive = (item) => {
+    if (item.isBlog) {
+      return location.pathname.startsWith("/blog");
     }
+
+    if (location.pathname !== "/") {
+      if (item.id === "home") {
+        return location.pathname === "/";
+      }
+      return location.pathname === item.path;
+    }
+
+    if (item.id === "home") {
+      return activeSection === "home";
+    }
+
+    return activeSection === item.id;
   };
 
   return (
@@ -73,7 +89,7 @@ const Navigation = () => {
         <div
           className="nav-brand"
           style={{ cursor: "pointer" }}
-          onClick={() => handleNavClick("home")}
+          onClick={() => navigate("/")}
         >
           <span>Abhiman Ranaweera</span>
         </div>
@@ -110,27 +126,13 @@ const Navigation = () => {
           <ul className="nav-links">
             {navItems.map((item) => (
               <li key={item.id}>
-                {item.isBlog ? (
-                  <Link
-                    to="/blog"
-                    className={`nav-link${
-                      location.pathname === "/blog" ? " active" : ""
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <Link
-                    className={`nav-link${
-                      activeSection === item.id && location.pathname === "/"
-                        ? " active"
-                        : ""
-                    }`}
-                    onClick={() => handleNavClick(item.id)}
-                  >
-                    {item.label}
-                  </Link>
-                )}
+                <Link
+                  to={item.path}
+                  className={`nav-link${isItemActive(item) ? " active" : ""}`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -140,28 +142,13 @@ const Navigation = () => {
         <ul className={`nav-links${menuOpen ? " nav-mobile-open" : ""}`}>
           {navItems.map((item) => (
             <li key={item.id}>
-              {item.isBlog ? (
-                <Link
-                  to="/blog"
-                  className={`nav-link${
-                    location.pathname === "/blog" ? " active" : ""
-                  }`}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <Link
-                  className={`nav-link${
-                    activeSection === item.id && location.pathname === "/"
-                      ? " active"
-                      : ""
-                  }`}
-                  onClick={() => handleNavClick(item.id)}
-                >
-                  {item.label}
-                </Link>
-              )}
+              <Link
+                to={item.path}
+                className={`nav-link${isItemActive(item) ? " active" : ""}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
             </li>
           ))}
         </ul>
