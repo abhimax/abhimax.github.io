@@ -30,6 +30,7 @@ const Navigation = () => {
     { id: "experience", label: "Experience", path: "/experience" },
     { id: "skills", label: "Skills", path: "/skills" },
     { id: "portfolio", label: "Portfolio", path: "/portfolio" },
+    { id: "events", label: "Tech Talks", path: "/events" },
     { id: "testimonials", label: "Testimonials", path: "/testimonials" },
     { id: "contact", label: "Contact", path: "/contact" },
     { id: "blog", label: "Blog", path: "/blog", isBlog: true },

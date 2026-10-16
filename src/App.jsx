@@ -8,6 +8,7 @@ const Hero = lazy(() => import("./components/hero/Hero"));
 const Experience = lazy(() => import("./components/experience/Experience"));
 const Skills = lazy(() => import("./components/skills/Skills"));
 const Portfolio = lazy(() => import("./components/portfolio/Portfolio"));
+const Events = lazy(() => import("./components/events/Events"));
 const Testimonials = lazy(
   () => import("./components/testimonials/Testimonials"),
 );
@@ -28,6 +29,7 @@ const HomePage = () => (
     {renderSection("experience", Experience)}
     {renderSection("skills", Skills)}
     {renderSection("portfolio", Portfolio)}
+    {renderSection("events", Events)}
     {renderSection("testimonials", Testimonials)}
     {renderSection("contact", Contact)}
   </>
@@ -37,6 +39,7 @@ const sectionRoutes = [
   { path: "/experience", id: "experience" },
   { path: "/skills", id: "skills" },
   { path: "/portfolio", id: "portfolio" },
+  { path: "/events", id: "events" },
   { path: "/testimonials", id: "testimonials" },
   { path: "/contact", id: "contact" },
 ];
