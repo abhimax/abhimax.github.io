@@ -19,8 +19,8 @@ const events = [
       "https://media.licdn.com/dms/image/v2/D5622AQECBOmIm4hpyQ/feedshare-shrink_480/B56aB5ZFS5JIAg-/0/1788743014729?e=1793836800&v=beta&t=VgBphc2ag1-au9xh6ixvp2MACXvPIof11gwi3DbxViA",
       "https://media.licdn.com/dms/image/v2/D5622AQFuNmzbd_ehmA/feedshare-shrink_480/B56aB5ZEKlKAAg-/0/1788743009401?e=1793836800&v=beta&t=e1pUWuCIT-0IRZW7gUa86rBjjgiEYNhIYVzFJP9O2co",
     ],
-    link: "https://lnkd.in/gHNp_Yjm",
-    linkLabel: "Read the article",
+    link: "https://medium.com/@abhimanranaweera/optimizing-aws-lambda-for-performance-cost-and-scalability-4e23c0bf4f85",
+    linkLabel: "Read the Medium Article",
   },
   {
     title: "Micro-Frontend Architecture in Practice",
@@ -38,8 +38,8 @@ const events = [
       "https://media.licdn.com/dms/image/v2/D5622AQFGng-YksRiAw/feedshare-shrink_1280/B56Z.V7sXFIMAM-/0/1784926881472?e=1793836800&v=beta&t=jrIt7T-mg25sqw1nVTNZHFDSNKwui9LHN8Khl-m2Is4",
       "https://media.licdn.com/dms/image/v2/D5622AQE2K3BHDpFnZw/feedshare-shrink_480/B56Z.V7sj1KEAg-/0/1784926882306?e=1793836800&v=beta&t=JoVLjktkQFAz8j6RfQuk8438uoI5Z9JCi2NlW-GnlEQ",
     ],
-    link: "https://lnkd.in/gx_VwgR3",
-    linkLabel: "Explore session links",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7486526052899639296/",
+    linkLabel: "Explore session on LinkedIn",
   },
   {
     title: "Streamlining UI Library Development From Design to Release",
@@ -54,7 +54,7 @@ const events = [
       "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*8xAAL6ZbRjLUhpcMNVHEvg.png",
     ],
     link: "https://medium.com/front-end-weekly/streamlining-ui-library-development-from-design-to-release-5fd4f888510a",
-    linkLabel: "Read Part 1",
+    linkLabel: "Read Medium Article Series",
   },
 ];
 
