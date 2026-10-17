@@ -8,6 +8,26 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (() => {
+        const redirect = sessionStorage.getItem("redirect");
+        if (redirect) {
+          const redirectUrl = new URL(redirect);
+          const targetPath =
+            redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
+          const currentPath =
+            window.location.pathname +
+            window.location.search +
+            window.location.hash;
+
+          if (targetPath && targetPath !== currentPath) {
+            window.history.replaceState(null, "", targetPath);
+          }
+
+          sessionStorage.removeItem("redirect");
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
