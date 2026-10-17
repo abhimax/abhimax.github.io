@@ -62,34 +62,37 @@ const getSectionMatchFromPath = (pathname) => {
 };
 
 const scrollToSectionWithOffset = (sectionId, behavior = "auto") => {
-  const element = document.getElementById(sectionId);
-  if (!element) return;
-
-  let top = 0;
-  let current = element;
-
-  while (current) {
-    top += current.offsetTop || 0;
-    current = current.offsetParent;
-  }
-
-  const targetTop = Math.max(top - 80, 0);
   let attempts = 0;
+  const maxAttempts = 40;
 
   const applyScroll = () => {
+    const element = document.getElementById(sectionId);
+    if (!element) {
+      if (attempts < maxAttempts) {
+        attempts += 1;
+        setTimeout(applyScroll, 80);
+      }
+      return;
+    }
+
+    const targetTop = Math.max(
+      window.scrollY + element.getBoundingClientRect().top - 80,
+      0,
+    );
+
     window.scrollTo({
       top: targetTop,
       left: 0,
       behavior,
     });
 
-    if (Math.abs(window.scrollY - targetTop) > 5 && attempts < 20) {
+    if (attempts < maxAttempts) {
       attempts += 1;
-      requestAnimationFrame(applyScroll);
+      setTimeout(applyScroll, 80);
     }
   };
 
-  requestAnimationFrame(applyScroll);
+  applyScroll();
 };
 
 const RouteNormalizer = () => {
@@ -169,14 +172,14 @@ const App = () => {
       const runInitialScroll = () => {
         const element = document.getElementById(initialMatch.id);
         if (!element) {
-          requestAnimationFrame(runInitialScroll);
+          setTimeout(runInitialScroll, 100);
           return;
         }
 
         scrollToSectionWithOffset(initialMatch.id, "auto");
       };
 
-      requestAnimationFrame(runInitialScroll);
+      runInitialScroll();
     }
   }, []);
 
@@ -189,9 +192,9 @@ const App = () => {
         return;
       }
 
-      requestAnimationFrame(() => {
+      setTimeout(() => {
         scrollToSectionWithOffset(matchedRoute.id, "auto");
-      });
+      }, 0);
     };
 
     handlePageShow();
