@@ -9,6 +9,11 @@
   <body>
     <div id="root"></div>
     <script>
+      if ("scrollRestoration" in window.history) {
+        window.history.scrollRestoration = "manual";
+      }
+    </script>
+    <script>
       (() => {
         const normalizePath = (pathname) => {
           if (!pathname || pathname === "/") return "/";

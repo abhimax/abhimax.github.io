@@ -90,7 +90,13 @@ const Navigation = () => {
         <div
           className="nav-brand"
           style={{ cursor: "pointer" }}
-          onClick={() => navigate("/")}
+          onClick={() => {
+            if (location.pathname === "/") {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              return;
+            }
+            navigate("/");
+          }}
         >
           <span>Abhiman Ranaweera</span>
         </div>
@@ -130,7 +136,20 @@ const Navigation = () => {
                 <Link
                   to={item.path}
                   className={`nav-link${isItemActive(item) ? " active" : ""}`}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={(event) => {
+                    if (item.id === "home") {
+                      if (location.pathname === "/") {
+                        event.preventDefault();
+                        window.scrollTo({
+                          top: 0,
+                          left: 0,
+                          behavior: "smooth",
+                        });
+                        return;
+                      }
+                    }
+                    setMenuOpen(false);
+                  }}
                 >
                   {item.label}
                 </Link>
@@ -146,7 +165,16 @@ const Navigation = () => {
               <Link
                 to={item.path}
                 className={`nav-link${isItemActive(item) ? " active" : ""}`}
-                onClick={() => setMenuOpen(false)}
+                onClick={(event) => {
+                  if (item.id === "home") {
+                    if (location.pathname === "/") {
+                      event.preventDefault();
+                      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                      return;
+                    }
+                  }
+                  setMenuOpen(false);
+                }}
               >
                 {item.label}
               </Link>

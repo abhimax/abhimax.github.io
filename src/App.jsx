@@ -52,32 +52,41 @@ const sectionRoutes = [
 ];
 
 const scrollToSectionWithOffset = (sectionId, behavior = "auto") => {
+  const element = document.getElementById(sectionId);
+  if (!element) return;
+
+  let top = 0;
+  let current = element;
+
+  while (current) {
+    top += current.offsetTop || 0;
+    current = current.offsetParent;
+  }
+
+  const targetTop = Math.max(top - 80, 0);
   let attempts = 0;
-  const maxAttempts = 30;
-  const navOffset = 80;
 
-  const tryScroll = () => {
-    const el = document.getElementById(sectionId);
-    if (!el) {
-      if (attempts < maxAttempts) {
-        attempts += 1;
-        requestAnimationFrame(tryScroll);
-      }
-      return;
+  const applyScroll = () => {
+    window.scrollTo({
+      top: targetTop,
+      left: 0,
+      behavior,
+    });
+
+    if (Math.abs(window.scrollY - targetTop) > 5 && attempts < 20) {
+      attempts += 1;
+      requestAnimationFrame(applyScroll);
     }
-
-    const top = Math.max(el.offsetTop - navOffset, 0);
-    window.scrollTo({ top, behavior });
   };
 
-  requestAnimationFrame(tryScroll);
+  requestAnimationFrame(applyScroll);
 };
 
 const RouteNormalizer = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     const normalizedPath = normalizePath(location.pathname);
 
     if (normalizedPath !== location.pathname) {
@@ -92,27 +101,88 @@ const RouteNormalizer = () => {
 
 const ScrollToRouteSection = () => {
   const location = useLocation();
+  const lastScrollRef = React.useRef("");
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     const currentPath = normalizePath(location.pathname);
+    const routeKey = `${currentPath}${location.hash}`;
+
+    if (lastScrollRef.current === routeKey) {
+      return;
+    }
+
+    lastScrollRef.current = routeKey;
+
+    if (currentPath === "/") {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      return;
+    }
+
     const matchedRoute = sectionRoutes.find(
       (route) => route.path === currentPath,
     );
 
     if (!matchedRoute) {
-      if (currentPath !== "/") {
-        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-      }
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
       return;
     }
 
-    scrollToSectionWithOffset(matchedRoute.id);
-  }, [location.pathname]);
+    const runScroll = () => {
+      const el = document.getElementById(matchedRoute.id);
+      if (!el) {
+        requestAnimationFrame(runScroll);
+        return;
+      }
+
+      scrollToSectionWithOffset(matchedRoute.id, "auto");
+    };
+
+    requestAnimationFrame(runScroll);
+  }, [location.pathname, location.hash]);
 
   return null;
 };
 
 const App = () => {
+  const location = useLocation();
+
+  React.useLayoutEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }, []);
+
+  React.useLayoutEffect(() => {
+    const handlePageShow = () => {
+      const currentPath = normalizePath(location.pathname);
+
+      if (currentPath === "/") {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        return;
+      }
+
+      const matchedRoute = sectionRoutes.find(
+        (route) => route.path === currentPath,
+      );
+
+      if (!matchedRoute) {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        return;
+      }
+
+      requestAnimationFrame(() => {
+        scrollToSectionWithOffset(matchedRoute.id, "auto");
+      });
+    };
+
+    handlePageShow();
+    window.addEventListener("pageshow", handlePageShow);
+
+    return () => {
+      window.removeEventListener("pageshow", handlePageShow);
+    };
+  }, [location.pathname]);
+
   return (
     <div className="container">
       <Navigation />
@@ -129,7 +199,7 @@ const App = () => {
             </>
           }
         />
-        {sectionRoutes.map(({ path, id }) => (
+        {sectionRoutes.map(({ path }) => (
           <Route
             key={path}
             path={path}
