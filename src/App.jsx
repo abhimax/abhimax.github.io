@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import ThemeToggle from "./components/theme/ThemeToggle";
 import Navigation from "./components/navigation/Navigation";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const Hero = lazy(() => import("./components/hero/Hero"));
@@ -22,6 +22,13 @@ const renderSection = (id, Component) => (
     </Suspense>
   </section>
 );
+
+const normalizePath = (pathname) => {
+  if (!pathname || pathname === "/") return "/";
+  return pathname.endsWith("/")
+    ? pathname.replace(/\/+$/, "") || "/"
+    : pathname;
+};
 
 const HomePage = () => (
   <>
@@ -66,16 +73,34 @@ const scrollToSectionWithOffset = (sectionId, behavior = "auto") => {
   requestAnimationFrame(tryScroll);
 };
 
+const RouteNormalizer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    const normalizedPath = normalizePath(location.pathname);
+
+    if (normalizedPath !== location.pathname) {
+      navigate(`${normalizedPath}${location.search}${location.hash}`, {
+        replace: true,
+      });
+    }
+  }, [location.pathname, location.search, location.hash, navigate]);
+
+  return null;
+};
+
 const ScrollToRouteSection = () => {
   const location = useLocation();
 
   React.useEffect(() => {
+    const currentPath = normalizePath(location.pathname);
     const matchedRoute = sectionRoutes.find(
-      (route) => route.path === location.pathname,
+      (route) => route.path === currentPath,
     );
 
     if (!matchedRoute) {
-      if (location.pathname !== "/") {
+      if (currentPath !== "/") {
         window.scrollTo({ top: 0, left: 0, behavior: "auto" });
       }
       return;
@@ -93,6 +118,7 @@ const App = () => {
       <Navigation />
       <ThemeToggle />
       <ScrollToTopButton />
+      <RouteNormalizer />
       <Routes>
         <Route
           path="/"

@@ -10,13 +10,22 @@
     <div id="root"></div>
     <script>
       (() => {
+        const normalizePath = (pathname) => {
+          if (!pathname || pathname === "/") return "/";
+          return pathname.endsWith("/")
+            ? pathname.replace(/\/+$/, "") || "/"
+            : pathname;
+        };
+
         const redirect = sessionStorage.getItem("redirect");
         if (redirect) {
           const redirectUrl = new URL(redirect);
           const targetPath =
-            redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
+            normalizePath(redirectUrl.pathname) +
+            redirectUrl.search +
+            redirectUrl.hash;
           const currentPath =
-            window.location.pathname +
+            normalizePath(window.location.pathname) +
             window.location.search +
             window.location.hash;
 
@@ -25,6 +34,20 @@
           }
 
           sessionStorage.removeItem("redirect");
+        } else {
+          const normalizedPath =
+            normalizePath(window.location.pathname) +
+            window.location.search +
+            window.location.hash;
+
+          if (
+            normalizedPath !==
+            window.location.pathname +
+              window.location.search +
+              window.location.hash
+          ) {
+            window.history.replaceState(null, "", normalizedPath);
+          }
         }
       })();
     </script>
