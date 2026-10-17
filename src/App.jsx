@@ -51,6 +51,16 @@ const sectionRoutes = [
   { path: "/contact", id: "contact" },
 ];
 
+const getSectionMatchFromPath = (pathname) => {
+  const currentPath = normalizePath(pathname);
+
+  if (currentPath === "/") {
+    return null;
+  }
+
+  return sectionRoutes.find((route) => route.path === currentPath) ?? null;
+};
+
 const scrollToSectionWithOffset = (sectionId, behavior = "auto") => {
   const element = document.getElementById(sectionId);
   if (!element) return;
@@ -153,17 +163,26 @@ const App = () => {
   }, []);
 
   React.useLayoutEffect(() => {
+    const initialMatch = getSectionMatchFromPath(window.location.pathname);
+
+    if (initialMatch) {
+      const runInitialScroll = () => {
+        const element = document.getElementById(initialMatch.id);
+        if (!element) {
+          requestAnimationFrame(runInitialScroll);
+          return;
+        }
+
+        scrollToSectionWithOffset(initialMatch.id, "auto");
+      };
+
+      requestAnimationFrame(runInitialScroll);
+    }
+  }, []);
+
+  React.useLayoutEffect(() => {
     const handlePageShow = () => {
-      const currentPath = normalizePath(location.pathname);
-
-      if (currentPath === "/") {
-        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-        return;
-      }
-
-      const matchedRoute = sectionRoutes.find(
-        (route) => route.path === currentPath,
-      );
+      const matchedRoute = getSectionMatchFromPath(location.pathname);
 
       if (!matchedRoute) {
         window.scrollTo({ top: 0, left: 0, behavior: "auto" });

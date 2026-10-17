@@ -15,7 +15,7 @@
         const targetPath =
           normalizePath(location.pathname) + location.search + location.hash;
 
-        sessionStorage.redirect = location.origin + targetPath;
+        sessionStorage.setItem("redirect", location.origin + targetPath);
       })();
     </script>
     <title>Redirecting...</title>
